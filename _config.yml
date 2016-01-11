@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Techmakers
+email: info@techmakers.io
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://techmakers.io" # the base hostname & protocol for your site
+twitter_username: techmakers.io
+github_username:  techmakers
+
+sitemap:
+  lastmod: 2015-01-23
+  priority: 0.7
+  changefreq: monthly
+  exclude: yes
+
+permalink: /blog/:categories/:year/:title.html
+
+# Build settings
+markdown: kramdown
+
+ftp_host: '0376398.netsolhost.com'
+ftp_dir: ' /htdocs/techmakers.io'
+ftp_passive: false
+
+# optional
+ftp_port: 21                  # default 21
+ftp_username: 'carlocassinari'     # default read from stdin
+ftp_password: 'Modem323' # default read from stdin
+ftp_secure: false             # default false
