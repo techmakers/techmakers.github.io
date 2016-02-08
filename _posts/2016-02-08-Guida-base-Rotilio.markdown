@@ -5,7 +5,7 @@ subtitle: "Guida base per l'utilizzo della nostra piattaforma IoT"
 date:   2016-01-15 09:20:29 +0100
 categories: Rotilio
 ---
-#Techmakers
+# Techmakers
 				
 ![techmakers](../img/post/techmakersLogo110 copia.png) 
 
