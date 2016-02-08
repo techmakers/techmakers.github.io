@@ -72,7 +72,7 @@ Come procedere all'accensione di Rotilio:
 
 - dopo questa operazione l'applicazione procederà con il set up e fornirà il nome del device, cliccando sul tasto fine si ritornerà alla dashboard iniziale con inserito il nostro nuovo device.
 
-![setup](../img/post/setup.jpg) ![dashboard2](../img/post/dashboard2.png)
+![setup](../img/post/setup.jpg) ![dashboard2](../img/post/dashboard2.jpg)
 
 3 Registrazione su rotilio.cc
 
