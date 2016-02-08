@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "Guida base Rotilio"
+subtitle: "Guida base per l'utilizzo della nostra piattaforma IoT"
 date:   2016-01-15 09:20:29 +0100
 categories: Rotilio
 ---
-#Techmakers
+Techmakers
 				
 ![techmakers](../img/post/techmakersLogo110 copia.png) 
 
-###Guida base per l'utilizzo della nostra piattaforma IoT
 
 Prima di addentrarsi nella parte pratica è necessario dotarsi della strumentazione necessaria all'utilizzo della piattaforma.
 
-###Setup di base
+Setup di base
 
 Smartphone iOS o Android con installata App Particle.io
 
@@ -42,9 +42,9 @@ Un altro passaggio che noi giudichiamo fondamentale prima di passare alla parte 
 
 Nel caso non foste ancora inscritti a GitHub potete farlo al seguente link [https://github.com/](https://github.com/) oppure potete usufruire della versione aggiornata e funzionante dell'interfaccia [https://rotilio.cc](https://rotilio.cc).
 
-###Pratica
+Pratica
 
-####1 Accendere Rotilio
+1 Accendere Rotilio
 
 Come procedere all'accensione di Rotilio:
 
@@ -64,7 +64,7 @@ Come procedere all'accensione di Rotilio:
 
 ![wifi](../img/post/wifi.jpg) ![wifiP](../img/post/wifiP.jpg)
 
-####2 Configurazione Wifi
+2 Configurazione Wifi
 
 - Il secondo passo consiste nella configurazione del Wifi, inserendo la password della nostra rete 
 
@@ -74,7 +74,7 @@ Come procedere all'accensione di Rotilio:
 
 ![setup](../img/post/setup.jpg) ![dashboard2](../img/post/dashboard2.png)
 
-####3 Registrazione su rotilio.cc
+3 Registrazione su rotilio.cc
 
 Con questo passaggio conclusivo sarà possibile visualizzare i dati e l'iterazione di Rotilio attraverso i sensori e gli attuattori su di esso montati.
 
