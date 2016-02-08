@@ -5,10 +5,9 @@ subtitle: "Guida base per l'utilizzo della nostra piattaforma IoT"
 date:   2016-02-08 09:20:29 +0100
 categories: Rotilio
 ---
-# Techmakers
-				
-![techmakers](../img/post/techmakersLogo110 copia.png) 
 
+In questo articolo affronteremo tutti i passaggi fondamentali per l'attivazione di Rotilio, nostra piattaforma per l'Internet of Things, elencando la strumentazione necessaria e tutti i passaggi pratici della configurazione.
+Attraverso tre semplici passaggi: l'accensione,la configurazione del WiFi e la registrazione sulla web app [rotilio.cc](http://rotilio.cc) sarete in grado di realizzare i vostri progetti per l'IoT, controllando luci, riscaldamento e molto altro.
 
 Prima di addentrarsi nella parte pratica è necessario dotarsi della strumentazione necessaria all'utilizzo della piattaforma.
 
@@ -47,6 +46,10 @@ Nel caso non foste ancora inscritti a GitHub potete farlo al seguente link [http
 #### 1 Accendere Rotilio
 
 Come procedere all'accensione di Rotilio:
+
+- Collegare Rotilio alla presa USB del proprio computer o collegarlo attraverso un alimentatore alla corrente.
+
+![rotiliocavo](../img/post/rotiliocavo) ![aliment1](../img/post/aliment1)
 
 - Aprire l'applicazione Particle sul proprio smartphone e registrasi
 
