@@ -49,7 +49,7 @@ Come procedere all'accensione di Rotilio:
 
 - Collegare Rotilio alla presa USB del proprio computer o collegarlo attraverso un alimentatore alla corrente.
 
-![rotiliocavo](../img/post/rotiliocavo) ![aliment1](../img/post/aliment1)
+![rotiliocavo](../img/post/rotiliocavo.JPG) ![aliment1](../img/post/aliment1.JPG)
 
 - Aprire l'applicazione Particle sul proprio smartphone e registrasi
 
