@@ -31,10 +31,8 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                     <li>
                         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                         <h6>{{ post.subtitle }}</h6>
-                            {{ post.excerpt }}
-                        </em></strong>  <!-- This is what does the task-->
-                        <br>
-                        <a href="{{ post.url }}">Read more...</a><br><br>
+                        {{ post.excerpt }}
+                        <a href="{{ post.url }}">read more...</a>
                         <div class="row">
                             {% include facebook.html %}
                             {% include twitter.html %}
