@@ -9,8 +9,7 @@ categories: Rotilio
 
 
 Vogliamo inaugurare il nostro blog con un articolo riguardante il Decreto Legislativo per il riempimento della [direttiva europea](http://www.formazione.enea.it/documents/direttiva_2012_27_UE.pdf) 2012/27/UE sull'efficienza energetica varato dal Consiglio dei Ministri il 30 Giugno 2014.
-<!-- more -->
-La normativa prevede che tutti i condomini con riscaldamento centralizzato si muniscano di valvole termostatiche per ogni termosifone presente nell'appartamento di modo che il monitoraggio dei consumi e la contabilizzazione del calore avvenga correttamente. 
+La normativa prevede che tutti i condomini con riscaldamento centralizzato si muniscano di valvole termostatiche per ogni termosifone presente nell'appartamento di modo che il monitoraggio dei consumi e la contabilizzazione del calore avvenga correttamente.
 
 
 Noi di Techmakers che crediamo nell'efficienza energetica e nella facile gestione della casa attraverso l'internet of things, abbiamo pertanto realizzato il nostro primo prodotto IoT, [Rotilio](http://techmakers.io/rotilio.html) piattaforma hardware e software open source che con l'ausilio di diversi sensori e la presenza del [Photon](https://www.particle.io) permette l'automatizzazione di alcuni aspetti della vita domestica e non solo.
