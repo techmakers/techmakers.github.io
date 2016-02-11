@@ -9,7 +9,7 @@ categories: Rotilio
 
 
 Vogliamo inaugurare il nostro blog con un articolo riguardante il Decreto Legislativo per il riempimento della [direttiva europea](http://www.formazione.enea.it/documents/direttiva_2012_27_UE.pdf) 2012/27/UE sull'efficienza energetica varato dal Consiglio dei Ministri il 30 Giugno 2014.
-
+<!-- more -->
 La normativa prevede che tutti i condomini con riscaldamento centralizzato si muniscano di valvole termostatiche per ogni termosifone presente nell'appartamento di modo che il monitoraggio dei consumi e la contabilizzazione del calore avvenga correttamente. 
 
 

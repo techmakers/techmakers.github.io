@@ -31,10 +31,7 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                     <li>
                         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                         <h6>{{ post.subtitle }}</h6>
-                        <div>
                             {{ post.excerpt }}
-                            <a href="{{ post.url }}">read more...</a>
-                        </div>
                         <div class="row">
                             {% include facebook.html %}
                             {% include twitter.html %}
@@ -43,7 +40,13 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                     {% endfor %}
                 </ul>
             </div>
-
+            <div class="post-content-truncate">
+                {% if post.content contains "<!-- more -->" %}
+                {{ post.content | split:"<!-- more -->" | first % }}
+                {% else %}
+                {{ post.content | strip_html | truncatewords:100 }}
+                {% endif %}
+            </div>
             <div class="row col-sm-3 feature feature-1 boxed">
                 <div align="center">
                     {% for tag in site.categories %}
