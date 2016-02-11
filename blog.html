@@ -31,7 +31,7 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                     <li>
                         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                         <h6>{{ post.subtitle }}</h6>
-                        {{ post.excerpt }}
+                        {{ post.excerpt }}<a href="{{ post.url }}">read more...</a>
                         <div class="row">
                             {% include facebook.html %}
                             {% include twitter.html %}
@@ -60,7 +60,7 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                         {% assign group = nil %}
                     </ul>
                     {% endfor %}
-                    <ul class="tag-box inline">
+                   <!-- <ul class="tag-box inline">
                         {% assign tags_list = site.categories %}
                         {% if tags_list.first[0] == null %}
                         {% for tag in tags_list %}
@@ -72,7 +72,7 @@ description: "Il blog di Techmakers con news ed eventi sulle nuove tecnologie e 
                         {% endfor %}
                         {% endif %}
                         {% assign tags_list = nil %}
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </section>
