@@ -47,3 +47,4 @@ The data infrastructure are the User Datagram Protocol (UDP) 26 bytes, the Datag
 - If possible write firmware with this two guide lines:
 	- work even if in offline mode (ex: if data limit reached, Electron goes offline)
 	- work with local algorithm if you can, to avoid dialog with the cloud
+
