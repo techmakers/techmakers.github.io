@@ -4,7 +4,6 @@ title:  "Electron data consumption"
 date:   2016-03-24 13:20:29 +0100
 categories: Rotilio
 ---
-#Electron data consumption
 
 We start to use [Electron](https://www.particle.io/cellular) the new cellular IoT board that works with 3G and 2G cellular module.
 
@@ -14,7 +13,7 @@ The new [Particle.io](https://www.particle.io) product arive in your office or h
 
 In this article we want talk about the data consumption.
 
-###Just to be alive
+## Just to be alive
 
 An Electron that is breathing cyan and doing nothing else currently pings every 23 minutes. The ping and the cloud's acknowledgement are each 61 bytes. 
 
@@ -27,13 +26,13 @@ The change  to [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) from 
 The TCP frame is 20 bytes, plus every message is acknowledged at the TCP level adding another 20 (TCP) + 20 (IP) for the ACK instead the UDP frame is 8 bytes. 
 
 
-###Every publish and read variable 
+## Every publish and read variable 
 
 When data is sent to or from the device, we have a consumption for a very short Particle.publish of nearly 128 bytes, mostly comprised of infrastructure.
 
 The data infrastructure are the User Datagram Protocol (UDP) 26 bytes, the Datagram Transport Layer Security ([DTLS](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)) 27 bytes and an acknowledgement message ([ACK](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))) 61 bytes.
 
-###How to limit data consumption
+## How to limit data consumption
 
 - Use USB firmware update instead OTA firmware update
 - Publish only if a value is really and significantly changed (send temperature only if it varies more than .5°C)
