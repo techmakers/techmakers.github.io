@@ -36,15 +36,23 @@ The data infrastructure are the User Datagram Protocol (UDP) 26 bytes, the Datag
 
 
 -- Use USB firmware update instead OTA firmware update
+
 -- Publish only if a value is really and significantly changed (send temperature only if it varies more than .5°C)
+
 -- Count the publish per period and limit the publish frequency if possible 
+
 -- Don't poll for variable if is not necessary 
+
 -- Reduce variable and event name length to the minimum
+
 -- Accumulate publish and variables in one time (string concat):
+
 	-- maximum string length for variable value is 622 bytes	
 	-- maximum string length for publish data is 255 bytes	
 -- Use System.sleep() to reduce data exchange (and Pfv) [https://docs.particle.io/reference/firmware/electron/#sleep-sleep-](https://docs.particle.io/reference/firmware/electron/#sleep-sleep-)
+
 -- If possible write firmware with this two guide lines:
+
 	--	work even if in offline mode (ex: if data limit reached, Electron goes offline)
 	-- work with local algorithm if you can, to avoid dialog with the cloud
 
