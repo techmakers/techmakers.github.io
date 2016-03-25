@@ -48,6 +48,7 @@ The data infrastructure are the User Datagram Protocol (UDP) 26 bytes, the Datag
 
 	- maximum string length for variable value is 622 bytes	
 	- maximum string length for publish data is 255 bytes	
+	
 -- Use System.sleep() to reduce data exchange [https://docs.particle.io/reference/firmware/electron/#sleep-sleep-](https://docs.particle.io/reference/firmware/electron/#sleep-sleep-)
 
 -- If possible write firmware with this two guide lines:
