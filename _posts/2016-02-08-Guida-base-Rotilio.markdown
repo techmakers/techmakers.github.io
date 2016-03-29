@@ -15,9 +15,9 @@ Setup di base
 
 Smartphone iOS o Android con installata App Particle.io
 
-- [Android](https://play.google.com/store/apps/details?id=io.particle.android.app)
+-- [Android](https://play.google.com/store/apps/details?id=io.particle.android.app)
 
-- [iOS](https://itunes.apple.com/it/app/particle-build-photon-electron/id991459054?l=en&mt=8)
+-- [iOS](https://itunes.apple.com/it/app/particle-build-photon-electron/id991459054?l=en&mt=8)
 
 Un computer Mac, Linux o Windows
 
@@ -47,33 +47,33 @@ Nel caso non foste ancora inscritti a GitHub potete farlo al seguente link [http
 
 Come procedere all'accensione di Rotilio:
 
-- Collegare Rotilio alla presa USB del proprio computer o collegarlo attraverso un alimentatore alla corrente.
+-- Collegare Rotilio alla presa USB del proprio computer o collegarlo attraverso un alimentatore alla corrente.
 
 ![rotiliocavo](../img/post/rotiliocavo.JPG) ![aliment1](../img/post/aliment1.JPG)
 
-- Aprire l'applicazione Particle sul proprio smartphone e registrasi
+-- Aprire l'applicazione Particle sul proprio smartphone e registrasi
 
 ![home](../img/post/home.jpg) ![signin](../img/post/signin.jpg)
 
-- dopo la registrazione sarà visibile la dashboard vuota da cui è possibile aggiungere un nuovo dispositivo
+-- Dopo la registrazione sarà visibile la dashboard vuota da cui è possibile aggiungere un nuovo dispositivo
 
 ![dashboard](../img/post/dashboard.jpg) ![addevice](../img/post/addevice.jpg)
 
-- Scegliendo la voce Photon si procede con la registrazione, Rotilio ora deve essere alimentato e connesso seguendo le indicazioni fornite dall'Applicazione
+-- Scegliendo la voce Photon si procede con la registrazione, Rotilio ora deve essere alimentato e connesso seguendo le indicazioni fornite dall'Applicazione
 
 ![config](../img/post/config.jpg) ![connect](../img/post/connect.jpg)
 
-- Successivamente bisogna collegare lo smartphone al Rotilio attraverso dei semplici passaggi
+-- Successivamente bisogna collegare lo smartphone al Rotilio attraverso dei semplici passaggi
 
 ![wifi](../img/post/wifi.jpg) ![wifiP](../img/post/wifiP.jpg)
 
 #### 2 Configurazione Wifi
 
-- Il secondo passo consiste nella configurazione del Wifi, inserendo la password della nostra rete 
+-- Il secondo passo consiste nella configurazione del Wifi, inserendo la password della nostra rete 
 
 ![configwifi](../img/post/configwifi.jpg) ![configwifi2](../img/post/configwifi2.jpg)
 
-- dopo questa operazione l'applicazione procederà con il set up e fornirà il nome del device, cliccando sul tasto fine si ritornerà alla dashboard iniziale con inserito il nostro nuovo device.
+-- dopo questa operazione l'applicazione procederà con il set up e fornirà il nome del device, cliccando sul tasto fine si ritornerà alla dashboard iniziale con inserito il nostro nuovo device.
 
 ![setup](../img/post/setup.jpg) ![dashboard2](../img/post/dashboard2.jpg)
 
@@ -81,15 +81,15 @@ Come procedere all'accensione di Rotilio:
 
 Con questo passaggio conclusivo sarà possibile visualizzare i dati e l'iterazione di Rotilio attraverso i sensori e gli attuattori su di esso montati.
 
-- Per poter visualizzare il nostro Rotilio e tutti i dati è necessario procedere con la registrazione sulla nostra web app [rotilio.cc](http://rotilio.cc) con gli stessi dati utilizzati per la registrazione sull'applicazione Particle
+-- Per poter visualizzare il nostro Rotilio e tutti i dati è necessario procedere con la registrazione sulla nostra web app [rotilio.cc](http://rotilio.cc) con gli stessi dati utilizzati per la registrazione sull'applicazione Particle
 
 ![rotiliocc](../img/post/rotiliocc.jpg) ![device](../img/post/device.jpg)
 
-- cliccando sull'icona freccia si accederà alla schermata variabili, 
+-- cliccando sull'icona freccia si accederà alla schermata variabili, 
 
 ![variables](../img/post/variables.jpg)
 
-- cliccando sull'icona telefono sranno invece visibili gli eventi
+-- cliccando sull'icona telefono sranno invece visibili gli eventi
 
 ![event](../img/post/event.jpg) ![event2](../img/post/event2.jpg)
 
