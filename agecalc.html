@@ -1,0 +1,40 @@
+<HTML>
+<head>
+<title>Quanto ti resta ?</title>
+</head>
+<body>
+Anno di nascita: <input id="yearBirth" type="text" value="" onkeyup="calc()" />
+<br/><br/>
+<div style="display:none" id="disp">
+Secondo questa <a href="https://www.google.com/search?q=vita%20media%20italia">ricerca</a>, la tua aspettativa di vita &egrave; pari a <span id="yourFutureAge">...</span> anni, ti restano ancora <span id="remainingYears">...</span> anni di vita.
+<br />
+GODITELI !!!!
+</div>
+
+
+
+<script>
+
+function calc(){
+
+	var yearBirth = document.getElementById("yearBirth").value*1 ;
+	
+	var actualYear = new Date().getFullYear();
+	var yourActualAge = actualYear - yearBirth;
+	var ageIncreasingPerYear = 0.3;
+	var actualAverageAge = 82.94;
+
+	var yourFutureAge = Math.round(yourActualAge + (actualAverageAge-yourActualAge) / (1 - ageIncreasingPerYear)) ;
+
+	var yourYearDeath = Math.round(yearBirth + yourFutureAge) ;
+
+	var remainingYears = yourYearDeath - actualYear ;
+
+	if (remainingYears > 0){
+		document.getElementById("disp").style.display = "inline" ;
+	}
+	document.getElementById("yourFutureAge").innerHTML = yourFutureAge ;
+	document.getElementById("remainingYears").innerHTML = remainingYears ;
+}
+
+</script>
