@@ -20,7 +20,7 @@ img.logo {
     margin-top: 10px;
 }
 a#download-button.btn-large.waves-effect.waves-light {
-    margin-left: 15px;
+    margin-left: -15px;
 }
 .parallax img {
     min-width:0;
