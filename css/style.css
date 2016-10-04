@@ -11,7 +11,9 @@ nav .brand-logo {
     color: #444;
     list-style-type: none;
 }
-
+#sidenav-overlay{
+    position: absolute;
+}
 img.logo {
     max-height: 70%;
     margin-top: 15px;
@@ -57,6 +59,7 @@ img#rotilio{
         display: block;
         z-index: 0;
     }
+
     .slider .indicators .indicator-item.active{
         background-color: #FC4F4F;
     }
@@ -80,6 +83,9 @@ img#rotilio{
     }
     img.circuito-rotilio{
         margin-left: 50px;
+    }
+    img.circuito-pro{
+        margin-left: 100px;
     }
     a#download-button.btn-large.waves-effect.waves-light{
         margin-top: 5px;
