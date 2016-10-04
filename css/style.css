@@ -57,7 +57,7 @@ img#rotilio{
         display: block;
         z-index: 0;
     }
-    #sidenav-overlay{
+   /* #sidenav-overlay{
         position: absolute;
         top: 0;
         left: 0;
@@ -66,8 +66,11 @@ img#rotilio{
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 997;
         will-change: opacity;
+    }*/
+    ul#nav-mobile.side-nav{
+        transform: translateX(-100%);
     }
-    ul{
+    ul#talk{
         margin-left: 0 !important;
     }
     .slider .indicators .indicator-item.active{
