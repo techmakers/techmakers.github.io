@@ -14,14 +14,19 @@ nav .brand-logo {
 ul#nav-mobile.side-nav{
     transform: translateX(-100%);
 }
+ul#dropdown_SkypeButton_Call_cashbit_1{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+}
 
 img.logo {
     height: 45px;
     margin-top: 10px;
 }
-a#download-button.btn-large.waves-effect.waves-light {
+/*a#download-button.btn-large.waves-effect.waves-light {
     margin-left: -15px;
-}
+}*/
 .parallax img {
     min-width:0;
     padding: 5px;
