@@ -27,6 +27,7 @@ img.logo {
 /*a#download-button.btn-large.waves-effect.waves-light {
     margin-left: -15px;
 }*/
+
 .parallax img {
     min-width:0;
     padding: 5px;
@@ -52,18 +53,52 @@ li{
 img#rotilio{
     opacity: 0.4;
 }
+@media only screen and (max-width: 1920px) and (min-width: 1367px){
+    h4#skills{
+        padding: 240px 0 0 0;
+    }
+}
+@media only screen and (max-width: 800px){
+    h4#skills{
+        padding: 309px 0 0 0;
+    }
 
-@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 1024px) and (min-width: 8001px){
+    h4#skills{
+        padding: 290px 0 0 0 !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    h4#skills{
+        padding: 309px 0 0 0 !important;
+    }
+}
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
 
     h1.header.center.home{
         margin-top: 2rem !important;
     }
-
+    h4#skills{
+        padding: 300px 0 0 0;
+    }
+    h4#training{
+    padding: 60px 0 0 0 !important;
+    }
 }
 @media only screen and (max-width: 736px) {
     div.slider{
         display: block;
         z-index: 0;
+    }
+    h4#skills{
+        padding: 0 !important;
+    }
+    h4#training{
+        padding: 0 !important;
+    }
+    table{
+        width: 100% !important;
     }
     #sidenav-overlay{
         display: none !important;
@@ -103,6 +138,10 @@ img#rotilio{
         margin-top: 5px;
         margin-left: 0;
     }
+    div#makers.row{
+        margin-left: 0.5rem !important;
+        margin-right: 0 !important;
+    }
 }
 @media only screen and (max-width: 375px) {
     h1.header.center.home{
@@ -134,6 +173,12 @@ img#rotilio{
         margin-left: 80px !important;
     }
 }
+@media only screen and (max-width: 320px) {
+    table{
+        width: 50%;
+        margin-left: -10px;
+    }
+}
 p {
     line-height: 2rem;
     font-size: large;
@@ -157,14 +202,30 @@ h5.header.col.s12.light {
 .btn-large:hover {
     background-color: #fc4f4f;
 }
-
+td{
+    padding: 0;
+}
+table{
+    width: 75%;
+}
+b{
+    font-size: large;
+}
 .parallax-container {
     min-height: 380px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
 }
-
+#rotilio_wifi.parallax-container{
+    min-height: 180px !important;
+}
+#rotilio_3g.parallax-container{
+    min-height: 180px !important;
+}
+#rotilio_base.parallax-container{
+    min-height: 180px !important;
+}
 .parallax-container .section {
     width: 100%;
 }
