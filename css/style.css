@@ -53,37 +53,11 @@ li{
 img#rotilio{
     opacity: 0.4;
 }
-@media only screen and (max-width: 1920px) and (min-width: 1367px){
-    h4#skills{
-        padding: 240px 0 0 0;
-    }
-}
-@media only screen and (max-width: 800px){
-    h4#skills{
-        padding: 309px 0 0 0;
-    }
 
-}
-@media only screen and (max-width: 1024px) and (min-width: 8001px){
-    h4#skills{
-        padding: 290px 0 0 0 !important;
-    }
-}
-@media only screen and (max-width: 768px){
-    h4#skills{
-        padding: 309px 0 0 0 !important;
-    }
-}
 @media only screen and (max-width: 1366px) and (min-width:1025px) {
 
     h1.header.center.home{
         margin-top: 2rem !important;
-    }
-    h4#skills{
-        padding: 300px 0 0 0;
-    }
-    h4#training{
-    padding: 60px 0 0 0 !important;
     }
 }
 @media only screen and (max-width: 736px) {
@@ -91,12 +65,7 @@ img#rotilio{
         display: block;
         z-index: 0;
     }
-    h4#skills{
-        padding: 0 !important;
-    }
-    h4#training{
-        padding: 0 !important;
-    }
+
     table{
         width: 100% !important;
     }
