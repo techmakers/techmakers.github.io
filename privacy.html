@@ -25,31 +25,45 @@
 </head>
 
 <body>
-<nav class="white" role="navigation" style="z-index: 1;">
+<nav class="white" role="navigation" style="position: fixed; z-index: 1;">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"><img class="logo logo-dark" alt="Techmakers logo"
-                                                                src="img/logo-dark.png"></a>
+        <a id="logo-container" href="index.html" class="brand-logo"><img class="logo logo-dark" alt="Techmakers logo"
+                                                                         src="img/logo-dark.png"></a>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#rotilio">Rotilio Maker</a></li>
+            <li><a href="#pro">Rotilio Pro</a></li>
+            <!-- <li><a href="#!">Relays board</a></li> -->
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#rotilio">Rotilio Maker</a></li>
+            <li><a href="#pro">Rotilio Pro</a></li>
+            <!-- <li><a href="#!">Relays board</a></li> -->
+        </ul>
         <ul class="right hide-on-med-and-down">
             <li class="title"><a href="#index-banner">About Us</a></li>
-            <li class="title"><a href="#rotilio">Rotilio Maker</a></li>
-            <li class="title"><a href="#pro">Rotilio Pro</a></li>
+            <!--<li class="title"><a href="#rotilio">Rotilio Maker</a></li>
+            <li class="title"><a href="#pro">Rotilio Pro</a></li>-->
+            <li class="title"><a class="dropdown-button" href="#!" data-activates="dropdown1">Products<i class="material-icons right" id="dropdown">arrow_drop_down</i></a></li>
             <li class="title"><a href="#services">Services</a></li>
+            <li class="title"><a href="IoT-products-forMakers.html">Buy Online</a></li>
+            <li class="title"><a href="Rotilio-IoT-Training.html">Training</a></li>
             <!-- <li class="title"><a href="#">Shop</a></li>
-             <li class="title"><a href="#">Community</a></li>-->
+        <li class="title"><a href="#">Community</a></li>-->
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li class="title"><a href="#index-banner">About Us</a></li>
-            <li class="title"><a href="#rotilio">Rotilio Maker</a></li>
-            <li class="title"><a href="#pro">Rotilio Pro</a></li>
-            <li class="title"><a href="#services">Services</a></li>
-            <!-- <li class="title"><a href="#">Shop</a></li>
-             <li class="title"><a href="#">Community</a></li>-->
+            <li></li>
+            <li class="title"><a href="http://techmakers.io/#index-banner">About Us</a></li>
+            <li class="title"><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right" id="dropdown">arrow_drop_down</i></a></li>
+            <li class="title"><a href="http://techmakers.io/#services">Services</a></li>
+            <li class="title"><a href="IoT-products-forMakers.html">Buy Online</a></li>
+            <li class="title"><a href="Rotilio-IoT-Training.html">Training</a></li>
+            <!-- <li><a href="#">Shop</a></li>
+            <li><a href="#">Community</a></li>-->
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-
 <div class="main-container">
     <section class="page-title page-title-4 bg-secondary">
         <div class="container">
