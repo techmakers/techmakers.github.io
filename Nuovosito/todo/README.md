@@ -1,11 +1,12 @@
 Generale
-!	- Nascondere Tattilio e Rotilio All In one (ovunque, menu e footer)
+
+!	+ Nascondere Tattilio e Rotilio All In one (ovunque, menu e footer)
 !	- Nascondere Azienda
 !	- Nascondere Sviluppatori
 	- Togliere riga rossa
 	- Preparare layout case history
 
-- Home
+- Home 
 !	- sistemare layout immagini
 	
 - Azienda
