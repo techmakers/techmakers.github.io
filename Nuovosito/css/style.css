@@ -1,0 +1,305 @@
+.navbar-inverse{
+    background-color: #fefefe;
+    border-color: #fefefe;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: black;
+}
+.navbar-nav>li>a:hover{
+    color: #fc4f4f !important;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: -65px;
+    margin-right: -333px;
+}
+.navbar-right{
+    margin-right: -70px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    background-color: transparent;
+    color: #fc4f4f !important;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+    color: black;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
+    background-color: transparent;
+    color: #fc4f4f !important;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #fc4f4f;
+}
+.navbar-toggle .icon-bar{
+    background-color: black !important;
+}
+.navbar-brand>img{
+    display: initial;
+}
+.dropdown-menu>li>a:hover{
+    color: #fc4f4f;
+}
+.col-sm-2{
+    width: 20%;
+}
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+div.panel-body{
+    height: 120px;
+}
+.fa.fa-circle.fa-stack-2x {
+color: #fc4f4f;
+}
+
+@media (max-width: 800px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    ul.nav.navbar-nav.navbar-right{
+        margin-top: 15px;
+    }
+    .navbar-toggle{
+        margin-top: 15px;
+    }
+}
+@media (min-width: 760px){
+    header.carousel{
+        height: auto;
+    }
+
+}
+@media (max-width: 1024px){
+    .navbar-right{
+        float: right !important;
+        margin-right: -15px;
+        margin-top: -50px;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    img#logo{
+        max-width: 23% !important;
+        padding: 12px;
+        margin-left: 20px;
+    }
+
+    div.panel.text-center{
+        width: 100% !important;
+        padding: 5px 10px 75px !important;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px){
+    .navbar-right{
+        float: right !important;
+        margin-right: -15px;
+        margin-top: -50px;
+    }
+    img#logo{
+        max-width: 33% !important;
+    }
+    .navbar-nav>li{
+        margin-right: -10px;
+    }
+    div.panel.text-center{
+        width: 100% !important;
+        padding: 5px 10px 555px !important;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px) and (orientation: landscape){
+    .navbar-right{
+        float: right !important;
+        margin-right: -15px;
+        margin-top: -50px;
+    }
+    div#carousel-app.carousel.slide{
+        max-height: 390px;
+    }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+    div#carousel-app.carousel.slide{
+        max-height: 390px;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        margin-left: -25px;
+    }
+    .customer-img, .img-related{
+        margin-bottom: 5px;
+    }
+    div#Caurosel.container{
+        margin-top: 8px;
+    }
+    div.col-md-4 {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 736px) and (orientation: portrait){
+    #navfooter{
+        display: none;
+    }
+    div.navbar-header{
+        height: 55px;
+    }
+    .navbar-brand{
+        float: none;
+        height: 0;
+    }
+    .navbar-brand>img{
+        max-width: 40% !important;
+        display: initial;
+        padding: 10px;
+    }
+    img#logo{
+        max-width: 50% !important;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        margin-left: 0;
+    }
+    img#store{
+        width: 100%;
+    }
+    img#play{
+        width: 100%;
+    }
+    img#iot{
+        width: 100%;
+    }
+    div.col-sm-2.text-center{
+        width: 100% !important;
+    }
+    div.panel.text-center{
+        width: 100% !important;
+        padding: 5px 10px 9px !important;
+    }
+    div#carousel-app.carousel.slide{
+        max-height: 670px;
+    }
+}
+@media (max-width: 736px) and (min-width: 570px) and (orientation: landscape){
+    .col-xs-12{
+        width: 125%
+    }
+    div.col-sm-2.text-center{
+        width: 100% !important;
+    }
+    div#home.col-sm-3{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .navbar-brand{
+        float: none;
+        height: 0;
+    }
+    .navbar-brand>img{
+        max-width: 30% !important;
+        display: initial;
+        padding: 0;
+    }
+    header.carousel{
+        height: 100%;
+    }
+    div.panel.text-center{
+        width: 100% !important;
+    }
+    div.panel.text-center{
+        width: 100% !important;
+        padding: 5px 10px 9px !important;
+    }
+    div#carousel-app.carousel.slide{
+        max-height: 1230px;
+    }
+}
+@media (max-width: 667px) and (min-width: 375px) and (orientation: landscape){
+    div#carousel-app.carousel.slide{
+        max-height: 1110px;
+    }
+}
+@media (max-width: 375px){
+    div#carousel-app.carousel.slide{
+        max-height: 600px;
+    }
+}
+@media (max-width: 320px) {
+    .navbar-brand>img{
+        max-width: 50% !important;
+    }
+    button.navbar-toggle{
+        height: 35px;
+    }
+    div.col-sm-9.col-xs-12{
+        margin-left: -25px;
+    }
+    .col-xs-12{
+        width: 120%
+    }
+    div#carousel-app.carousel.slide{
+        max-height: 500px;
+    }
+}
+@media (max-width: 568px) and (orientation: landscape){
+    .navbar-brand{
+        float: none;
+        height: 0;
+    }
+    div#home.col-sm-3{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .navbar-brand>img{
+        max-width: 30% !important;
+        display: initial;
+        padding: 0;
+    }
+    .navbar-brand>img{
+        padding: 5px !important;
+    }
+    header.carousel{
+        height: 100%;
+    }
+    .col-xs-12{
+        width: 125%
+    }
+    div.col-sm-2.text-center{
+        width: 100% !important;
+    }
+    div.panel.text-center{
+        width: 100% !important;
+        padding: 5px 10px 9px !important;
+    }
+    div#carousel-app.carousel.slide{
+        max-height: 950px;
+    }
+}
