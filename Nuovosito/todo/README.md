@@ -1,8 +1,8 @@
 - Generale
 
-	- **Nascondere Tattilio e Rotilio All In one (ovunque, menu e footer)**
-	- **Nascondere Azienda**
-	- **Nascondere Sviluppatori**
+	- ~~Nascondere Tattilio e Rotilio All In one (ovunque, menu e footer)~~ 
+	- ~~Nascondere Azienda~~
+	- ~~Nascondere Sviluppatori~~
 	- Togliere riga rossa
 	- Preparare layout case history
 
@@ -54,7 +54,7 @@
 		- Denominare le screenshot
 		- Link per ogni screenshot
 	- Scheda relè
-		- **Rinominare in "RS485 Relays array"**
+		- ~~Rinominare in "RS485 Relays array"~~
 		- **Manca testo cappello introduttivo**
 		- **Togliere "iscriviti alla newsletter"**
 		- Inserire il titolo prima delle screenshot
@@ -62,7 +62,7 @@
 		- Denominare le screenshot
 		- Link per ogni screenshot
 	- CEM331
-		- **Rinominare in "Rotilio Power Meter"**
+		- ~~Rinominare in "Rotilio Power Meter"~~
 		- **Manca testo cappello introduttivo**
 		- **Mancano le caratteristiche**
 		- **Mettere le seguenti immagini: scheda nuda, pinze, scatola chiusa**
