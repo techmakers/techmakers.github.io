@@ -7,7 +7,7 @@
 	- Preparare layout case history
 
 - Home 
-	- **sistemare layout immagini**
+	- ~~sistemare layout immagini~~
 	
 - Azienda
 	- Immagine 750x450
@@ -21,7 +21,7 @@
 	- Loghi e link ai clienti
 
 - Industria
-	- **Immagine 1200x300**
+	- ~~Immagine 1200x300~~
 	- **Cappello introduttivo**
 	- **Verifica testo**
 	- Sistemare le immagini
@@ -30,7 +30,7 @@
 		- **Telemetria**
 
 - Smarthome
-	- **Immagine 1200x300**
+	- ~~Immagine 1200x300~~
 	- **Cappello introduttivo**
 	- **Verifica testo**
 	- Sistemare le immagini
@@ -41,14 +41,13 @@
 - Prodotti
 	- Rotilio Maker
 		- **Verifica testo cappello introduttivo**
-		- **Togliere "iscriviti alla newsletter"**
-		- **Sostituire con immagine evocativa 750x450, bimbo con robot**
-		- Inserire il titolo prima delle screenshot
+		- ~~Togliere "iscriviti alla newsletter"~~
+		- ~~Sostituire con immagine evocativa 750x450, bimbo con robot~~		- Inserire il titolo prima delle screenshot
 		- Denominare le screenshot
 		- Link per ogni screenshot
 	- Rotilio Pro
 		- **Verifica testo cappello introduttivo**
-		- **Togliere "iscriviti alla newsletter"**
+		- ~~Togliere "iscriviti alla newsletter"~~
 		- **Sostituire con immagine evocativa 750x450, trovare immagine** professionista/industria/altro
 		- Inserire il titolo prima delle screenshot
 		- Denominare le screenshot
@@ -56,7 +55,7 @@
 	- Scheda relè
 		- ~~Rinominare in "RS485 Relays array"~~
 		- **Manca testo cappello introduttivo**
-		- **Togliere "iscriviti alla newsletter"**
+		- ~~Togliere "iscriviti alla newsletter"~~
 		- Inserire il titolo prima delle screenshot
 		- Aggiungere screenshot: foto banco telema, screenshot banco telema
 		- Denominare le screenshot
@@ -66,7 +65,7 @@
 		- **Manca testo cappello introduttivo**
 		- **Mancano le caratteristiche**
 		- **Mettere le seguenti immagini: scheda nuda, pinze, scatola chiusa**
-		- **Togliere "iscriviti alla newsletter"**
+		- ~~Togliere "iscriviti alla newsletter"~~
 		- Inserire il titolo prima delle screenshot
 		- Aggiungere screenshot: screenshot del monitoraggio
 		- Denominare le screenshot
