@@ -1,5 +1,5 @@
 - Home 
-	- Monitoraggio e consumi energia elettrica: cambiare colore testo bianco su giallo
+	- ~~Monitoraggio e consumi energia elettrica: cambiare colore testo bianco su giallo~~
 	
 - Azienda
 	- Immagine 750x450
@@ -22,7 +22,7 @@
 - Smarthome
 	- **Cappello introduttivo**
 	- **Verifica testo**
-	- **Case history: cambiare colore testo bianco su giallo**
+	- ~~Case history: cambiare colore testo bianco su giallo~~
 	- Sviluppare case history: 
 		- **Monitoraggio**
 		- **Mydatec**
