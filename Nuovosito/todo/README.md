@@ -61,6 +61,6 @@
 	- Immagine 1200x300
 	- Cappello introduttivo
 	- Verifica testo
-	- Sistemare le immagini
+	- ~~Sistemare le immagini~~
 
 - Contatti
