@@ -1,13 +1,5 @@
-- Generale
-
-	- ~~Nascondere Tattilio e Rotilio All In one (ovunque, menu e footer)~~ 
-	- ~~Nascondere Azienda~~
-	- ~~Nascondere Sviluppatori~~
-	- ~~Togliere riga rossa~~
-	- ~~Preparare layout case history~~
-
 - Home 
-	- ~~sistemare layout immagini~~
+	- Monitoraggio e consumi energia elettrica: cambiare colore testo bianco su giallo
 	
 - Azienda
 	- Immagine 750x450
@@ -21,19 +13,16 @@
 	- Loghi e link ai clienti
 
 - Industria
-	- ~~Immagine 1200x300~~
 	- **Cappello introduttivo**
 	- **Verifica testo**
-	- ~~Sistemare le immagini~~
 	- Sviluppare case history: 
 		- **LoadBank** 
 		- **Telemetria**
 
 - Smarthome
-	- ~~Immagine 1200x300~~
 	- **Cappello introduttivo**
 	- **Verifica testo**
-	- ~~Sistemare le immagini~~
+	- **Case history: cambiare colore testo bianco su giallo**
 	- Sviluppare case history: 
 		- **Monitoraggio**
 		- **Mydatec**
@@ -41,35 +30,28 @@
 - Prodotti
 	- Rotilio Maker
 		- **Verifica testo cappello introduttivo**
-		- ~~Togliere "iscriviti alla newsletter"~~
-		- ~~Sostituire con immagine evocativa 750x450, bimbo con robot~~		- ~~Inserire il titolo prima delle screenshot~~
-		- ~~Denominare le screenshot~~
+		- **Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"**
 		- Link per ogni screenshot
 	- Rotilio Pro
 		- **Verifica testo cappello introduttivo**
-		- ~~Togliere "iscriviti alla newsletter"~~
-		- ~~Sostituire con immagine evocativa 750x450, trovare immagine~~ professionista/industria/altro
-		- ~~Inserire il titolo prima delle screenshot~~
-		- ~~Denominare le screenshot~~
+		- **Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"**
 		- Link per ogni screenshot
 	- Scheda relè
-		- ~~Rinominare in "RS485 Relays array"~~
+		- Rinominare il file HTML in RS485RelaysArray.html
 		- **Manca testo cappello introduttivo**
-		- ~~Togliere "iscriviti alla newsletter"~~
-		- ~~Inserire il titolo prima delle screenshot~~
-		- ~~Aggiungere screenshot: foto banco telema, screenshot banco telema~~
-		- ~~Denominare le screenshot~~
+		- **Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"**
 		- Link per ogni screenshot
 	- CEM331
 		- ~~Rinominare in "Rotilio Power Meter"~~
 		- **Manca testo cappello introduttivo**
 		- **Mancano le caratteristiche**
-		- ~~Mettere le seguenti immagini: scheda nuda, pinze, scatola chiusa~~
-		- ~~Togliere "iscriviti alla newsletter"~~
-		- ~~Inserire il titolo prima delle screenshot~~
-		- ~~Aggiungere screenshot: screenshot del monitoraggio~~
-		- ~~Denominare le screenshot~~
+		- **Monitoraggio produzione e consumi di energia elettrica: sostituire con "Applicazione Mobile", "applicazione web" a seconda dei casi**
 		- Link per ogni screenshot
+
+- DownloadApp.html
+	- **Mettere target=_blank sul link a iot.techmakers.io**
+	- **Mancano i link alle APP negli store Apple e Google**
+
 
 - Piattaforma
 	- Verifica testo
