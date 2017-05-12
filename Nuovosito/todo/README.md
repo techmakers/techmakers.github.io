@@ -1,5 +1,7 @@
 - Home 
 	- ~~Monitoraggio e consumi energia elettrica: cambiare colore testo bianco su giallo~~
+	- Venitalazione :-> Ventilazione
+	- Piattaforma Techmakers dove .... :-> Risorse per gli sviluppatori
 	
 - Azienda
 	- Immagine 750x450
@@ -51,7 +53,7 @@
 - DownloadApp.html
 	- ~~Mettere target=_blank sul link a iot.techmakers.io~~
 	- ~~Mancano i link alle APP negli store Apple e Google~~
-
+	- Applicazione Download -> Dowload applicazione
 
 - Piattaforma
 	- Verifica testo
