@@ -1,7 +1,7 @@
 - Home 
 	- ~~Monitoraggio e consumi energia elettrica: cambiare colore testo bianco su giallo~~
-	- Venitalazione :-> Ventilazione
-	- Piattaforma Techmakers dove .... :-> Risorse per gli sviluppatori
+	- ~~Venitalazione :-> Ventilazione~~
+	- ~~Piattaforma Techmakers dove .... :-> Risorse per gli sviluppatori~~
 	
 - Azienda
 	- Immagine 750x450
@@ -39,7 +39,7 @@
 		- ~~Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"~~
 		- Link per ogni screenshot
 	- Scheda relè
-		- Rinominare il file HTML in RS485RelaysArray.html
+		- ~~Rinominare il file HTML in RS485RelaysArray.html~~
 		- **Manca testo cappello introduttivo**
 		- ~~Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"~~
 		- Link per ogni screenshot
@@ -53,7 +53,7 @@
 - DownloadApp.html
 	- ~~Mettere target=_blank sul link a iot.techmakers.io~~
 	- ~~Mancano i link alle APP negli store Apple e Google~~
-	- Applicazione Download -> Dowload applicazione
+	- ~~Applicazione Download -> Dowload applicazione~~
 
 - Piattaforma
 	- Verifica testo
