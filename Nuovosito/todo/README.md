@@ -44,6 +44,7 @@
 		- ~~Sostituire la dicitura: interfaccia grafica, con "Applicazione Web e Mobile"~~
 		- Link per ogni screenshot
 	- CEM331
+	- - ~~Rinominare il file HTML in RotilioPowerMeter.html~~
 		- ~~Rinominare in "Rotilio Power Meter"~~
 		- **Manca testo cappello introduttivo**
 		- **Mancano le caratteristiche**
@@ -57,10 +58,10 @@
 
 - Piattaforma
 	- Verifica testo
-	- Rivedere immagine 1200x300
+	- ~~Rivedere immagine 1200x300~~
 
 - Sviluppatori
-	- Immagine 1200x300
+	- ~~Immagine 1200x300~~
 	- Cappello introduttivo
 	- Verifica testo
 	- ~~Sistemare le immagini~~
