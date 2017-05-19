@@ -1,3 +1,10 @@
+### Generali
+
+- **Spostare News dopo Contatti**
+- **Mettere foto prodotto in Rotilio Maker che si veda subito**
+- 
+
+
 - Home
 	
 - Azienda
@@ -12,28 +19,30 @@
 	- Loghi e link ai clienti
 
 - Industria
-	- **Cappello introduttivo**
-	- **Verifica testo**
+	- ~~Cappello introduttivo~~
+	- ~~Verifica testo~~
 	- Sviluppare case history: 
 		- **LoadBank** 
 		- **Telemetria**
 
 - Smarthome
-	- **Cappello introduttivo**
-	- **Verifica testo**
+	- ~~Cappello introduttivo~~
+	- ~~Verifica testo~~
 	- Sviluppare case history: 
 		- **Monitoraggio**
 		- **Mydatec**
 
 - Prodotti
 	- Rotilio Maker
-		- **Verifica testo cappello introduttivo**
+		- ~~Verifica testo cappello introduttivo~~
+		- Spostare in fondo al menu prodotti
 		- Link per ogni screenshot
 	- Rotilio Pro
-		- **Verifica testo cappello introduttivo**
+		- ~~Verifica testo cappello introduttivo~~
 		- Link per ogni screenshot
 	- Scheda relè
-		- **Manca testo cappello introduttivo**
+		- ~~Manca testo cappello introduttivo~~
+		- Aumentare le informazioni tecniche con schemi etc.
 		- Link per ogni screenshot
 	- CEM331
 		- **Manca testo cappello introduttivo**
@@ -43,7 +52,7 @@
 - DownloadApp.html
 
 - Piattaforma
-	- Verifica testo
+	- ~~Verifica testo~~
 
 - Sviluppatori
 	- Cappello introduttivo
