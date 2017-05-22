@@ -1,8 +1,7 @@
 ### Generali
 
 - **Spostare News dopo Contatti**
-- **Mettere foto prodotto in Rotilio Maker che si veda subito**
-- 
+- **Footer: logo e scritta techmaker un po' di margine top**
 
 
 - Home
@@ -35,7 +34,8 @@
 - Prodotti
 	- Rotilio Maker
 		- ~~Verifica testo cappello introduttivo~~
-		- Spostare in fondo al menu prodotti
+		- Foto con Maker e Relays collegati da un filo
+		- **Spostare in fondo al menu prodotti**
 		- Link per ogni screenshot
 	- Rotilio Pro
 		- ~~Verifica testo cappello introduttivo~~
