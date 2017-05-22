@@ -1,7 +1,13 @@
 ### Generali
 
+<<<<<<< HEAD
+- ~~Spostare News dopo Contatti~~
+- ~~Footer: logo e scritta techmaker un po' di margine top~~
+=======
+- **Inversione carosello con foto sotto**
 - **Spostare News dopo Contatti**
 - **Footer: logo e scritta techmaker un po' di margine top**
+>>>>>>> origin/master
 
 
 - Home
@@ -35,9 +41,10 @@
 	- Rotilio Maker
 		- ~~Verifica testo cappello introduttivo~~
 		- Foto con Maker e Relays collegati da un filo
-		- **Spostare in fondo al menu prodotti**
+		- ~~Spostare in fondo al menu prodotti~~
 		- Link per ogni screenshot
 	- Rotilio Pro
+		- Foto plastico digiload al posto dell'impianto
 		- ~~Verifica testo cappello introduttivo~~
 		- Link per ogni screenshot
 	- Scheda relè

@@ -5,7 +5,9 @@
 .tmgreencolor{
     color: #459501;
 }
-
+img#logo{
+    max-width: 35%;
+}
 .navbar-inverse{
     background-color: whitesmoke;
     border-color: #fefefe;
@@ -166,6 +168,9 @@ color: #fc4f4f;
     }
 }
 @media (max-width: 736px) and (orientation: portrait){
+    img#logo{
+        max-width: 15%;
+    }
     #navfooter{
         display: none;
     }
@@ -203,6 +208,9 @@ color: #fc4f4f;
     .col-xs-12{
         width: 125%
     }
+    img#logo{
+        max-width: 10%;
+    }
     div.col-sm-2.text-center{
         width: 100% !important;
     }
@@ -237,10 +245,16 @@ color: #fc4f4f;
     div#carousel-app.carousel.slide{
         max-height: 600px;
     }
+    img#logo{
+        max-width: 18%;
+    }
 }
 @media (max-width: 320px) {
     button.navbar-toggle{
         height: 35px;
+    }
+    img#logo{
+        padding-top: 4px;
     }
     div.col-sm-9.col-xs-12{
         margin-left: -25px;
