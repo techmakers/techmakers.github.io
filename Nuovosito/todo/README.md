@@ -1,13 +1,11 @@
 ### Generali
 
-<<<<<<< HEAD
+
 - ~~Spostare News dopo Contatti~~
 - ~~Footer: logo e scritta techmaker un po' di margine top~~
-=======
 - **Inversione carosello con foto sotto**
 - **Spostare News dopo Contatti**
 - **Footer: logo e scritta techmaker un po' di margine top**
->>>>>>> origin/master
 
 
 - Home
