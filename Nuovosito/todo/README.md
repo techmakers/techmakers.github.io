@@ -1,5 +1,6 @@
 ### Generali
 
+- **Inversione carosello con foto sotto**
 - **Spostare News dopo Contatti**
 - **Footer: logo e scritta techmaker un po' di margine top**
 
@@ -38,6 +39,7 @@
 		- **Spostare in fondo al menu prodotti**
 		- Link per ogni screenshot
 	- Rotilio Pro
+		- Foto plastico digiload al posto dell'impianto
 		- ~~Verifica testo cappello introduttivo~~
 		- Link per ogni screenshot
 	- Scheda relè
