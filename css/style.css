@@ -63,7 +63,9 @@ div.panel-body{
 .fa.fa-circle.fa-stack-2x {
 color: #fc4f4f;
 }
-
+footer{
+    background-color: whitesmoke;
+}
 @media (max-width: 800px) {
     .navbar-header {
         float: none;
