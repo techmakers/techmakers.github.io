@@ -1,0 +1,436 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+    list-style-type: none;
+}
+
+ul#nav-mobile.side-nav {
+    transform: translateX(-100%);
+}
+
+i#dropdown.material-icons.right{
+    line-height: 30px;
+}
+.dropdown-content li > a, .dropdown-content li > span{
+    color: #444;
+}
+ul#dropdown_SkypeButton_Call_cashbit_1 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+}
+
+img.logo {
+    height: 45px;
+    margin-top: 10px;
+}
+
+h1.header.center.home{
+    color: #fc4f4f; margin-top: 5rem; z-index: 0;
+}
+div.slider {
+    display: block;
+    z-index: 0;
+    min-height: 380px;
+
+}
+div#slider.slider{
+    height: 480px !important;
+}
+.slider .indicators .indicator-item.active {
+    background-color: #FC4F4F;
+}
+ul.slides{
+    height: 440px !important;
+}
+img#maker-slider{
+    max-width: 65%;
+    margin-top: 33px;
+    margin-left: 220px;
+    opacity: 0.7;
+}
+.parallax img {
+    min-width: 0;
+    padding: 5px;
+}
+
+div.slider {
+    display: none;
+}
+
+img.circuito-rotilio {
+    width: 70%;
+}
+
+img.circuito-pro {
+    width: 50%;
+}
+img.relays-dimension {
+    width: 120%;
+    margin-top: 50px;
+}
+li.title {
+    list-style-type: none !important;
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: disc !important;
+    line-height: 2rem;
+    font-size: large;
+}
+
+img#rotilio {
+    opacity: 0.4;
+}
+
+p {
+    line-height: 2rem;
+    font-size: large;
+}
+
+h5.header.col.s12.light {
+    color: whitesmoke;
+}
+
+.button-collapse {
+    color: #fc4f4f;
+}
+
+.btn-large {
+    background-color: #fc4f4f;
+    height: 44px;
+    line-height: 44px;
+    z-index: 0;
+}
+
+.btn-large:hover {
+    background-color: #fc4f4f;
+}
+
+td {
+    padding: 0;
+}
+
+/*table {
+    width: 75%;
+}*/
+
+b {
+    font-size: large;
+}
+img.activator{
+    z-index: 10 !important;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+#rotilio_wifi.parallax-container {
+    min-height: 180px !important;
+}
+
+#rotilio_3g.parallax-container {
+    min-height: 180px !important;
+}
+
+#rotilio_base.parallax-container {
+    min-height: 180px !important;
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+footer.page-footer {
+    background-color: #fc4f4f;
+}
+
+.material-icons {
+    color: #fc4f4f;
+}
+
+.page-footer {
+    max-height: 20%;
+}
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1920px) and (min-width: 1367px){
+    div#slider.slider{
+        height: 550px !important;
+    }
+    ul#aboutlist.list{
+        margin-left: 260px;
+    }
+    .slider .indicators .indicator-item.active {
+        background-color: #FC4F4F;
+    }
+    ul.slides{
+        height: 500px !important;
+    }
+    img#maker-slider{
+        max-width: 50%;
+        margin-top: 33px;
+        margin-left: 420px;
+        opacity: 0.7;
+    }
+    table#prowifi{
+        margin-top: 80px !important;
+    }
+    table#pro3g{
+        margin-top: 80px !important;
+    }
+}
+@media only screen and (max-width: 1366px) and (min-width: 1024px)and (orientation:portrait){
+    h1.header.center.home {
+        margin-top: 2rem !important;
+    }
+    table#prowifi{
+        margin-top: 105px !important;
+    }
+    table#pro3g{
+        margin-top: 130px !important;
+    }
+    ul#aboutlist.list{
+        margin-left: 50px !important;
+    }
+}
+@media only screen and (max-width: 1366px) and (min-width: 1024px)and (orientation:landscape){
+    h1.header.center.home {
+        margin-top: 2rem !important;
+    }
+    ul#aboutlist.list{
+        margin-left: 100px !important;
+    }
+    /*table#prowifi{
+        margin-top: 80px !important;
+    }
+    table#pro3g{
+        margin-top: 80px !important;
+    }*/
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) and (orientation:portrait){
+    i#dropdown.material-icons.right{
+        line-height: 50px;
+    }
+    h1.header.center.home {
+        margin-top: 2rem !important;
+    }
+    img#maker-slider{
+        max-width: 100%;
+        margin-top: 33px;
+        margin-left: 0;
+        opacity: 0.7;
+    }
+    table#prowifi{
+        margin-top: 130px !important;
+    }
+    table#pro3g{
+        margin-top: 130px !important;
+    }
+    ul#aboutlist.list{
+        margin-left: 100px !important;
+    }
+
+}
+@media only screen and (max-width: 1024px) and (min-width: 801px) and (orientation:landscape) {
+    h1.header.center.home {
+        margin-top: 2rem !important;
+    }
+    img.logo{
+        margin-left: -80px;
+    }
+    table#prowifi{
+        margin-top: 105px !important;
+    }
+    table#pro3g{
+        margin-top: 135px !important;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 768px) and (orientation:landscape) {
+    h1.header.center.home {
+        margin-top: 2rem !important;
+    }
+    img.logo{
+        margin-left: -80px;
+    }
+    table#prowifi{
+        margin-top: 130px !important;
+    }
+    table#pro3g{
+        margin-top: 100px !important;
+    }
+}
+@media only screen and (max-width: 736px) {
+    i#dropdown.material-icons.right{
+        line-height: 50px;
+    }
+    div.slider {
+        display: block;
+        z-index: 0;
+        min-height: 380px;
+
+    }
+    div#slider.slider{
+        height: 440px !important;
+    }
+    .slider .indicators .indicator-item.active {
+        background-color: #FC4F4F;
+    }
+    ul.slides{
+        height: 400px !important;
+    }
+    img#maker-slider{
+        max-width: 100%;
+        margin-top: 33px;
+        margin-left: 0;
+        opacity: 0.7;
+    }
+    table {
+        width: 100% !important;
+    }
+    table#prowifi{
+        margin-top: 0 !important;
+    }
+    table#pro3g{
+        margin-top: 0 !important;
+    }
+    #sidenav-overlay {
+        display: none !important;
+    }
+
+    ul#talk {
+        margin-left: 0 !important;
+    }
+
+
+    div#index-banner.parallax-container {
+        display: none;
+    }
+
+    h1.header.center.home {
+        margin-top: 4rem !important;
+    }
+
+    h1.header.center.subhome {
+        margin-top: -1rem !important;
+
+    }
+
+    h1.header.center {
+        font-size: 2.2rem !important;
+        margin-top: -4rem !important;
+
+    }
+
+    h5.header.col.s12 {
+        font-size: 1.2rem !important;
+    }
+
+    img.circuito-rotilio {
+        margin-left: 50px;
+    }
+
+    img.circuito-pro {
+        margin-left: 100px;
+    }
+    img.relays-dimension {
+        margin-left: -50px;
+        margin-top: 0;
+
+    }
+    a#download-button.btn-large.waves-effect.waves-light {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    div#makers.row {
+        margin-left: 0.5rem !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1.header.center.home {
+        margin-top: 3rem !important;
+    }
+
+    h1.header.center.subhome {
+        margin-top: -1rem !important;
+
+    }
+
+    h1.header.center {
+        font-size: 2rem !important;
+        margin-top: -4rem !important;
+
+    }
+
+    h5.header.col.s12 {
+        font-size: 1.2rem !important;
+    }
+
+    a#download-button.btn-large.waves-effect.waves-light {
+        line-height: 14px;
+        padding: 15px;
+    }
+
+    @media only screen and (max-width: 320px) {
+        a#download-button.btn-large.waves-effect.waves-light {
+            line-height: 24px;
+            padding: 10px;
+        }
+        p{
+            line-height: 1.5rem;
+        }
+
+    }
+    img.circuito-pro {
+        margin-left: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    img#maker-slider{
+        max-width: 100%;
+        margin-top: 33px;
+        margin-left: 0;
+        opacity: 0.7;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}

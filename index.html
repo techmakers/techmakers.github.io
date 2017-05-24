@@ -1,505 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script type="text/javascript">
-        window.cookieconsent_options = {
-            "message": "Utilizziamo i cookie per fornirti una migliore navigazione. Continuando a navigare su questo sito, cliccando sui link al suo interno o semplicemente scrollando la pagina verso il basso, accetti il servizio e gli stessi cookie.",
-            "dismiss": "ok",
-            "learnMore": "Ulteriori info",
-            "link": "privacy.html",
-            "theme": "dark-top"
-        };
-    </script>
 
-    <script type="text/javascript"
-            src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
-    <!-- End Cookie Consent plugin -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Techmakers</title>
 
-    <!-CSS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){
+            z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='https://v2.zopim.com/?4mWCOhTZkvtJza92XbR7FDRazylxzBJu';z.t=+new Date;$.
+                    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zendesk Chat Script-->
+
 </head>
+
 <body>
-<nav class="white" role="navigation" style="position: fixed; z-index: 1;">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo"><img class="logo logo-dark" alt="Techmakers logo"
-                                                           src="img/logo-dark.png"></a>
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#rotilio">Rotilio Maker</a></li>
-            <li><a href="#pro">Rotilio Pro</a></li>
-           <li><a href="#RS485">Relays board</a></li>
-        </ul>
-        <ul id="dropdown2" class="dropdown-content">
-            <li><a href="#rotilio">Rotilio Maker</a></li>
-            <li><a href="#pro">Rotilio Pro</a></li>
-            <li><a href="#RS485">Relays board</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li class="title"><a href="#index-banner">About Us</a></li>
-            <!--<li class="title"><a href="#rotilio">Rotilio Maker</a></li>
-            <li class="title"><a href="#pro">Rotilio Pro</a></li>-->
-            <li class="title"><a class="dropdown-button" href="#!" data-activates="dropdown1">Products<i class="material-icons right" id="dropdown">arrow_drop_down</i></a></li>
-            <li class="title"><a href="#services">Services</a></li>
-            <li class="title"><a href="IoT-products-forMakers.html">Buy Online</a></li>
-            <li class="title"><a href="Rotilio-IoT-Training.html">Training</a></li>
-            <!-- <li class="title"><a href="#">Shop</a></li>
-        <li class="title"><a href="#">Community</a></li>-->
-        </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-            <li></li>
-            <li class="title"><a href="http://techmakers.io/#index-banner">About Us</a></li>
-            <li class="title"><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right" id="dropdown">arrow_drop_down</i></a></li>
-            <li class="title"><a href="http://techmakers.io/#services">Services</a></li>
-            <li class="title"><a href="IoT-products-forMakers.html">Buy Online</a></li>
-            <li class="title"><a href="Rotilio-IoT-Training.html">Training</a></li>
-            <!-- <li><a href="#">Shop</a></li>
-            <li><a href="#">Community</a></li>-->
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center home" style="  color: #fc4f4f; margin-top: 5rem !important; z-index: 0;">
-                Techmakers</h1>
-            <h1 class="header center subhome" style="  color: #000000; font-size:2.5rem;"> creates hardware and software
-                for the</h1>
-            <h1 class="header center subhome" style=" color: #fc4f4f ;"> Internet of Things</h1>
-            <div class="row center col s6 m3" style="margin-left: 5px;">
-                <a href="#start" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
-                <a href="https://www.hackster.io/Techmakers" id="download-button"
-                   class="btn-large waves-effect waves-light">Projects</a>
-                <!---<a href="https://github.com/techmakers/rotilio.cc" id="download-button" class="btn-large waves-effect waves-light">Open Source</a>-->
+    <!-- Navigation -->
 
-           </div>
-
-            <br><br>
-
-        </div>
-    </div>
-    <div class="parallax" style="background-color:#f4f4f6;"><img src="img/tm_home_prova3.jpg" class="home1"></div>
-
-</div>
-
-<div class="slider" id="slider">
-    <ul class="slides">
-        <li>
-            <img src="img/tm_home_prova3.jpg" style="opacity: 0.7;"> <!-random image -->
-            <div class="caption center-align">
-                <h1 class="header center home">Techmakers</h1>
-                <h1 class="header center subhome" style="  color: #000000; font-size:2.5rem;"> creates hardware and
-                    software for the</h1>
-                <h1 class="header center subhome" style=" color: #fc4f4f ;"> Internet of Things</h1>
-                <div class="row center col s6 m6">
-                    <a href="#start" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
-                    <a href="https://www.hackster.io/Techmakers" id="download-button"
-                       class="btn-large waves-effect waves-light">Projects</a>
-                    <!--<a href="https://github.com/techmakers/rotilio.cc" id="download-button" class="btn-large waves-effect waves-light">Open Source</a> -->
-
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" style="width: 83%">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img id="logo" src="img/Logo.png" alt="Logo Techmakers"></a>
             </div>
-        </li>
-        <li style="background-color: #D8D8D8;">
-            <img src="img/tm_rotilio_copia.jpg" id="maker-slider"> <!-random image -->
-            <div class="caption center-align" >
-                <h1 class="header center home">Rotilio Maker</h1>
-                <h1 class="header center subhome" style="  color: #000000; font-size:2.5rem;"></h1>
-                <h1 class="header center subhome" style=" color: #fc4f4f ;"></h1>
-                <div class="row center col s6 m6">
-                    <a href="#rotilio" id="download-button" class="btn-large waves-effect waves-light">Rotilio Maker</a>
-                    <a href="IoT-products-forMakers.html" id="download-button"
-                       class="btn-large waves-effect waves-light">Buy online</a>
-                </div>
-            </div>
-        </li>
-        <!-- <li>
-            <img src="img/tm_makers_revolution.jpg"> random image
-            <div class="caption center-align">
-                <h1 class="header center home">Rotilio Pro</h1>
-                <h1 class="header center subhome" style="  color: #fefefe; font-size:2.5rem;"></h1>
-                <h1 class="header center subhome" style=" color: #fc4f4f ;"></h1>
-                <div class="row center col s6 m6">
-                    <a href="#pro" id="download-button" class="btn-large waves-effect waves-light">Rotilio Pro</a>
-                    <a href="IoT-products-forMakers.html" id="download-button"
-                       class="btn-large waves-effect waves-light">Buy online</a>
-                </div>
-            </div>
-        </li>-->
-    </ul>
-</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                   <!-- <li>
+                        <a href="about.html">Azienda</a>
+                    </li> -->
+                    <li>
+                        <a href="Industria4.0.html">Industria 4.0</a>
+                    </li>
+                    <li>
+                        <a href="SmartHome.html">Smart Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prodotti <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
 
-
-<div class="container">
-    <div class="section">
-
-        <div class="row">
-            <div class="col s12 m12">
-                <h4 class="center">About Us</h4>
-
-                <p class="center">With Techmakers you can deliver IoT solutions made by connected software, products and machinery.</p>
-                <ul class="list" id="aboutlist"style="margin-left: 60px;">
-                    <li>Data gathering and transmission from sensor to database</li>
-                    <li>Full stack software with device management</li>
-                    <li>Added value creation from data and device integration</li>
-                    <li>Fast time to market solutions with low cost of ownership</li>
+                            <li>
+                                <a href="RotilioPro.html">Rotilio Pro</a>
+                            </li>
+                            <!-- <li>
+                                <a href="Tattilio.html">Tattilio</a>
+                            </li>
+                            <li>
+                                <a href="RotilioAllinOne.html">Rotilio All in One</a>
+                            </li>-->
+                            <li>
+                                <a href="RS485RelaysArray.html">RS485 Relays Array</a>
+                            </li>
+                            <li>
+                                <a href="RotilioPowerMeter.html">Rotilio Power Meter</a>
+                            </li>
+                            <li>
+                                <a href="RotilioMaker.html">Rotilio Maker</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="Sviluppatori.html">Sviluppatori</a>
+                    </li>-->
+                    <li>
+                        <a href="Piattaforma_IoT.html">Piattaforma</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contatti</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/techmakers.io/" target="_blank">News</a>
+                    </li>
                 </ul>
-
-
             </div>
-
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
 
-    </div>
-</div>
+    </nav>
 
-<div class="parallax-container valign-wrapper" id="rotilio">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fc4f4f; margin-top: -3rem">Rotilio<sup>®</sup>Maker</h1>
-            <div class="row center">
-                <h5 class="header col s12" style="color:black;">Rotilio<sup>®</sup> Maker is Arduino<sup>®</sup>
-                    compatibile, ready to connect IoT Device with on board sensors, simple API for phisical and user
-                    interface</h5>
-            </div>
-            <div class="row center">
-                <a href="http://rotilio.cc/#/home" id="download" class="btn-large waves-effect waves-light">Rotilio<sup>®</sup>
-                    Maker Web Interface</a>
-                <a href="IoT-products-forMakers.html" id="download"
-                   class="btn-large waves-effect waves-light">Rotilio<sup>®</sup> Maker buy now</a>
 
-            </div>
-        </div>
-    </div>
-    <div class="parallax" style="background-color: #D8D8D8;"><img src="img/tm_rotilio_copia.jpg" id="rotilio" alt="Rot">
-    </div>
-</div>
+    <!-- Header Carousel -->
+    <div class="container" id="Caurosel">
 
-<div class="container">
-    <div class="section">
 
-        <!--  Icon Section   -->
+        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
-            <div class="col s12 m6">
-                <img src="img/ROTILIO_3.png" class="circuito-rotilio" alt="Unsplashed background img 2">
-            </div>
-
-            <div class="col s12 m6">
-                <div class="icon-block">
-                    <ul class="list">
-                        <li>Multiple on board sensors: temperature, humidity, pressure, light, position, switch</li>
-                        <li>Multiple on board actuators: relais, buzzer, leds</li>
-                        <li>OTA firmware updates</li>
-                        <li>Based on open source software and hardware</li>
-                        <li>Wireless sensor network with zero configuration</li>
-                        <li>WiFi or 3G connection with simple setup</li>
-                        <li>Community based support</li>
-                        <li>Ready firmware examples</li>
-                        <li>Ready Javascript application (AngularJS)</li>
-                        <li>Simple to learn and deploy on field</li>
-                        <li>Ready for educational purpose</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<div class="parallax-container valign-wrapper" id="pro">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fc4f4f; margin-top: -3rem">Rotilio<sup>®</sup> Pro</h1>
-            <div class="row center">
-                <h5 class="header col s12" style="color: black">Rotilio<sup>®</sup> Pro is Arduino<sup>®</sup>
-                    compatible, industry grade IoT Platform with global coverage data plan, fully customizable Mobile
-                    App</h5>
-            </div>
-            <!-- <div class="row center">
-                 <a href="IoT-products-forMakers.html" id="download" class="btn-large waves-effect waves-light">Rotilio<sup>®</sup> Pro Buy now</a>
-             </div> -->
-        </div>
-    </div>
-    <div class="parallax" style="background-color: #D8D8D8;"><img src="img/rotilio_pro_2%20copia.png"
-                                                                  alt="Unsplashed background img 3"
-                                                                  style="opacity: 0.4;"></div>
-</div>
-<div class="container">
-    <div class="section">
-
-        <!--  Icon Section   -->
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="icon-block">
-                    <ul class="list">
-                        <li>Industry grade solution for IoT projects</li>
-                        <li>RS-485 connection with PLC and other devices</li>
-                        <li>ADC converter for direct sensors connection</li>
-                        <li>I2C, SPI interfaces</li>
-                        <li>Full stack software solutions for OEM and system integrators</li>
-                        <li>Ready control panel dashboard web and mobile app</li>
-                        <li>Based on open source software and hardware</li>
-                        <li>Wireless sensor network with zero configuration</li>
-                        <li>Continuous software integration with OTA firmware updates</li>
-                        <li>Professional support with SLA</li>
-                        <li>WiFi or 3G connection with simple setup</li>
-                        <li>Low traffic communication protocol</li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <img src="img/rotilio_pro_2.png" class="circuito-pro" alt="Unsplashed background img 2">
+            <div class="col-lg-12">
+                <h1 class="page-header"><span class="tmcolor">Techmakers.io</span> <span class="tmgreencolor">know how per l'Internet of Things</span></h1>
             </div>
         </div>
+        <!-- /.row -->
 
-    </div>
-</div>
 
-<div class="parallax-container valign-wrapper" id="RS485">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fc4f4f; margin-top: -3rem">RS485 Relay board</h1>
-            <div class="row center">
-                <h5 class="header col s12" style="color:black;">a RS485 8 channel relays controller</h5>
-            </div>
-            <div class="row center">
-                <a href="https://github.com/techmakers/rotilio.cc/tree/master/RelaysBoard" id="download" class="btn-large waves-effect waves-light">RS485 Relay board technical sheet</a>
-            </div>
-        </div>
-    </div>
-    <div class="parallax" style="background-color: #D8D8D8;"><img src="img/Relays_board.png" id="relays" alt="Relays" style="opacity: 0.4; max-width: 80%;">
-    </div>
-</div>
+        <h4>
+            Realizziamo prodotti e soluzioni IoT, dal sensore alle applicazioni Mobile e Web con passione, competenza e voglia di innovare.
+        </h4>
 
-<div class="container">
-    <div class="section">
+        <!-- Page Content -->
 
-        <!--  Icon Section   -->
-        <div class="row">
-            <div class="col s12 m6">
-                <img src="img/Relays_board_dim.png" class="relays-dimension" alt="Unsplashed background img 2">
-            </div>
+            <!-- Marketing Icons Section -->
+            <div class="row">
 
-            <div class="col s12 m6">
-                <div class="icon-block">
-                    <ul class="list">
-                        <li>Allow to connect via RS485 bus 8 relays</li>
-                        <li>The 8 relays on board are capable of switching: 12VDC/10A, 240VAC/7A, 12VDC/15A, 24VDC/15A, 125VAC/15A or 250VAC/10A</li>
-                        <li>Option to change the board number manually</li>
-                        <li>Led to indicate which relays are working</li>
-                        <li>Connect up to 15x8 channel Relay controllers</li>
-                        <li>Max distance of 1200m</li>
-                        <li>Ready firmware examples</li>
-                        <li>Simple to learn and deploy on field</li>
-                    </ul>
+                <div class="col-sm-4" id="home">
+                    <a href="Industria4.0.html">
+                        <img class="img-responsive img-hover img-related" src="img/Home/industria4_0.jpg" alt="industria 4.0">
+                    </a>
+                </div>
+
+                <div class="col-sm-4" id="home">
+                    <a href="SmartHome.html">
+                        <img class="img-responsive img-hover img-related" src="img/Home/SmartHome.png" alt="smart home">
+                    </a>
+                </div>
+
+                <!-- <div class="col-sm-3" id="home">
+                     <a href="Sviluppatori.html">
+                         <img class="img-responsive img-hover img-related" src="img/Home/sviluppatori.jpg" alt="sviluppatori">
+                     </a>
+                 </div>-->
+                <div class="col-sm-4" id="home">
+                    <a href="downloadapp.html">
+                        <img class="img-responsive img-hover img-related" src="img/Home/AppMobile.jpg" alt="app mobile">
+                    </a>
                 </div>
             </div>
+            <!-- /.row -->
+        <!-- /.container -->
 
-        </div>
-
-    </div>
-</div>
-<div class="parallax-container valign-wrapper" id="start">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fc4f4f; margin-top: -2rem">Get Started</h1>
-            <div class="row center">
-                <h5 class="header col s12">enter the world of IoT with Techmakers</h5>
-            </div>
-        </div>
-    </div>
-    <div class="parallax" style="background-color: #000000;"><img src="img/tm_makers_interno.jpg" alt="Unsplashed background img 3" style="opacity: 0.7">
-    </div>
-</div>
-<div class="container" style="width: 80%;">
-    <div class="section">
-
-        <!- Icon Section -->
-        <div class="row">
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><img src="img/github-circle.png"></h2>
-                    <h5 class="center">GitHub</h5>
-                    <p>Rotilio<sup>®</sup> is open source on Github.</p>
-                    <div class="row center">
-                        <a href="https://github.com/techmakers/rotilio.cc" id="download-button"
-                           class="btn-large waves-effect waves-light">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><img src="img/hackster_logo.png"></h2>
-                    <h5 class="center">Hackster</h5>
-                    <p>Check on Hackster our projects.</p>
-                    <div class="row center">
-                        <a href="https://www.hackster.io/Techmakers" id="download-button"
-                           class="btn-large waves-effect waves-light">Hackster.io</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><img src="img/facebook-box%20copia.png"></h2>
-                    <h5 class="center">Facebook</h5>
-                    <p>Follow us on Facebook for all latest news.</p>
-                    <div class="row center">
-                        <a href="https://www.facebook.com/techmakers.io/" id="download-button"
-                           class="btn-large waves-effect waves-light">Latest news</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><img src="img/Logo.png"></h2>
-                    <h5 class="center">White paper</h5>
-                    <p>Read our white paper on Github.</p>
-                    <div class="row center">
-                        <a href="https://github.com/techmakers/rotilio.cc/blob/master/docs/techmakersIoTWhitePaper.md"
-                           id="download-button" class="btn-large waves-effect waves-light">White Paper</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center"><i class="material-icons">shopping_basket</i></h2>
-                    <h5 class="center">Shop</h5>
-                    <p>At this link you can buy our products from courses to Rotilio Maker pro in quick and easy way.</p>
-                    <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Shop</a>
-                    </div>
-               </div>
-           </div>-->
-        </div>
-
-    </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper" id="services">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fc4f4f; margin-top: -2rem">Services</h1>
-            <div class="row center">
-                <h5 class="header col s12" style="color: black;">a team to support you from design to marketing your IoT
-                    solution</h5>
-            </div>
-        </div>
-    </div>
-    <div class="parallax" style="background-color: #f9f1e6;"><img src="img/tm_inventori.jpg" alt="Unsplashed background img 3"></div>
-</div>
-<div class="container" style="width: 80%;">
-    <div class="section">
-
-        <!- Icon Section -->
-        <div class="row">
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">End to end solution design</h5>
-                    <p>We developed throughout the application stack from the sensor to the Mobile App and the control
-                        dashboard. We are able to customize the mobile application according to customer requirements
-                        and modulate commercial offerings based on the real features used.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><i class="material-icons">group</i></h2>
-                    <h5 class="center">Know-how transfer </h5>
-                    <p>We developed a partnership program for companies and professionals who want to sell and deploy
-                        IoT solutions with our OEM hardware and software.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><i class="material-icons">chrome_reader_mode</i></h2>
-                    <h5 class="center">Training</h5>
-                    <p>We organize theoretical and practical courses to approach the best in the world of the Internet
-                        of Things. In our courses we will show how Rotilio<sup>®</sup>, is easy to setup and ready to
-                        use with just a few lines of code.</p>
-                    <div class="row center">
-                        <a href="Rotilio-IoT-Training.html" id="download-button"
-                           class="btn-large waves-effect waves-light">more information</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Prototyping</h5>
-                    <p>We are able to design customized prototypes for IoT solutions from the sensor to the Mobile App
-                        and the control dashboard.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col l12 s12" style="text-align: center;">
-                <h5 class="white-text">Techmakers srl</h5>
-                <p class="grey-text text-lighten-4">Headquarter: Via Palestro n. 45ar, Genova<br>Registered office: Via
-                    Privata Fratelli Gabba n. 5, Milano<br>e-mail info@techmakers.io<br>tel +39 010 8315289</p>
-                <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-                <div id="SkypeButton_Call_cashbit_1">
-                    <script type="text/javascript">
-                        Skype.ui({
-                            "name": "dropdown",
-                            "element": "SkypeButton_Call_cashbit_1",
-                            "participants": ["cashbit"],
-                            "imageSize": 32
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col l12 s12">
-                <p style="color: white; font-size: 12px; text-align: center">© 2015 Techmakers srl | p.iva
-                    08874730966<br> REA CCIAA Milano n. 2054539 </a><br>
-                    <a class="brown-text text-lighten-3" href="https://www.facebook.com/techmakers.io/"><img
-                            src="img/facebook-box.png"></a>
-                    <a class="brown-text text-lighten-3" href="https://twitter.com/techmakers_io"><img
-                            src="img/twitter-box.png"></a>
-                    <a class="brown-text text-lighten-3" href="https://github.com/techmakers/rotilio.cc"><img
-                            src="img/github-box.png"></a>
-                    <!--<img src="img/etsy.png"></p>-->
-                <p style="color: white; font-size: 12px; text-align: center"><a class="brown-text text-lighten-3"
-                                                                                href="http://techmakers.io/privacy"
-                                                                                style="color: white !important;">Privacy</a>
+        <div class="row respira-dopo">
+            <div class="col-sm-12">
+                <p>
+                    Tutti i nostri dispositivi sono <strong>certificati CE</strong>, comunicano su canale <strong>criptato</strong> via WiFi, Ethernet o 3G, sono corredati da software e APP che <strong>funzionano</strong> su Windows, Linux, MacOS, Web, iOS, Android, Web.
                 </p>
-
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="container">
+    <header id="myCarousel" class="carousel slide respira-dopo">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="img-responsive center-block" src="img/Home/Loadbank.png" alt="simulatore di carico per generatori">
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="img/Home/Contaore.png" alt="telemetria industriale">
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="img/Home/MyDatec.png" alt="smart home">
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="img/Home/CEM331.png" alt="monitoraggio energia elettrica">
+            </div>
+
+            <div class="item">
+                <img class="img-responsive center-block" src="img/Home/Rotiliocc.png" alt="rotilio">
+            </div>
+        </div>
+
+        <!-- Controls
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>-->
+    </header>
     </div>
-</footer>
+
+    <!-- Footer -->
+    <footer   style="background-color: whitesmoke">
+        <div class="container">
+            <div class="row">
+                <div id="navfooter">
+                    <div class="col-sm-9  col-xs-12">
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="index.html" style="color: black"><h5 style="font-size: 11pt;">Home</h5></a>
+                            <ul style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                <a href="Industria4.0.html" style="color: black"><li>Industria 4.0</li></a>
+                                <a href="SmartHome.html" style="color: black"><li>Smart Home</li></a>
+                                <!--<a href="Sviluppatori.html" style="color: black"><li>Sviluppatori</li></a>-->
+                            </ul>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">
+                             <a href="about.html" style="color: black"><h5 style="font-size: 11pt;">Azienda</h5></a>
+                             <ul style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                 <a href="about.html#about" style="color: black"><li>Chi siamo</li></a>
+                                 <a href="about.html#team" style="color: black"><li>I nostri clienti</li></a>
+                                 <a href="about.html#customers" style="color: black"><li>Unisciti a noi</li></a>
+                             </ul>
+                         </div>-->
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="#" style="color: black"><h5 style="font-size: 11pt;">Prodotti</h5></a>
+                            <ul class="white-text" style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                <a href="RotilioPro.html" style="color: black"><li>Rotilio Pro</li></a>
+                                <!--<a href="Tattilio.html" style="color: black"><li>Tattilio</li></a>
+                                <a href="RotilioAllinOne.html" style="color: black"><li>Rotilio All in One</li></a>-->
+                                <a href="RS485RelaysArray.html" style="color: black"><li>RS485 Realays Array</li></a>
+                                <a href="RotilioPowerMeter.html" style="color: black"><li>Rotilio Power Meter</li></a>
+                                <a href="RotilioMaker.html" style="color: black"><li>Rotilio Maker</li></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="Piattaforma_IoT.html" style="color: black"><h5 class="white-text" style="font-size: 11pt;">Piattaforma</h5></a>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="contact.html" style="color: black"><h5 class="white-text" style="font-size: 11pt;">Contatti</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-center" style="padding: 10px;">
+                    <img src="img/logo-dark.png" style="max-width: 100%;">
+                    <p style="max-width: 150%;">e-mail: info@techmakers.io<br>tel: +39 010 8315289</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="text-align: center;">
+                    <p>© 2015 Techmakers srl  | p.iva 08874730966<br> REA CCIAA Milano n. 2054539 </p><br>
+                    <a href="https://www.facebook.com/techmakers.io/" style="color: black;"><i class="fa fa-fw fa-facebook"></i></a>
+                    <a href="https://twitter.com/techmakers_io" style="color: black;"><i class="fa fa-fw fa-twitter"></i></a>
+                    <a href="https://github.com/techmakers/rotilio.cc" style="color: black;"><i class="fa fa-fw fa-github"></i></a>
+                    <p><a href="Privacy.html" style="color: black;">Privacy</a></p>
+
+                </div>
+            </div>
+        </div>
 
 
-<!- Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
+
 </html>
