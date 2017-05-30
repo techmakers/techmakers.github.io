@@ -4,3 +4,7 @@ Disallow: /Nuovosito/
 Disallow: /oldsite/
 Disallow: /css/
 Disallow: /js/
+
+Sitemap:http://techmakers.io/sitemap.xml
+
+
