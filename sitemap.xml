@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://techmakers.io/</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/index.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/Industria4-0.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/SmartHome.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/rotilio-pro.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/rs485-relays-array.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/rotilio-power-meter.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/rotilio-maker.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/piattaforma-iot.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/contact.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/downloadapp.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://techmakers.io/privacy.html</loc>
+  <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>
