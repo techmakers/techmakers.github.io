@@ -205,6 +205,7 @@ footer{
     div#carousel-app.carousel.slide{
         max-height: 670px;
     }
+
 }
 @media (max-width: 736px) and (min-width: 570px) and (orientation: landscape){
     .col-xs-12{
@@ -272,6 +273,9 @@ footer{
     .navbar-brand{
         float: none;
         height: 0;
+    }
+    img#logo{
+        max-width: 12%;
     }
     div#home.col-sm-3{
         margin-left: -15px;
