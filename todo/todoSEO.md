@@ -12,7 +12,7 @@
 
 ###Home 55.1/100
 - ottimizzare la descrizione della pagina (meta description)
-- ottimizzare il tag title, uniformare con h1 techmakers --> Techmakers.io know how per l'Internet of Things
+- ~~ottimizzare il tag title, uniformare con h1 techmakers --> Techmakers.io know how per l'Internet of Things~~
 - ottimizzare tag h2 (inserirli)
 - ottimizzare url: Nella tua URL mancano alcune keywords [know,Internet,Things] contenute nel tag h1
 - Aumentare il contenuto testuale presente nella pagina.
@@ -43,9 +43,9 @@
 - ~~inserire tag tilte su href: prodotti e nei button maggiori info~~
 
 ###Rotilio Maker 63.7/100
-- ottimizzare la descrizione della pagina (meta description)
-- ottimizzare il tag title, troppo breve
-- uniformare l' h1 al tag title
+- ~~ottimizzare la descrizione della pagina (meta description)~~
+- ~~ottimizzare il tag title, troppo breve~~
+- ~~uniformare l'h1 al tag title~~
 - ottimizzare url:  http://techmakers.io/rotilio-maker.html --->  http://techmakers.io/rotilio-maker-tutto-inizia-.html   
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
 - ~~inserire tag tilte su href: prodotti, rotilio.cc, particle.io e frecce next carousel~~	
