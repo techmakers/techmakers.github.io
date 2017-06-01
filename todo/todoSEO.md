@@ -26,7 +26,7 @@
 - ottimizzare url: http://techmakers.io/industria4-0.html ---> http://techmakers.io/industria-soluzioni-aumentare-produttivita-qualita-.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti, immagine, link wikipedia, piano nazionale industria 4.0, Iper e super ammortamento, Credito di imposta R&S, Piano nazionale Industria 4.0 (PDF) e frecce next carousel
+- ~~inserire tag tilte su href: prodotti, link wikipedia, piano nazionale industria 4.0, Iper e super ammortamento, Credito di imposta R&S, Piano nazionale Industria 4.0 (PDF) e frecce next carousel~~
 
 ###Smarthome 60.1/100
 - ottimizzare la descrizione della pagina (meta description)
@@ -34,13 +34,13 @@
 - ottimizzare url:  http://techmakers.io/smart-home.html ---> http://techmakers.io/smart-home-connessa-ecologica-servizio.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti, link wikipedia, e frecce next carousel
+- ~~inserire tag tilte su href: prodotti, link wikipedia, e frecce next carousel~~
 
 ###Piattaforma 63/100
 - ottimizzare il tag title, uniformare con h1 Techmakers|Piattaforma IoT --> IoTSite la piattaforma enterprise per IoT
 - ottimizzare url:  http://techmakers.io/piattaforma-iot.html ---> http://techmakers.io/iotsite-piattaforma-enterprise-.html  
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti e nei button maggiori info
+- ~~inserire tag tilte su href: prodotti e nei button maggiori info~~
 
 ###Rotilio Maker 63.7/100
 - ottimizzare la descrizione della pagina (meta description)
@@ -48,7 +48,7 @@
 - uniformare l' h1 al tag title
 - ottimizzare url:  http://techmakers.io/rotilio-maker.html --->  http://techmakers.io/rotilio-maker-tutto-inizia-.html   
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti, rotilio.cc, particle.io e frecce next carousel	
+- ~~inserire tag tilte su href: prodotti, rotilio.cc, particle.io e frecce next carousel~~	
 
 ###Rotilio Pro 61/100
 - ottimizzare la descrizione della pagina (meta description)
@@ -57,13 +57,13 @@
 - ottimizzare url: http://techmakers.io/rotilio-pro.html ---> http://techmakers.io/rotilio-essenziale-potente-pronto.html
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti e frecce next carousel
+- ~~inserire tag tilte su href: prodotti e frecce next carousel~~
 
 ###RS485 relays array 61.2/100
 - ottimizzare il tag title Techmakers|RS485 Relays Array, troppo corto
 - ottimizzare url: http://techmakers.io/rs485-relays-array.html ---> http://techmakers.io/rotilio-relays-array-accendiamo-.html   
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti e frecce next carousel
+- ~~inserire tag tilte su href: prodotti e frecce next carousel~~
 
 ###Rotilio power meter 58.6/100
 - ottimizzare la descrizione della pagina (meta description)
@@ -71,7 +71,7 @@
 - ottimizzare url: http://techmakers.io/rotilio-power-meter.html ---> http://techmakers.io/rotilio-power-meter-potenza-nulla-senza-controllo.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti, consorzio ingauno e frecce next carousel
+- ~~inserire tag tilte su href: prodotti, consorzio ingauno e frecce next carousel~~
 
 ###Contatti 51.1
 - ottimizzare la descrizione della pagina (meta description)
@@ -81,4 +81,4 @@
 - ottimizzare url: http://techmakers.io/contact.html ---> http://techmakers.io/contattaci-siamo-pronti-tutto-quasi-.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
-- inserire tag tilte su href: prodotti e info@techmakers.io
+- ~~inserire tag tilte su href: prodotti e info@techmakers.io~~
