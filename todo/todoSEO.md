@@ -19,7 +19,7 @@
 - verificare keywords
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
 - rapporto tra testo e codice da migliorare
-- inserire tag tilte su href: prodotti e immagine download app
+- ~~inserire tag tilte su href: prodotti e immagine download app~~
 
 ###Industria 61/100
 - ottimizzare tag title con h1: Techmakers|Industria 4.0 ---> Industria 4.0 soluzioni per aumentare la produttività e la qualità
