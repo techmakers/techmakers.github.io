@@ -51,7 +51,7 @@
 - ~~inserire tag tilte su href: prodotti, rotilio.cc, particle.io e frecce next carousel~~	
 
 ###Rotilio Pro 61/100
-- ~~ottimizzare la descrizione della pagina (meta description)~~
+- ottimizzare la descrizione della pagina (meta description)
 - ~~ottimizzare il tag title: Techmakers|Rotilio Pro ---> Rotilio Pro essenziale, potente, PROnto~~
 - ~~uniformare l' h1 al tag title~~
 - ottimizzare url: http://techmakers.io/rotilio-pro.html ---> http://techmakers.io/rotilio-essenziale-potente-pronto.html 
