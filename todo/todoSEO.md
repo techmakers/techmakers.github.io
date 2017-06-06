@@ -22,7 +22,7 @@
 - ~~inserire tag tilte su href: prodotti e immagine download app~~
 
 ###Industria 61/100
-- ottimizzare tag title con h1: Techmakers|Industria 4.0 ---> Industria 4.0 soluzioni per aumentare la produttività e la qualità
+- ~~ottimizzare tag title con h1: Techmakers|Industria 4.0 ---> Industria 4.0 soluzioni per aumentare la produttività e la qualità~~
 - ottimizzare url: http://techmakers.io/industria4-0.html ---> http://techmakers.io/industria-soluzioni-aumentare-produttivita-qualita-.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
