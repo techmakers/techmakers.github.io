@@ -29,8 +29,8 @@
 - ~~inserire tag tilte su href: prodotti, link wikipedia, piano nazionale industria 4.0, Iper e super ammortamento, Credito di imposta R&S, Piano nazionale Industria 4.0 (PDF) e frecce next carousel~~
 
 ###Smarthome 60.1/100
-- ottimizzare la descrizione della pagina (meta description)
-- ottimizzare il tag title, uniformare con h1 Techmakers|Smart Home --> Smart home connessa, ecologica, al tuo servizio
+- ~~ottimizzare la descrizione della pagina (meta description)~~
+- ~~ottimizzare il tag title, uniformare con h1 Techmakers|Smart Home --> Smart home connessa, ecologica, al tuo servizio~~
 - ottimizzare url:  http://techmakers.io/smart-home.html ---> http://techmakers.io/smart-home-connessa-ecologica-servizio.html 
 - Aumentare il contenuto testuale presente nella pagina.
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
