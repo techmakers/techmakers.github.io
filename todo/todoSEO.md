@@ -43,7 +43,7 @@
 - ~~inserire tag tilte su href: prodotti e nei button maggiori info~~
 
 ###Rotilio Maker 63.7/100
-- ottimizzare la descrizione della pagina (meta description)
+- ~~ottimizzare la descrizione della pagina (meta description)~~
 - ~~ottimizzare il tag title, troppo breve~~
 - ~~uniformare l'h1 al tag title~~
 - ottimizzare url:  http://techmakers.io/rotilio-maker.html --->  http://techmakers.io/rotilio-maker-tutto-inizia-.html   
@@ -51,12 +51,10 @@
 - ~~inserire tag tilte su href: prodotti, rotilio.cc, particle.io e frecce next carousel~~	
 
 ###Rotilio Pro 61/100
-- ottimizzare la descrizione della pagina (meta description)
+- ~~ottimizzare la descrizione della pagina (meta description)~~
 - ~~ottimizzare il tag title: Techmakers|Rotilio Pro ---> Rotilio Pro essenziale, potente, PROnto~~
-- uniformare l' h1 al tag title
-- ottimizzare url: http://techmakers.io/rotilio-pro.html ---> http://techmakers.io/rotilio-essenziale-potente-pronto.html
-- Aumentare il contenuto testuale presente nella pagina.
-- Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
+- ~~uniformare l' h1 al tag title~~
+- ottimizzare url: http://techmakers.io/rotilio-pro.html ---> http://techmakers.io/rotilio-essenziale-potente-pronto.html 
 - ~~inserire tag tilte su href: prodotti e frecce next carousel~~
 
 ###RS485 relays array 61.2/100
