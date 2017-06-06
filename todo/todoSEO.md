@@ -37,7 +37,7 @@
 - ~~inserire tag tilte su href: prodotti, link wikipedia, e frecce next carousel~~
 
 ###Piattaforma 63/100
-- ottimizzare il tag title, uniformare con h1 Techmakers|Piattaforma IoT --> IoTSite la piattaforma enterprise per IoT
+- ~~ottimizzare il tag title, uniformare con h1 Techmakers|Piattaforma IoT --> IoTSite la piattaforma enterprise per IoT~~
 - ottimizzare url:  http://techmakers.io/piattaforma-iot.html ---> http://techmakers.io/iotsite-piattaforma-enterprise-.html  
 - Alcune delle keywords del tag h1 non sono presenti nel corpo della pagina 
 - ~~inserire tag tilte su href: prodotti e nei button maggiori info~~
