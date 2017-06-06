@@ -11,7 +11,7 @@
 
 
 ###Home 55.1/100
-- ottimizzare la descrizione della pagina (meta description)
+- ~~ottimizzare la descrizione della pagina (meta description)~~
 - ~~ottimizzare il tag title, uniformare con h1 techmakers --> Techmakers.io know how per l'Internet of Things~~
 - ottimizzare tag h2 (inserirli)
 - ottimizzare url: Nella tua URL mancano alcune keywords [know,Internet,Things] contenute nel tag h1
