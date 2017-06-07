@@ -3,7 +3,7 @@
 ###Generali 58.4/100
 - Mancano i tag h2 all'interno della tua pagina
 - Nella tua URL mancano alcune keywords 
-- mancano i tag microdata offerti da [http://schema.org](http://schema.org) inseriscili nella tua pagina per aumentare il tuo impatto visivo sui motori di ricerca.
+- ~~mancano i tag microdata offerti da [http://schema.org](http://schema.org) inseriscili nella tua pagina per aumentare il tuo impatto visivo sui motori di ricerca.~~
 - Mancano social all'interno della pagina (open graph, card twitter, plug in social, promozione delle pagine su fb)
 - SFRUTTA IL CACHING DEL BROWSER
 - ELIMINA JAVASCRIPT E CSS CHE BLOCCANO LA VISUALIZZAZIONE NEI CONTENUTI ABOVE-THE-FOLD

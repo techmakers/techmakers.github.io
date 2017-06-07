@@ -173,6 +173,18 @@ footer{
     img#logo{
         max-width: 15%;
     }
+    i.fa.fa-fw.fa-facebook{
+        width: 7%;
+    }
+    i.fa.fa-fw.fa-twitter{
+        width: 7%;
+    }
+    i.fa.fa-fw.fa-github{
+        width: 7%;
+    }
+    p#privacy{
+        margin: 10px;
+    }
     #navfooter{
         display: none;
     }
