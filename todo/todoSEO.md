@@ -1,7 +1,8 @@
 ###SEO 
 
 ###Generali 58.4/100
-- Mancano i tag h2 all'interno della tua pagina
+- **Aumentare il contenuto testuale presente nella pagina, dalle 350 parole in su, con una buona presenza di parole chiave.**
+- **verificare keywords**
 - Nella tua URL mancano alcune keywords 
 - ~~mancano i tag microdata offerti da [http://schema.org](http://schema.org) inseriscili nella tua pagina per aumentare il tuo impatto visivo sui motori di ricerca.~~
 - Mancano social all'interno della pagina (open graph, card twitter, plug in social, promozione delle pagine su fb)
@@ -13,7 +14,7 @@
 ###Home 55.1/100
 - ~~ottimizzare la descrizione della pagina (meta description)~~
 - ~~ottimizzare il tag title, uniformare con h1 techmakers --> Techmakers.io know how per l'Internet of Things~~
-- ottimizzare tag h2 (inserirli)
+- ~~ottimizzare tag h2 (inserirli)~~
 - ottimizzare url: Nella tua URL mancano alcune keywords [know,Internet,Things] contenute nel tag h1
 - Aumentare il contenuto testuale presente nella pagina.
 - verificare keywords
