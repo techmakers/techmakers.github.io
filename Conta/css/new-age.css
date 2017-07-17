@@ -562,11 +562,11 @@ body {
 	z-index:10;
 }
 
-#img1{ background-image: url("../css/screen1.png");}
-#img2{ background-image: url("../css/screen2.png");}
-#img3{ background-image: url("../css/screen3.png");}
-#img4{ background-image: url("../css/screen4.png");}
-#img5{ background-image: url("../css/screen5.png");}
+#img1{ background-image: url(../img/guida/screen1.png)}
+#img2{ background-image: url(../img/guida/screen2.png)}
+#img3{ background-image: url(../img/guida/screen3.png)}
+#img4{ background-image: url(../img/guida/screen4.png)}
+#img5{ background-image: url(../img/guida/screen5.png)}
 
 .content-text
 {
