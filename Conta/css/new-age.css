@@ -562,11 +562,11 @@ body {
 	z-index:10;
 }
 
-#img1{ background-image: url("screen1.png");}
-#img2{ background-image: url("screen2.png");}
-#img3{ background-image: url("screen3.png");}
-#img4{ background-image: url("screen4.png");}
-#img5{ background-image: url("screen5.png");}
+#img1{ background-image: url("../css/screen1.png");}
+#img2{ background-image: url("../css/screen2.png");}
+#img3{ background-image: url("../css/screen3.png");}
+#img4{ background-image: url("../css/screen4.png");}
+#img5{ background-image: url("../css/screen5.png");}
 
 .content-text
 {
@@ -610,6 +610,12 @@ body {
 
 @media (min-width: 1920px) {
 		body{font-size:23px}
+}
+
+@media (max-width: 320px) {
+	body{font-size:10px}
+		.content-title{font-size:2.3em}
+	.content-text{font-size:1.3em}
 }
 	
 
