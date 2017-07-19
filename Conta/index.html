@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="La prima applicazione per controllare gli afflussi ad eventi a numero chiuso!">
+    <meta name="author" content="Techmakers S.r.l.">
 
 	<link rel="icon" href="img/logo.png">
-    <title>Conta - Servizio Web per Eventi</title>
+    <title>Conta - App per Eventi - Il servizio per gestire l'afflusso di persone nelle tue manifestazioni</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -34,6 +34,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?4mWCOhTZkvtJza92XbR7FDRazylxzBJu";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 
 </head>
 
@@ -46,7 +56,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <img id="navbar-logo" src="img/logo.png" /><a class="navbar-brand page-scroll" href="#page-top">Conta - Gestisci ogni entrata</a>
+                <img id="navbar-logo" alt="logo conta" src="img/ContaW.png" style="margin-top: -3px;" /><img id="navbar-logo-mobile" alt="logo conta" src="img/ContaY.png" style="display: none;" /><img id="navbar-logo-nero" alt="logo conta" src="img/ContaB.png" style="display: none;" /><a class="navbar-brand page-scroll" href="#page-top">&ensp;Gestisci ogni entrata</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,6 +67,9 @@
                     </li>
 					<li>
                         <a class="page-scroll" href="#utilizzo">Usare <i>Conta</i></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#pricing-demo">Attiva il servizio</i></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#eventi">Eventi indicati</a>
@@ -78,7 +91,6 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>Conta è la prima web App che permette di gestire e controllare l'afflusso di persone ai tuoi eventi!</h1>
-                            <a href="http://conta.techmakers.io" class="btn btn-outline btn-xl">REGISTRATI E INIZIA</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +100,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.png" class="img-responsive" alt="">
+                                    <img src="img/demo-screen-1.png" alt="screenshot conta app" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -120,7 +132,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.png" class="img-responsive" alt=""> </div>
+                                    <img src="img/demo-screen-1.png" class="img-responsive" alt="screenshot conta app"> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -133,14 +145,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                 <img class="iconsapp" src="img/icons/connection.png" />
+                                 <img class="iconsapp" src="img/icons/connection.png" alt="connection connessione conta" />
                                     <h3>Sempre sincronizzati</h3>
                                     <p class="text-muted">Il <b>numero totale</b> di persone entrate è visualizzato <b>in tempo reale</b> da tutti gli accessi!</p>   
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
-									<img class="iconsapp" src="img/icons/alert.png" />
+									<img class="iconsapp" src="img/icons/alert.png" alt="allarme alert soglia"  />
                                     <h3>Conteggio con allerta</h3>
                                     <p class="text-muted">Possibilità di impostare <b>allerte</b> avvicinandosi al <b>numero massimo</b> di persone nell'evento!</p>
                                 </div>
@@ -149,14 +161,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                    <img class="iconsapp" src="img/icons/phone.png" />                                    
+                                    <img class="iconsapp" src="img/icons/phone.png" alt="iphone phone counter"/>                                    
                                     <h3>Basta uno smartphone</h3>
                                     <p class="text-muted">Non servono strumenti in più: basta uno smartphone per contare con questa <b>App universale</b>!</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                    <img class="iconsapp" src="img/icons/positions.png" />
+                                    <img class="iconsapp" src="img/icons/positions.png" alt="positions posizione controllo"/>
 									<h3>Visione completa</h3>
                                     <p class="text-muted">Il gestore dell'evento accede alla <b>visione da remoto</b> di ogni entrata e della <b>posizione</b> di tutti gli steward!</p>
                                 </div>
@@ -345,9 +357,92 @@
 	
 	
 	
+	
+		<section id="pricing-demo" class="features">
+	<div class="pricing-bg">
+	<div class="overlay">
+        <div class="container">
+		
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2 id="pricingTitle">Ottieni Conta e acquista il tuo evento su misura</h2>
+						<p class="text-muted-w">Scegli l'opzione perfetta per le tue esigenze</p>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="row price-row">
+			
+								<div class="col-sm-4"><div class="price-col demo-col"><div class="slider"></div>
+                    <h3 class="price-title">Iscriviti Gratis</h3>	
+					<div class="price-desc">
+						<br><br><br>
+						<p>E sblocca in omaggio:</p>
+						<ul>
+							<li>Un evento della durata di 24 ore.</li>
+							<li>2 accessi per steward al tuo evento di prova.</li>			
+						</ul>
+						<br>
+						<a href="http://conta.techmakers.io"><div class="btn btn-outline btn-xl">PROVA LA DEMO</div></a>
+					</div> </div>
+                </div>
+			
+			<div class="col-sm-4"><div class="price-col">	<div class="slider"></div>								
+                    <h3 class="price-title">Attiva Conta</h3>					
+					<h3 class="price-euros">300 €</h3>
+					<div class="price-desc">
+					
+						<p>Ottieni subito:</p>
+						<ul>
+							<li>Accesso completo all'App da <i>qualsiasi</i> dispositivo.</li>
+							<li>Possibilità di sblocco di steward <i>illimitati</i>.</li>
+							<li>Primo evento con 4 accessi steward <i>gratuiti</i>.</li>					
+						</ul>
+						<br>
+						<div style="position: absolute; left: 50%; bottom:30px;">
+						<div class="pay-btn">	
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TRFH6C48ZTVEE">
+<input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form></div>
+					</div> </div>		</div>               
+				</div>
+			
+				
+				<div class="col-sm-4"><div class="price-col"><div class="slider"></div>
+                    <h3 class="price-title">Pacchetto Steward</h3>					
+					<h3 class="price-euros">50 €</h3>
+					<div class="price-desc">
+					
+						<p>ACQUISTA E RICEVI:</p>
+						<ul>
+							<li>50 codici di accesso per i tuoi steward - <i>1 € a accesso</i>.</li>
+							<li>Ogni codice consente a 1 utente l'accesso al conteggio di 1 evento - <i>durata massima 24 ore</i>. </li>
+							<li>Completa autonomia nella distribuzione dei codici: scadenza dopo un anno dall'acquisto.</li>
+						</ul>
+						<br>
+						<div style="position: absolute; left: 50%;bottom:30px;">
+						<div class="pay-btn">	
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="EYP6ZBW5CJUZL">
+<input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form></div></div>
+					</div> </div>
+                </div>
+            </div>
+			</div>
+        </div>
+		</div>
+		</div>
+    </section>
 
-
-
+	
+	
     <section id="eventi" class="contact bg-primary">
         <div class="container">
             <h3 col-xs-9>Il servizio Conta è adatto per qualsiasi tipo di evento: concerti, feste di piazza, manifestazioni sportive, mercatini. Il suo utilizzo è consigliato per una copertura sicura ed efficiente di tutte le entrate, anche con un grande numero di varchi.</h3>
@@ -356,7 +451,6 @@
 			<h4 col-xs-8><i>L'App è nata per facilitare l'adattamento alle nuove norme di sicurezza previste per eventi pubblici - Circolare del Ministero dell'Interno del 07/06/2017</i></h4>
         </div>
     </section>
-
 	
 	<footer id="contacts">
     <div class="container">	
