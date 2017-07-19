@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La prima applicazione per controllare gli afflussi negli eventi a numero chiuso!&#13;&#10;Conteggio sincronizzato di entrate e uscite e gestione completa dell'evento.">
+    <meta name="author" content="Techmakers S.r.l.">
+
+    <link rel="icon" href="img/logo.png">
+    <title>Conta - Servizio Web per Eventi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <img id="navbar-logo" alt="logo conta" src="img/ContaW.png" style="margin-top: -3px;" /><img id="navbar-logo-mobile" alt="logo conta" src="img/ContaY.png" style="display: none;" /><img id="navbar-logo-nero" alt="logo conta" src="img/ContaB.png" style="display: none;" /><a class="navbar-brand page-scroll" href="#page-top">&ensp;Gestisci ogni entrata</a>
+            </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#vantaggi">Vantaggi</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#utilizzo">Usare <i>Conta</i></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#pricing-demo">Attiva il servizio</i></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#eventi">Eventi indicati</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#contacts">Contatti</a>
+                    </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Page Content -->
+<section class="features">
+    <div class="container">
+
+        <div class="row">
+
+            <h2 align="center">Informativa estesa sui Cookie</h2>
+            <p>
+                I Cookie sono costituiti da porzioni di codice installate all’interno del browser che assistono
+                il Titolare nell’erogazione del servizio in base alle finalità descritte. Alcune delle finalità
+                di installazione dei Cookie potrebbero, inoltre, necessitare del consenso dell’Utente.</p>
+            <h3>COOKIE TECNICI E DI STATISTICA AGGREGATA</h3>
+            <p>
+                <b>Attività strettamente necessarie al funzionamento</b>
+            </p>
+            <p>
+                Questo sito utilizza Cookie per salvare la sessione dell’Utente e per svolgere altre attività
+                strettamente necessarie al funzionamento dello stesso, ad esempio in relazione alla
+                distribuzione del traffico.</p>
+
+            <p>
+                <b>Attività di salvataggio delle preferenze, ottimizzazione e statistica</b>
+            </p>
+            <p>
+                Questo sito utilizza Cookie per salvare le preferenze di navigazione ed ottimizzare l’esperienza
+                di navigazione dell’Utente. Fra questi Cookie rientrano, ad esempio, quelli per impostare la
+                lingua e la valuta o per la gestione di statistiche da parte del Titolare del sito.</p>
+
+            <h3>ALTRE TIPOLOGIE DI COOKIE O STRUMENTI TERZI CHE POTREBBERO FARNE UTILIZZO</h3>
+            <p>
+                Alcuni dei servizi elencati di seguito raccolgono statistiche in forma aggregata e potrebbero
+                non richiedere il consenso dell’Utente o potrebbero essere gestiti direttamente dal Titolare – a
+                seconda di quanto descritto – senza l’ausilio di terzi.
+                Qualora fra gli strumenti indicati in seguito fossero presenti servizi gestiti da terzi, questi
+                potrebbero – in aggiunta a quanto specificato ed anche all’insaputa del Titolare – compiere
+                attività di tracciamento dell’Utente. Per informazioni dettagliate in merito, si consiglia di
+                consultare le privacy policy dei servizi elencati.
+            </p>
+
+
+            <p>
+                <b>Statistica</b>
+            </p>
+            <p>
+                I servizi contenuti nella presente sezione permettono al Titolare del Trattamento di monitorare
+                e analizzare i dati di traffico e servono a tener traccia del comportamento dell’Utente.
+                Google Analytics (Google Inc.)
+                Google Analytics è un servizio di analisi web fornito da Google Inc. (“Google”). Google utilizza
+                i Dati Personali raccolti allo scopo di tracciare ed esaminare l’utilizzo di questo sito,
+                compilare report e condividerli con gli altri servizi sviluppati da Google.
+                Google potrebbe utilizzare i Dati Personali per contestualizzare e personalizzare gli annunci
+                del proprio network pubblicitario.Dati personali raccolti: Cookie e Dati di utilizzo.
+                Luogo del trattamento : USA – <a href="http://www.google.it/intl/it/policies/privacy/"> Privacy
+                Policy </a> – <a href="http://www.aboutads.info/choices/"> Opt Out </a></p>
+            <p><b>Visualizzazione di contenuti da piattaforme esterne</b></p>
+            <p>
+                Questi servizi permettono di visualizzare contenuti ospitati su piattaforme esterne direttamente
+                dalle pagine di questo sito e di interagire con essi.
+                Nel caso in cui sia installato un servizio di questo tipo, è possibile che, anche nel caso gli
+                Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in
+                cui è installato.
+                Video Youtube (Google Inc.)
+                Youtube è un servizio di visualizzazione di contenuti video gestito da Google Inc. che permette
+                a questo sito di integrare tali contenuti all’interno delle proprie pagine.
+                Dati personali raccolti: Cookie e Dati di utilizzo.
+                Luogo del trattamento : USA – <a href="http://www.google.it/intl/it/policies/privacy/"> Privacy
+                Policy </a> – <a href="http://www.aboutads.info/choices/"> Opt Out </a></p>
+            <h3>COME POSSO CONTROLLARE L'ISTALLAZIONE DI COOKIE?</h3>
+            <p>
+                In aggiunta a quanto indicato in questo documento, l’Utente può gestire le preferenze relative
+                ai Cookie direttamente all’interno del proprio browser ed impedire – ad esempio – che terze
+                parti possano installarne. Tramite le preferenze del browser è inoltre possibile eliminare i
+                Cookie installati in passato, incluso il Cookie in cui venga eventualmente salvato il consenso
+                all’installazione di Cookie da parte di questo sito. È importante notare che disabilitando tutti
+                i Cookie, il funzionamento di questo sito potrebbe essere compromesso. L’Utente può trovare
+                informazioni su come gestire i Cookie nel suo browser ai seguenti indirizzi:<a
+                    href="https://support.google.com/chrome/answer/95647?hl=it&p=cpn_cookies">Google Chrome </a>
+                , <a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie">Mozilla
+                Firefox</a>,<a href="https://support.apple.com/kb/PH19214?viewlocale=it_IT&locale=en_US"> Apple
+                Safari</a> e<a href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies">
+                Microsoft Windows Explorer</a>.
+                In caso di servizi erogati da terze parti, l’Utente può inoltre esercitare il proprio diritto ad
+                opporsi al tracciamento informandosi tramite la privacy policy della terza parte, tramite il
+                link di opt out se esplicitamente fornito o contattando direttamente la stessa.
+                Fermo restando quanto precede, il Titolare informa che l’Utente può avvalersi di Your Online
+                Choices. Attraverso tale servizio è possibile gestire le preferenze di tracciamento della
+                maggior parte degli strumenti pubblicitari. Il Titolare, pertanto, consiglia agli Utenti di
+                utilizzare tale risorsa in aggiunta alle informazioni fornite dal presente documento.
+            </p>
+            <h3>TITOLARE DEL TRATTAMENTO DEI DATI</h3>
+            <p>
+                Techmakers srl - Via Privata Fratelli Gabba n. 5, - 20100 Milano - info@techmakers.io
+
+                Dal momento che l’installazione di Cookie e di altri sistemi di tracciamento operata da terze
+                parti tramite i servizi utilizzati all’interno di questo sito non può essere tecnicamente
+                controllata dal Titolare, ogni riferimento specifico a Cookie e sistemi di tracciamento
+                installati da terze parti è da considerarsi indicativo. Per ottenere informazioni complete,
+                consulta la privacy policy degli eventuali servizi terzi elencati in questo documento.
+                Vista l’oggettiva complessità legata all’identificazione delle tecnologie basate sui Cookie ed
+                alla loro integrazione molto stretta con il funzionamento del web, l’Utente è invitato a
+                contattare il Titolare qualora volesse ricevere qualunque approfondimento relativo all’utilizzo
+                dei Cookie stessi e ad eventuali utilizzi degli stessi – ad esempio ad opera di terzi –
+                effettuati tramite questo sito.
+            </p>
+            <p><b>Dati Personali (o Dati)</b></p>
+            <p>
+                Costituisce dato personale qualunque informazione relativa a persona fisica, identificata o
+                identificabile, anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi
+                compreso un numero di identificazione personale.
+            <p>
+                <b>Dati di Utilizzo</b>
+            </p>
+            <p>
+                Sono i dati personali raccolti in maniera automatica dall’Applicazione (o dalle applicazioni di
+                parti terze che la stessa utilizza), tra i quali: gli indirizzi IP o i nomi a dominio dei
+                computer utilizzati dall’Utente che si connette al sito, gli indirizzi in notazione URI (Uniform
+                Resource Identifier), l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta
+                al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo stato
+                della risposta dal server (buon fine, errore, ecc.) il Paese di provenienza, le caratteristiche
+                del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni temporali
+                della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi
+                all’itinerario seguito all’interno del sito, con particolare riferimento alla sequenza delle
+                pagine consultate, ai parametri relativi al sistema operativo e all’ambiente informatico
+                dell’Utente.</p>
+            <p><b>Utente</b></p>
+            <p>
+                L’individuo che utilizza questo sito, che deve coincidere con l’Interessato o essere da questo
+                autorizzato ed i cui Dati Personali sono oggetto del trattamento.
+            <p><b>Interessato</b></p>
+            <p>
+                La persona fisica o giuridica cui si riferiscono i Dati Personali.</p>
+            <p><b>Responsabile del Trattamento (o Responsabile)</b>
+            </p>
+            <p>
+                La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione
+                od organismo cui competono, anche unitamente ad altro titolare, le decisioni in ordine alle
+                finalità, alle modalità del trattamento di dati personali ed agli strumenti utilizzati, ivi
+                compreso il profilo della sicurezza, in relazione al funzionamento e alla fruizione di questo
+                sito. Il Titolare del Trattamento, salvo quanto diversamente specificato, è il proprietario di
+                questo sito.
+            <p><b>Cookie</b></p>
+            <p>
+                Piccola porzione di dati conservata all’interno del dispositivo dell’Utente.
+            </p>
+
+            <p><b>Riferimenti legali</b></p>
+            <p>
+                Avviso agli Utenti europei: la presente informativa privacy è redatta in adempimento degli
+                obblighi previsti dall’Art. 10 della Direttiva n. 95/46/CE, nonché a quanto previsto dalla
+                Direttiva 2002/58/CE, come aggiornata dalla Direttiva 2009/136/CE, in materia di Cookie.
+                Questa cookie policy riguarda esclusivamente questo sito.
+            </p>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <p>© 2015 <a href="http://techmakers.io">Techmakers srl</a> | P.iva 08874730966<br> REA CCIAA Milano n.
+                    2054539 </p><br>
+                <a href="https://www.facebook.com/techmakers.io/" title="Techmakers Facebook" style="color: black;"><i
+                        class="fa fa-fw fa-facebook"></i></a>
+                <a href="https://twitter.com/techmakers_io" title="Techmakers Twitter" style="color: black;"><i
+                        class="fa fa-fw fa-twitter"></i></a>
+                <a href="https://github.com/techmakers/rotilio.cc" title="Techmakers Github" style="color: black;"><i
+                        class="fa fa-fw fa-github"></i></a>
+                <p><a href="privacy.html" title="Privacy" style="color: black;">Privacy</a></p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.min.js"></script>
+
+
+</body>
+
+</html>
