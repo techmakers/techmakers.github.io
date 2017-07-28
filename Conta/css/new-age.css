@@ -601,11 +601,11 @@ body {
 	z-index:10;
 }
 
-#img1{ background-image: url(../img/guida/screen1.png)}
-#img2{ background-image: url(../img/guida/screen2.png)}
-#img3{ background-image: url(../img/guida/screen3.png)}
-#img4{ background-image: url(../img/guida/screen4.png)}
-#img5{ background-image: url(../img/guida/screen5.png)}
+#img1{ background-image: url(../img/guida/screen1.PNG)}
+#img2{ background-image: url(../img/guida/screen2.PNG)}
+#img3{ background-image: url(../img/guida/screen3.PNG)}
+#img4{ background-image: url(../img/guida/screen4.PNG)}
+#img5{ background-image: url(../img/guida/screen5.PNG)}
 
 .content-text
 {
@@ -1000,4 +1000,3 @@ transition:    opacity 1.4s ease;}
 
 
 
-	
