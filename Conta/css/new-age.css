@@ -119,6 +119,10 @@ p {
   background-color: transparent;
 }
 
+p.content-text{
+  line-height: 1.2;
+  margin-bottom: 0;
+}
 
 
 @media (max-width: 768px) {
