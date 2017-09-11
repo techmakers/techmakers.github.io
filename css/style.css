@@ -48,7 +48,7 @@ img#logo{
 .dropdown-menu>li>a:hover{
     color: #fc4f4f;
 }
-.col-sm-2{
+.col-sm-2.text-center{
     width: 20%;
 }
 .carousel-control.left{
@@ -69,6 +69,10 @@ footer{
 @media (max-width: 800px) {
     .navbar-header {
         float: none;
+    }
+    img#homestore{
+        max-width: 40% !important;
+        margin: 10px !important;
     }
     .navbar-left,.navbar-right {
         float: none !important;
@@ -127,6 +131,11 @@ footer{
         width: 100% !important;
         padding: 5px 10px 75px !important;
     }
+    img#iotstore{
+        margin-top: 0 !important;
+        max-width: 30% !important;
+        margin: 10px;
+    }
 }
 @media (max-width: 800px) and (min-width: 600px){
     .navbar-right{
@@ -156,6 +165,11 @@ footer{
     div#carousel-app.carousel.slide{
         max-height: 390px;
     }
+    img#iotstore{
+        margin-top: 0 !important;
+        max-width: 30% !important;
+        margin: 5px;
+    }
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
         margin-left: -25px;
     }
@@ -172,6 +186,22 @@ footer{
 @media (max-width: 736px) and (orientation: portrait){
     img#logo{
         max-width: 15%;
+    }
+    img#iotstore{
+        max-width: 40% !important;
+        margin: 5px;
+    }
+    i.fa.fa-fw.fa-facebook{
+        width: 7%;
+    }
+    i.fa.fa-fw.fa-twitter{
+        width: 7%;
+    }
+    i.fa.fa-fw.fa-github{
+        width: 7%;
+    }
+    p#privacy{
+        margin: 10px;
     }
     #navfooter{
         display: none;
@@ -255,6 +285,10 @@ footer{
 @media (max-width: 320px) {
     button.navbar-toggle{
         height: 35px;
+    }
+    img#homestore{
+        max-width: 40% !important;
+        margin: 5px !important;
     }
     img#logo{
         padding-top: 4px;

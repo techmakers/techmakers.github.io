@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La prima applicazione per controllare gli afflussi negli eventi a numero chiuso!&#13;&#10;Conteggio sincronizzato di entrate e uscite e gestione completa dell'evento.">
+    <meta name="author" content="Techmakers S.r.l.">
+
+    <link rel="icon" href="img/logo.png">
+    <title>Conta - Servizio Web per Eventi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <img id="navbar-logo" alt="logo conta" src="img/ContaW.png" style="margin-top: -3px;" /><img id="navbar-logo-mobile" alt="logo conta" src="img/ContaY.png" style="display: none;" /><img id="navbar-logo-nero" alt="logo conta" src="img/ContaB.png" style="display: none;" /><a class="navbar-brand page-scroll" href="#page-top">&ensp;Gestisci ogni entrata</a>
+            </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#vantaggi">Vantaggi</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#utilizzo">Usare <i>Conta</i></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#pricing-demo">Attiva il servizio</i></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#eventi">Eventi indicati</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://techmakers.io/Conta/#contacts">Contatti</a>
+                    </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align: center;">Termini e condizioni</h1>
+        </div>
+        <div class="row">
+            <h2>Terrmini e condizione dei servizi Conta</h2>
+            <p>I presenti termini e condizioni (“Termini e Condizioni”) regolano l’uso del servizio Conta da parte degli
+                Utenti (come di seguito definiti).
+            </p>
+            <h3>1. DESCRIZIONE DI CONTA</h3>
+            <p>
+                1.1 Conta offre una applicazione, utilizzabile via tablet e smartphone, per la
+                creazione e gestione di Eventi (come di seguito definiti). Conta, attraverso l’apposito
+                pannello di controllo accessibile da parte degli Utenti, consente in via esemplificativa e non
+                esaustiva di:
+
+            <ul>
+                <li>creare un Evento in pochi click, inserendo le coordinate nell'interfaccia;</li>
+                <li>invitare gli steward ad un Evento condividendo il "Codice invito"</li>
+                <li>contare in modo semplice gli ingressi e le uscite dei partecipanti</li>
+                <li>gestire differenti varchi di accesso</li>
+                <li>comunicazione in tempo reale del munero dei partecipanti</li>
+                <li>allerta raggiungimento livelli di soglia</li>
+                <li>allerta superamento del numero massimo di persone consentite</li>
+            </ul>
+            </p>
+            <p>1.2 Conta è di proprietà ed è gestito da Techmakers srl, numero di registrazione REA CCIAA Milano 2054539
+                e partita IVA 08874730966, con sede legale in Via Privata Fratelli Gabba n. 5, Milano,
+                info@techmakers.io.</p>
+            <h3>2. SCOPO E DEFINIZIONI</h3>
+            <p>2.1 I presenti Termini e Condizioni, l’Informativa sulla privacy, la Politica di uso dei cookies e il
+                Form di registrazione nell'applicazione, come di seguito definito, costituiscono
+                l’intero accordo e governano l’intero rapporto tra Techmakers srl e gli Utenti. Techmakers srl si
+                riserva il
+                diritto di prevedere condizioni particolari in relazione alla fornitura di ulteriori specifici servizi.
+                In tale ultimo caso, troveranno applicazione i presenti Termini e Condizioni ove non derogati dalle
+                condizioni particolari di tali specifici servizi.
+            </p>
+            <p>2.2 Ai fini dei presenti Termini e Condizioni, per:
+            <ul>
+                <li><b>Consumatore” o “Consumatori”</b>: si intende la persona fisica che utilizza i Servizi di Conta
+                    per scopi
+                    estranei all’attività imprenditoriale, commerciale, artigianale o professionale eventualmente
+                    svolta;
+                </li>
+                <li><b>“Evento” o “Eventi”</b>: l’evento/gli eventi creato/i dagli Utenti attraverso i Servizi di Conta;
+                </li>
+                <li><b>“Form di registrazione”</b>: si intende il modulo di registrazione accessibile sull'applicazione
+                    che
+                    dovrà essere debitamente compilato dall’Utente per accedere ai Servizi di Conta;
+                </li>
+                <li><b>“Attivazione”</b>: il servizio descritto nella clausola 1.a) dei presenti Termini e Condizioni;
+                </li>
+                <li><b>“Creazione evento”</b>: il servizio descritto nella clausola 1.b) dei presenti Termini e
+                    Condizioni;
+                </li>
+                <li><b>“Attivazione steward”</b>: il servizio descritto nella clausola 1.c) dei presenti Termini e
+                    Condizioni;
+                </li>
+                <li><b>“Servizi”</b>: ogni servizio, ivi incluso l'applicazione, fornito da Techmakers srl;</li>
+                <li><b>“Applicazione”</b>: l'applicazione di proprietà e gestita da Techmakers srl accessibile
+                    attraverso gli store dedicati (comprese tutte le pagine web, i sotto-domini e le sotto-parti in esse
+                    contenute);
+                </li>
+                <li><b>“Utente” o “Utenti”</b>: l’utente o gli utenti che acquistano ed utilizzano i Servizi di Conta.
+                </li>
+            </ul>
+            </p>
+            <h3>3. LINGUA</h3>
+            <p>I presenti Termini e Condizioni sono redatti in lingua italiana. Conta si riserva il diritto di
+                tradurre i seguenti Termini e Condizioni, l’Informativa sulla privacy o ogni altra regola, policy e/o
+                procedura operativa eventualmente pubblicate di volta in volta sul Sito in altre lingue, per la comodità
+                dell’Utente. In caso di conflitto nell’interpretazione delle clausole contrattuali così come del
+                contenuto di ogni altro documento pubblicato sul Sito, prevarrà la versione redatta in lingua
+                italiana.</p>
+            <h3>4. SERVIZI</h3>
+            <p>4.1 Con l’esatto adempimento degli obblighi di cui alla clausola 5 dei presenti Termini e Condizioni, gli
+                Utenti possono fare uso dei seguenti Servizi offerti da Conta:
+            <ul>
+                <li><b>Attivazione</b>: consente di creare e gestire un singolo Evento, senza steward.</li>
+                <li><b>Creazione evento</b>: ogni evento creato dopo l'attivazione non è compreso nel prezzo.</li>
+                <li><b>Attivazione steward</b>: l'invito di uno o più steward ad un evento non è compreso el prezzo.
+                </li>
+            </ul>
+            </p>
+            <p>4.2 Le caratteristiche e le funzionalità complete dei Servizi ed i relativi prezzi sono disponibili
+                all’indirizzo www.techmakers.io/Conta.</p>
+            <p>4.3 Techmakers srl potrà di volta in volta modificare i Servizi ed aggiungere, modificare o rimuovere
+                caratteristiche o funzionalità dai Servizi medesimi. Nel caso in cui la modifica ai Servizi determini
+                delle variazioni ai prezzi dei medesimi, Techmakers srl comunicherà tali variazioni agli Utenti i quali
+                disporranno di un termine di trenta (30) giorni per comunicare la disdetta, senza alcun costo, inviando
+                un’email al seguente indirizzo di posta elettronica – support@techmakers.io. In mancanza di tale
+                comunicazione, le modifiche, aggiornamenti e/o variazioni ai Servizi o ai loro prezzi si intenderanno
+                accettate.</p>
+            <h3>5. OBBLIGHI DEGLI UTENTI</h3>
+            <p>5.1 Registrandosi attraverso l'applicazione o utilizzando i Servizi, gli Utenti acconsentono a, e si
+                impegnano
+                a rispettare, i presenti Termini e Condizioni.
+            </p>
+            <p>5.2 In particolare, gli Utenti si impegnano a corrispondere il prezzo dei Servizi previsto attraverso le
+                modalità di pagamento consentite sul Sito, in relazione ai Servizi prescelti, e a rispettare gli
+                obblighi di seguito elencati.
+            </p>
+            <p>5.3 L’Utente dovrà:</p>
+            <ul>
+                <li>fornire informazioni veritiere e complete su se stesso, come richiesto dal Form dell'applicazione;
+                </li>
+                <li>custodire con diligenza la password utilizzata per accedere al proprio account, della cui sicurezza
+                    e segretezza l’Utente è l’unico responsabile. Qualora l’Utente sospetti che sia stato effettuato un
+                    accesso non autorizzato al proprio account da parte di terzi, l’Utente è pregato di contattare
+                    immediatamente Techmakers srl all’indirizzo email support@techmakers.io e di cambiare la propria
+                    password nel più breve tempo possibile. Techmakers srl non assume alcuna responsabilità per
+                    qualunque
+                    danno derivante dalla non diligente custodia della password e dell’account utilizzati dall’Utente;
+                </li>
+                <li>non trasmettere o indurre altri a trasmettere, caricare, o altrimenti mettere a disposizione
+                    attraverso il Sito contenuti (i) che siano illeciti, diffamatori, o lesivi dell’altrui privacy o di
+                    altri diritti di terzi; (ii) che siano falsi, inesatti o comunque ingannevoli o altrimenti lesivi
+                    dei diritti dei Consumatori; ovvero (iii) che costituiscano violazione di brevetti, marchi, segreti
+                    aziendali, diritto d’autore o altri diritti di proprietà intellettuale di terzi;
+                </li>
+                <li>utilizzare i Servizi in conformità alla normativa applicabile;</li>
+                <li>non trasmettere, caricare, o altrimenti rendere disponibili virus, messaggi pubblicitari, materiali
+                    promozionali non sollecitati o non autorizzati, inclusa ogni forma di spam;
+                </li>
+                <li>avere ottenuto da ciascuno e tutti i contatti inseriti sulla piattaforma il consenso all’invio di
+                    comunicazioni da parte dell’Utente per tramite di Techmaker srl, nonché tutti i consensi e le
+                    autorizzazioni necessarie secondo la legge di volta in volta applicabile;
+                </li>
+                <li>non apportare modifiche o alterare altrimenti i Servizi e non danneggiare in alcun modo l’integrità
+                    dei medesimi;
+                </li>
+                <li>non utilizzare i servizi in modo diverso da quello al quale sono stati destinati;</li>
+                <li>fuori dalle ipotesi espressamente consentite non affittare, concedere in prestito, rivendere,
+                    sub-licenziare o in altro modo distribuire i Servizi; non usare i Servizi per fornire o rendere
+                    operativi servizi di marketing, formazione e outsourcing o consulenza, o per sviluppare un prodotto
+                    che sia in concorrenza con i Servizi; non consentire a terzi l’accesso o l’utilizzo dei Servizi,
+                    salvo autorizzazione scritta di Techmakers srl.
+                </li>
+            </ul>
+            <p>5.4 Techmakers srl potrà restringere, sospendere o chiudere l’account di ogni Utente che abusi o utilizzi
+                in
+                modo improprio i Servizi. La chiusura di un account su Conta determinerà la perdita dell’accesso ai
+                Servizi.
+            </p>
+            <h3>6. SERVIZI AGGIUNTIVI</h3>
+            <p>6.1 Techmakers srl può, su richiesta, e per un prezzo che essa stessa potrà stabilire di volta in volta a
+                sua
+                esclusiva discrezione, fornire dei servizi aggiuntivi all’Utente al di là della funzionalità
+                dell'applicazione,
+                ivi compresi, in via esemplificativa ma non limitativa, il nolo di Tablet o altri terminali per il
+                check-in e altre attrezzature, la messa a disposizione di consulenti e personale per assistere l’Utente
+                nella data del suo evento e la fornitura di servizi di gestione dell’account dedicati.</p>
+            <p>6.2 Tutti i servizi aggiuntivi, che siano forniti prima, durante o dopo l’evento dell‘Utente, saranno
+                considerati parte dei Servizi e soggetti a tutti i termini e condizioni dei presenti T&C ove non
+                espressamente derogate dagli specifici contratti relativi a tali servizi aggiuntivi che si andranno, di
+                volta in volta, a perfezionare.</p>
+            <h3>7. DIRITTI DI PROPRIETÀ INTELLETTUALE</h3>
+            <p>7.1 Il Sito, i Servizi e il relativo Software sono di proprietà e sono gestiti da Techmakers srl. Tutti i
+                diritti e titoli di proprietà intellettuale sul Sito, sui Servizi e sul relativo Software sono e
+                rimarranno di Techmakers srl e/o dei suoi licenzianti.</p>
+            <p>7.2 Con i presenti Termini e Condizioni Techmakers srl concede agli Utenti il diritto non esclusivo e non
+                trasferibile di utilizzare il Software limitatamente all’utilizzo dei Servizi da parte degli Utenti.
+                L’Utente non avrà alcun diritto di modificare, adattare, o convertire il Software o creare opere
+                derivate dal Software, eccetto quanto necessario per configurare il Software mediante menù, opzioni e
+                strumenti previsti a tali fini e contenuti nei Servizi stessi. Fatto salvo quanto permesso ai sensi
+                della legge applicabile, è proibita qualunque attività di reverse engineering e ogni altra
+                estrapolazione del codice sorgente del Software. Se l’Utente vuole esercitare diritti di reverse
+                engineering al fine di assicurare l’interoperabilità conformemente alla legge applicabile, l’Utente
+                dovrà informare Techmakers srl per iscritto e consentire a Techmakes srl, a sua discrezione, di fare
+                un’offerta
+                per fornire le informazioni e l’assistenza per un corrispettivo che sarà mutualmente concordato tra le
+                parti.</p>
+            <p>7.3 Gli Utenti sono i soli titolari di ogni dato, materiale, informazione fornito ad Techmakers srl in
+                relazione all’utilizzo dei Servizi. Gli Utenti sono responsabili rispetto ad ogni contenuto fornito ad
+                Techmakers srl e ad ogni attività relativa al proprio account. Gli Utenti, per tutta la durata del
+                rapporto
+                contrattuale con Techmakers srl, concedono ad Techmekers srl licenza non esclusiva, trasferibile e
+                valida in
+                tutto il mondo di riprodurre, modificare, pubblicare o altrimenti utilizzare ogni contenuto fornito in
+                relazione all’utilizzo dei Servizi secondo quanto previsto nei presenti Termini e Condizioni.
+            </p>
+            <h3>8. DURATA E RISOLUZIONE</h3>
+            <p>8.1 I presenti Termini e Condizioni hanno effetto a decorrere dal pagamento del prezzo per il godimento
+                dei Servizi e rimarranno validi per un periodo di dodici (12) mesi. Il contratto tra Techmakers srl e
+                l’Utente si rinnoverà per un uguale periodo agli stessi termini e condizioni ove non disdettato, da una
+                delle parti, a mezzo di comunicazione per iscritto da far pervenire, all’altra parte, almeno un mese
+                prima della scadenza. Ciascuna parte avrà il diritto di recedere dal contratto in qualsiasi momento con
+                un preavviso di trenta (30) giorni all’altra parte.
+            </p>
+            <h3>9. RECESSO</h3>
+            <p>9.1 Gli Utenti dei Servizi Conta che siano qualificabili come Consumatori hanno il diritto di
+                recedere dal contratto, senza alcuna penalità e senza specificarne il motivo, entro quattordici (14)
+                giorni dal completamento della procedura di registrazione, inviando una dichiarazione
+                esplicita presso la sede di Techmakers srl tramite email. Techmakers srl provvederà a rimborsare i
+                pagamenti
+                ricevuti dagli Utenti qualificabili come Consumatori senza indebito ritardo e comunque entro quattordici
+                (14) giorni dal giorno in cui è informata della decisione del Consumatore di recedere dal contratto.
+                Qualora il Consumatore abbia chiesto di iniziare la prestazione di Servizi durante il periodo di recesso
+                sopra indicato, il Consumatore sarà tenuto a corrispondere un importo proporzionale a quanto fornito
+                fino al momento della comunicazione, da parte del Consumatore, della volontà di recedere dal
+                contratto.</p>
+            <h3>10.LIMITAZIONE DI RESPONSABILITÀ</h3>
+            <p>10.1 Techmakers non garantisce che il funzionamento del Sito o dei Servizi sia ininterrotto o privo di
+                errori.</p>
+            <p>10.2 L’Utente riconosce espressamente che Techmakers srl non è responsabile per le azioni, i contenuti,
+                le
+                informazioni i dati degli Utenti o di terze parti, e l’Utente si impegna a tenere indenne Techmakers
+                srl, i
+                suoi affiliati, i suoi amministratori, dipendenti e agenti da qualsiasi pretesa, reclamo, richiesta di
+                danni connessa a contenuti, azioni, informazioni o dati di terze parti.
+            </p>
+            <p>10.3 Techmakers srl non potrà essere in alcun modo ritenuta responsabile delle conseguenze derivanti
+                dalla
+                violazione, da parte degli Utenti, degli obblighi di cui alla sezione 5 che precede, inclusa la
+                violazione, da parte degli Utenti.
+                L’Utente si impegna a tenere indenne Techmakers srl da ogni e qualunque responsabilità derivante dalla
+                violazione, da parte dell’Utente stesso, dei presenti Termini e Condizioni, inclusa ogni violazione
+                della normativa applicabile al trattamento dei dati personali dei partecipanti, degli iscritti e degli
+                invitati agli Eventi.
+            </p>
+            <p>10.4 Techmakers srl non realizza né organizza gli Eventi. Pertanto, ogni forma di responsabilità diretta
+                od
+                indiretta dovesse discendere dall’organizzazione o dalla partecipazione agli Eventi sarà da intendersi
+                ad esclusivo carico degli organizzatori o dei partecipanti agli Eventi.</p>
+            <p>10.5 Nulla di quanto stabilito nei presenti Termini e Condizioni implica in alcun modo che Techmakers srl
+                si
+                obblighi né possa essere considerata tenuta allo svolgimento di un’attività di sorveglianza preventiva
+                sulle informazioni che memorizza e trasmette, né a ricercare attivamente fatti o circostanze che
+                indichino la presenza di attività legalmente o contrattualmente illecite. Sono fatti comunque salvi i
+                diritti e le facoltà riconosciute ad Techmakers srl ai sensi della legislazione comunitaria e nazionale
+                applicabile.
+            </p>
+            <p>10.6 L’Utente riconosce che Techmakers srl non controlla i Contenuti forniti o messi a disposizione
+                dall’Utente o da terzi in relazione ai Servizi, ma che Techmakers srl e i suoi incaricati avranno il
+                diritto
+                (ma non l’obbligo) a propria esclusiva discrezione di (i) monitorare, alterare, modificare o rimuovere
+                qualsiasi Contenuto dell’utente, in tutto o in parte e/o (ii) annullare e cessare il diritto dell’Utente
+                a usare i Servizi in qualsiasi momento (con o senza preavviso) per qualsiasi o nessuna ragione.
+            </p>
+            <p>10.7 L’Utente riconosce e conviene che Techmakers può conservare il Contenuto dell’Utente e può anche
+                divulgarlo per qualsiasi ragione, ivi compreso, a titolo esemplificativo ma non limitativo se viene
+                richiesto per legge o nella convinzione in buona fede che tale conservazione o divulgazione siano
+                ragionevolmente necessarie per: (a) ottemperare ad un procedimento giudiziario; (b) applicare i presenti
+                T&C; (c) rispondere a rivendicazioni sul fatto che qualche Contenuto dell’Utente viola i diritti di
+                terzi; e/o (d) proteggere i diritti, le proprietà o la sicurezza personale di Techmakers srl, dei suoi
+                utenti e/o del pubblico.</p>
+            <h3>11. CLAUSOLE GENERALI</h3>
+            <p>11.1 <b>Legge applicabile e foro competente</b>. I presenti Termini e Condizioni sono regolati dalla
+                legge italiana e devono essere interpretati in conformità alle leggi italiane, con esclusione delle
+                norme di diritto internazionale privato eventualmente applicabili. Qualunque controversia derivante
+                dalla interpretazione, validità o esecuzione dei presenti Termini e Condizioni o comunque inerente al o
+                derivante dagli stessi che dovesse insorgere tra Techmakers srl e gli Utenti, sarà soggetta alla
+                competenza
+                esclusiva ed inderogabile del Tribunale di Milano.
+            </p>
+            <p>11.2 <b>Risoluzione extragiudiziale delle controversie</b>. Gli Utenti siano qualificabili come
+                Consumatori
+                hanno facoltà di promuovere la risoluzione extragiudiziale delle controversie inerenti il rapporto di
+                consumo ove previsto dalle legislazioni di volta in volta applicabili.</p>
+            <p>11.3 <b>Integrazioni e modifiche</b>. I presenti Termini e Condizioni costituiscono l’intero accordo tra
+                le
+                parti e sostituiscono qualsiasi precedente o contemporanea condizione, accordo o dichiarazione, sia
+                verbale che scritta, relativa alla materia che ne forma oggetto. Techmakers srl si riserva espressamente
+                il
+                diritto di modificare o integrare i presenti Termini e Condizioni, ed eventuali modifiche o integrazioni
+                ai medesimi saranno pubblicati sul Sito. Gli Utenti saranno vincolati al rispetto di tali modifiche o
+                integrazioni successivamente alla loro pubblicazione sul Sito, salvo il diritto di risolvere il
+                contratto con Techmakers srl con preavviso di trenta (30) giorni da inviare tramite email al seguente
+                indirizzo di posta elettronica – support@techamkers.io. In mancanza di tale comunicazione, le modifiche
+                ai presenti
+                Termini e Condizioni si intenderanno accettate.</p>
+            <p>11.4 I presenti Termini e Condizioni e qualsiasi diritto e obbligazione in essi previsto o da essi
+                derivante non potrà essere ceduto dagli Utenti senza il preventivo consenso scritto di Techmakers
+                srl.</p>
+            <p>11.5 Qualora una qualsiasi disposizione dei presenti Termini e Condizioni sia dichiarata illecita, nulla,
+                o inefficace, tale disposizione sarà modificata in modo da renderla efficace o altrimenti eliminata, e
+                non inficerà la validità e l’efficacia delle restanti disposizioni.</p>
+            <p>11.6 Per qualunque informazione e assistenza in merito ai Servizi o all’utilizzo del Sito, l’Utente è
+                invitato a contattare Techmakers srl al seguente indirizzo email: support@techmakers.io.</p>
+            <p>Genova, 17 Luglio 2017</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <p>© 2015 <a href="http://techmakers.io">Techmakers srl</a> | P.iva 08874730966<br> REA CCIAA Milano n.
+                    2054539 </p><br>
+                <a href="https://www.facebook.com/techmakers.io/" title="Techmakers Facebook" ><i
+                        class="fa fa-fw fa-facebook"></i></a>
+                <a href="https://twitter.com/techmakers_io" title="Techmakers Twitter" ><i
+                        class="fa fa-fw fa-twitter"></i></a>
+                <a href="https://github.com/techmakers/rotilio.cc" title="Techmakers Github" ><i
+                        class="fa fa-fw fa-github"></i></a>
+                <p><a href="termini-d-uso-di-conta.html">Termini e condizioni</a> - <a href="privacy.html" title="Privacy">Privacy</a></p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="lib/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>

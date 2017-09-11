@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="La prima applicazione per controllare gli afflussi negli eventi a numero chiuso! Conteggio sincronizzato di entrate e uscite e gestione completa dell'evento.">
+    <meta name="author" content="Techmakers S.r.l.">
+
+    <link rel="icon" href="img/logo.png">
+    <title>Conta - La prima App per gestire l'afflusso nei tuoi eventi!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101546095-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) {
+                z._.push(c)
+            }, $ = z.s =
+                    d.createElement(s), e = d.getElementsByTagName(s)[0];
+            z.set = function (o) {
+                z.set._.push(o)
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute("charset", "utf-8");
+            $.src = "https://v2.zopim.com/?4mWCOhTZkvtJza92XbR7FDRazylxzBJu";
+            z.t = +new Date;
+            $.type = "text/javascript";
+            e.parentNode.insertBefore($, e)
+        })(document, "script");
+    </script>
+    <!--End of Zendesk Chat Script-->
+
+</head>
+
+<body id="page-top">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <img id="navbar-logo" alt="logo conta" src="img/ContaW.png" style="margin-top: -3px;"/><img
+                id="navbar-logo-mobile" alt="logo conta" src="img/ContaY.png" style="display: none;"/><img
+                id="navbar-logo-nero" alt="logo conta" src="img/ContaB.png" style="display: none;"/><a
+                class="navbar-brand page-scroll" href="#page-top">Gestisci ogni ingresso</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#vantaggi"
+                       title="scopri i vantaggi di Conta, l'applicazione che conta le persone">Vantaggi</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#utilizzo" title="usare Conta">Usare <i>Conta</i></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#pricing-demo" title="attivazione dell'applicazione Conta">Attiva il
+                        servizio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#eventi" title="scopri tutti gli eventi per cui puoi uasere Conta">Eventi
+                        indicati</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contacts">Contatti</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner center-block">
+                        <h1 style="font-size: 50px;" title="la prima applicazione contapersone per eventi">Conta è la prima App che permette di gestire e
+                            controllare l'afflusso di
+                            persone ai tuoi eventi!
+                        </h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href='https://play.google.com/store/apps/details?id=com.techmakers.conta&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                                        class="img-responsive" alt='Contapersone disponibile su Google Play'
+                                        src='img/google-play-badge.png'/></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href='https://itunes.apple.com/us/app/conta/id1261298959?l=it&ls=1&mt=8'><img
+                                        class="img-responsive" alt='app contapersone iphone'
+                                        src='img/app-store-badge.png'/></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href='http://conta.techmakers.io'><img class="img-responsive"
+                                                                          alt='web app contapersone'
+                                                                          src='img/WebM-badge.png'/></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 title="gestione di più ingressi ad eventi">Gli addetti alla sicurezza potranno visualizzare in tempo reale il numero di persone presenti all'evento, anche in eventi con più ingressi e uscite</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait white">
+                        <div class="device">
+                            <div class="screen">
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                <img src="img/demo-screen-1.png" alt="applicazione Conta screenshot"
+                                     class="img-responsive">
+                            </div>
+                            <div class="button">
+                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="vantaggi" class="features">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2 title="i vantaggi e le potenzialità dell'applicazione Conta, che permette di contare le persone agli eventi">
+                            Vantaggi e potenzialità</h2>
+                        <p class="text-muted">Una semplice App per un controllo completo</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.png" class="img-responsive"
+                                         alt="app contapersone">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <img class="iconsapp" src="img/icons/connection.png"
+                                         alt="connection connessione conta"/>
+                                    <h3 title="Conta permette di avere i dati di afflusso all'evento in tempo reale">
+                                        Sempre sincronizzati</h3>
+                                    <p class="text-muted">Il <b>numero totale</b> di persone entrate è visualizzato <b>in
+                                        tempo reale</b> da tutti gli accessi!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <img class="iconsapp" src="img/icons/alert.png" alt="allarme alert soglia"/>
+                                    <h3>Conteggio con allerta</h3>
+                                    <p class="text-muted">Possibilità di impostare <b>allerte</b> avvicinandosi al <b>numero
+                                        massimo</b> di persone nell'evento!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <img class="iconsapp" src="img/icons/phone.png" alt="iphone phone counter"/>
+                                    <h3>Basta uno smartphone</h3>
+                                    <p class="text-muted">Non servono strumenti in più: basta uno smartphone per contare
+                                        con questa <b>App universale</b>!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <img class="iconsapp" src="img/icons/positions.png"
+                                         alt="positions posizione controllo"/>
+                                    <h3>Visione completa</h3>
+                                    <p class="text-muted">Il gestore dell'evento accede alla <b>visione da remoto</b> di
+                                        ogni ingresso e della <b>posizione</b> di tutti gli steward!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="utilizzo" class="cta">
+    <div class="overlay">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="container carousel-inner" style="height:100% !important;">
+                <div class="item active">
+                    <div class="centerer">
+                        <div class="helper">
+                            <div class="content">
+                                <p class="content-title" style="text-align:left;">Un'unica App per gestori e
+                                    steward</p>
+                                <p class="content-text">
+                                    Il servizio offre due funzionalità: la creazione e gestione di
+                                    eventi, per i gestori, o il conteggio delle persone alle entrate, per gli steward.
+                                    Scegli la modalità di utilizzo attraverso l'intuitivo pulsante.<br><br>
+                                </p>
+                                <p class="content-title" style="text-align:right;">Conteggio sempre sincronizzato</p>
+                                <p class="content-text ">
+                                    Accedere in contemporanea al contatore delle persone nella tua festa
+                                    non è mai stato così semplice: comunica a chi controlla le entrate il
+                                    codice invito unico per il tuo evento, e il conteggio rimarrà sincronizzato!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper">
+                            <div class="content">
+                                <p class="content-title" style="text-align:center;">Crea e gestisci i tuoi eventi</p>
+                                <p class="content-text">Per impostare un nuovo evento, inserisci le informazioni base
+                                    come nome, data e ora di inizio. Conferma con crea o azzera le modifiche con
+                                    annulla.
+                                </p>
+                                <p class="content-text">
+                                    Ad ogni evento corrisponde un numero limite di persone e una soglia di allerta. Puoi
+                                    aggiungere le diverse entrate al tuo evento per una migliore organizzazione.
+                                    Nella sezione in basso trovi l'archivio dei tuoi eventi.
+                                </p>
+                                <p class="content-text" style="text-align:center;">Per eliminare un profilo, premi
+                                    <b>E</b>.<br>
+                                    Per modificare le impostazioni, premi <b>M</b>.<br>
+                                    Inizia il conteggio con <b>C</b>.<br>
+                                </p>
+                                <p class="content-text" style="text-align:center;">
+                                    <i>Nella modalità conteggio trovi il <b>codice di invito</b> unico per il tuo
+                                        evento!</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper helper-img">
+                            <div class="content content-img">
+                                <div class="img-guida" id="img1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper helper-img">
+                            <div class="content content-img">
+                                <div class="img-guida" id="img2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper">
+                            <div class="content">
+                                <p class="content-title" style="text-align:center;">Aggiorna il numero di passaggi</p>
+                                <p class="content-text "> In modalità conteggio, basterà cliccare sul tasto verde
+                                    per aggiungere una nuova persona ingresso e quello rosso per una nuova uscita.
+                                </p>
+                                <p class="content-text ">
+                                    Seleziona l'ingresso che stai controllando, attraverso il menù a tendina,
+                                    scegliendola tra quelle dell'evento.
+                                    In basso verrà visualizzato il codice invito del tuo evento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper helper-img">
+                            <div class="content content-img">
+                                <div class="img-guida" id="img3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper">
+                            <div class="content">
+                                <p class="content-title" style="text-align:center;">Controlla l'afflusso totale</p>
+                                <p class="content-text ">Iniziato a contare, avrai davanti la situazione globale delle
+                                    presenze al tuo evento.
+                                    Controlla in tempo reale il numero totale di persone entrate, il numero massimo e il
+                                    numero di persone rimaste.<br>
+                                </p>
+                                <p class="content-text ">
+                                    Superata la soglia di allerta, la schermata si colorerà di giallo.
+                                    Al superamento del numero massimo di persone consentite, scatterà l'allarme con la
+                                    schermata rossa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper helper-img">
+                            <div class="content content-img">
+                                <div class="img-guida" id="img4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper">
+                            <div class="content">
+                                <p class="content-title" style="text-align:center;">Accedi a un evento come
+                                    steward</p>
+                                <p class="content-text ">Nella seconda modalità, Conta offre la possibilità di
+                                    "connettersi" a eventi già creati come steward. Inserisci nella prima sezione il
+                                    codice invito dell'evento e conferma.
+                                </p>
+                                <p class="content-text ">
+                                    Nella seconda sezione della schermata iniziale, vengono visualizzati tutti gli
+                                    eventi a cui si è connessi. <i> Premi il tasto conta per iniziare a contare le
+                                    entrate relative all'evento!</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="centerer">
+                        <div class="helper helper-img">
+                            <div class="content content-img">
+                                <div class="img-guida" id="img5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section id="pricing-demo" class="features">
+    <div class="pricing-bg">
+        <div class="overlay">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading" id="pricing-heading">
+                            <h2 id="pricingTitle">Ottieni Conta e acquista il tuo evento su misura</h2>
+                            <p id="pricingDesc">Scegli l'opzione perfetta per le tue esigenze</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row price-row">
+
+                    <div class="col-sm-3">
+                        <div class="price-col demo-col">
+                            <div class="slider"></div>
+                            <p class="price-title">Iscriviti Gratis</p>
+                            <div class="price-desc">
+                                <br><br><br>
+                                <p style="margin-top: 30px;">RICEVI IN OMAGGIO</p>
+                                <ul>
+                                    <li>Un evento della durata di 24 ore.</li>
+                                    <li>2 accessi per steward al tuo evento di prova.</li>
+                                </ul>
+                                <br>
+                                <a href="http://conta.techmakers.io">
+                                    <div class="btn btn-outline btn-xl">PROVALO SUBITO</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="price-col">
+                            <div class="slider"></div>
+                            <p class="price-title">Attiva Conta</p>
+                            <p class="price-euros">300 €</p>
+                            <div class="price-desc">
+
+                                <p>SBLOCCA PER SEMPRE</p>
+                                <ul>
+                                    <li>L'accesso all'app <i>come admin</i> da qualsiasi dispositivo.</li>
+                                    <li>Un primo evento con 4 accessi steward <i>gratuiti</i>.</li>
+                                    <li>Dopodichè ti basterà pagare 1 euro per aggiungere steward!</li>
+                                </ul>
+                                <br>
+                                <div style="position: absolute; left: 50%; bottom:6px;">
+                                    <div class="pay-btn">
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="TRFH6C48ZTVEE">
+                                            <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="price-col">
+                            <div class="slider"></div>
+                            <p class="price-title">Aggiungi Steward</p>
+                            <p class="price-euros">2 €</p>
+                            <div class="price-desc">
+
+                                <p><i>OGNI 2 STEWARD</i></p>
+                                <ul>
+                                    <li>Seleziona la quantità di steward desiderata.</li>
+                                    <li>Sblocca l'accesso al tuo evento di 24 ore per il numero scelto di utenti!</li>
+                                </ul>
+                                <br>
+                                <div style="position: absolute; left: 50%; bottom:6px;">
+                                    <div class="pay-btn">
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="5K8TJY37VELFY">
+                                            <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="price-col">
+                            <div class="slider"></div>
+                            <p class="price-title">Offerta Lancio</p>
+                            <p class="price-euros">40 €</p>
+                            <div class="price-desc">
+
+                                <p>IL PACCHETTO CONTIENE:</p>
+                                <ul>
+                                    <li>50 accessi per i tuoi steward - <i>1 € a accesso</i>.</li>
+                                    <li>Completa libertà nella distribuzione dei codici: scadenza dopo un anno
+                                        dall'acquisto.
+                                    </li>
+                                </ul>
+                                <br>
+                                <div style="position: absolute; left: 50%;bottom:6px;">
+                                    <div class="pay-btn">
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="EYP6ZBW5CJUZL">
+                                            <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="eventi" class="contact bg-primary">
+    <div class="container">
+        <h3>Il servizio Conta è adatto per qualsiasi tipo di evento: concerti, feste di piazza, manifestazioni
+            sportive, mercatini. Il suo utilizzo è consigliato per una copertura sicura ed efficiente di tutte le
+            entrate, anche con un grande numero di varchi.</h3>
+        <hr/>
+        <br>
+        <h4><i>L'App è nata per facilitare l'adattamento alle nuove norme di sicurezza previste per eventi
+            pubblici - Circolare del Ministero dell'Interno del 07/06/2017</i></h4>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="color:lightgrey">
+                <div class="h1 page-header"><span>Contattaci</span> <span>siamo pronti a tutto (o quasi !)</span></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <iframe width="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.6435514208284!2d8.939177869813834!3d44.411764453634206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d343eeb7c956d5%3A0x10288bc1c74b89eb!2sVia+Palestro%2C+45%2C+16122+Genova!5e0!3m2!1sit!2sit!4v1489060930591"
+                        height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-md-4" itemscope="" itemtype="http://schema.org/Organization">
+                <h2>Techmakers srl</h2>
+                <p itemprop="address">
+                    <b>Sede Operativa:</b> Via Palestro n. 45ar, Genova<br>
+                    <b>Sede Legale:</b> Via Privata Fratelli Gabba n. 5, Milano
+                </p>
+                <p itemprop="telephone"><i class="fa fa-phone"></i>
+                    <b title="Phone">Tel</b>: +39 010 8315289</p>
+                <p itemprop="email"><i class="fa fa-envelope-o"></i>
+                    <b title="Email">E-mail</b>: <a href="mailto:info@techmakers.io" title="techmakers email">info@techmakers.io</a>
+                </p>
+                <hr style="border-color: grey">
+                <br>
+                <p>© 2015 <a href="http://techmakers.io">Techmakers srl</a> | P.iva 08874730966<br> REA CCIAA Milano n.
+                    2054539 </p><br>
+                <a href="https://www.facebook.com/techmakers.io/" title="Techmakers Facebook"><i
+                        class="fa fa-fw fa-facebook"></i></a>
+                <a href="https://twitter.com/techmakers_io" title="Techmakers Twitter"><i
+                        class="fa fa-fw fa-twitter"></i></a>
+                <a href="https://github.com/techmakers/rotilio.cc" title="Techmakers Github"><i
+                        class="fa fa-fw fa-github"></i></a>
+                <p><a href="termini-d-uso-di-conta.html">Termini e condizioni</a> - <a href="privacy.html"
+                                                                                       title="Privacy">Privacy</a></p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="lib/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>
