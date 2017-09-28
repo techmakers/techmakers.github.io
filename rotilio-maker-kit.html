@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sperimenta e impara a sviluppare applicazioni IoT, con Rotilio Maker hai una piattaforma completa dove puoi sperimentare e realizzare prototipi.">
+    <meta name="author" content="">
+
+    <title>Techmakers|Rotilio Maker Kit</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){
+            z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='https://v2.zopim.com/?4mWCOhTZkvtJza92XbR7FDRazylxzBJu';z.t=+new Date;$.
+                    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zendesk Chat Script-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101546095-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" style="width: 83%">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" title="Techmakers home"><img id="logo" src="img/Logo.png" alt="Logo Techmakers" ></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html" title="Techmakers home">Home</a>
+                    </li>
+                    <!-- <li>
+                         <a href="about.html">Azienda</a>
+                     </li> -->
+                    <li>
+                        <a href="industria4-0.html" title="L'industria 4.0 secondo Techmakers">Industria 4.0</a>
+                    </li>
+                    <li>
+                        <a href="smart-home.html" title="La smart home secondo techmakers">Smart Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" title="prodotti" class="dropdown-toggle" data-toggle="dropdown">Prodotti <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="rotilio-pro.html" title="rotilio pro per l'industria 4.0">Rotilio Pro</a>
+                            </li>
+                            <!-- <li>
+                                <a href="tattilio.html">Tattilio</a>
+                            </li>
+                            <li>
+                                <a href="rotilio-all-in-one.html">Rotilio All in One</a>
+                            </li>-->
+                            <li>
+                                <a href="rs485-relays-array.html" title="RS485 relays array">RS485 Relays Array</a>
+                            </li>
+                            <li>
+                                <a href="rotilio-power-meter.html" title="Rotilio power meter">Rotilio Power Meter</a>
+                            </li>
+                            <li>
+                                <a href="rotilio-maker.html" title="Rotilio Maker per gli sviluppatori">Rotilio Maker</a>
+                            </li>
+                            <li>
+                                <a href="rotilio-maker-kit.html" title="Rotilio Maker Kit per gli sviluppatori">Rotilio Maker Kit</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="sviluppatori.html">Sviluppatori</a>
+                    </li>-->
+                    <li>
+                        <a href="piattaforma-software-iot.html" title="Pattaforma software per la gestione di dispositivi iot">Piattaforma</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contatti">Contatti</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/techmakers.io/" title="Techmakers Facebook" target="_blank">News</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Rotilio Maker -->
+        <div class="row">
+            <div class="col-lg-12" itemscope itemtype="http://schema.org/Product">
+                <h1 class="page-header"><span class="tmcolor" itemprop="name">Rotilio Maker Kit</span> <span class="tmgreencolor">tutto per l'IoT</span></h1>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-sm-12">
+                <p style="font-size:18px;color:grey;" class="respira-dopo">Questo Kit comprende tutte le componenti necessarie per creare un prodotto IoT connesso, alimentato e installato saldamente nel punto ideale.</p>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Prodotti/RotilioMakerKit.png" alt="Rotilio Maker photon">
+                    <p>Rotilio Maker</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Prodotti/photon.png" alt="Rotilio Maker photon">
+                    <p>Photon (WiFi)</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Prodotti/Scatola.png" alt="Rotilio Maker photon">
+                    <p>Scatola preforata</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                <img class="img-responsive" src="img/Prodotti/Scatola3.png" alt="Rotilio Maker photon">
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Prodotti/Scatola2.png" alt="Rotilio Maker photon">
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Prodotti/Flangia.png" alt="Rotilio Maker photon">
+                </div>
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col-sm-8 text-center">
+                    <img class="img-responsive" src="img/Prodotti/RotilioMakerKit.png" alt="Rotilio Maker photon">
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="col-xs-6">Rotilio Maker</h3>
+                        <h3 class="col-xs-6 text-center">69,00€<br><span style="font-size: 12px;">IVA esclusa</span></h3>
+                        <ul class="col-xs-12">
+                            <li>Dimensioni scheda in millimetri: 70x70x25 (LxPxH)</li>
+                            <li>Sensori multipli: temperatura, umidità, pressione, luce e posizione</li>
+                            <li>Attuatori multipli: interrutore, relè, cicalino e led</li>
+                            <li>Comunicazione RS485</li>
+                            <li>Alimentazione: 5V</li>
+                            <li>Connessione USB (alimentazione supplementare, debug e diagnostica)</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id='product-component-81054f4ae8a'></div>
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+
+                            (function () {
+                                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                                if (window.ShopifyBuy) {
+                                    if (window.ShopifyBuy.UI) {
+                                        ShopifyBuyInit();
+                                    } else {
+                                        loadScript();
+                                    }
+                                } else {
+                                    loadScript();
+                                }
+
+                                function loadScript() {
+                                    var script = document.createElement('script');
+                                    script.async = true;
+                                    script.src = scriptURL;
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                    script.onload = ShopifyBuyInit;
+                                }
+
+                                function ShopifyBuyInit() {
+                                    var client = ShopifyBuy.buildClient({
+                                        domain: 'techmakers-io.myshopify.com',
+                                        apiKey: 'd8b69dfa3a65dc313a9baaa73e6ab2d1',
+                                        appId: '6',
+                                    });
+
+                                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                        ui.createComponent('product', {
+                                            id: [6186447815],
+                                            node: document.getElementById('product-component-81054f4ae8a'),
+                                            moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+                                            options: {
+                                                "product": {
+                                                    "variantId": "all",
+                                                    "width": "240px",
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": false,
+                                                        "title": false,
+                                                        "variantTitle": false,
+                                                        "price": false,
+                                                        "description": false,
+                                                        "buttonWithQuantity": false,
+                                                        "quantity": false
+                                                    },
+                                                    "text": {
+                                                        "button": "AGGIUNGI AL CARRELLO"
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "text-align": "left",
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0",
+                                                                "margin-bottom": "50px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "title": {
+                                                            "font-size": "26px"
+                                                        },
+                                                        "price": {
+                                                            "font-size": "18px"
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        },
+                                                        "compareAt": {
+                                                            "font-size": "15px"
+                                                        }
+                                                    }
+                                                },
+                                                "cart": {
+                                                    "contents": {
+                                                        "button": true
+                                                    },
+                                                    "styles": {
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "footer": {
+                                                            "background-color": "#ffffff"
+                                                        }
+                                                    }
+                                                },
+                                                "modalProduct": {
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "variantTitle": false,
+                                                        "buttonWithQuantity": true,
+                                                        "button": false,
+                                                        "quantity": false
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0px",
+                                                                "margin-bottom": "0px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        }
+                                                    }
+                                                },
+                                                "toggle": {
+                                                    "styles": {
+                                                        "toggle": {
+                                                            "background-color": "#fa4f50",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "count": {
+                                                            "font-size": "13px"
+                                                        }
+                                                    }
+                                                },
+                                                "productSet": {
+                                                    "styles": {
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    });
+                                }
+                            })();
+                            /*]]>*/
+                        </script>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id='product-component-8d8a37cf7d1'></div>
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+
+                            (function () {
+                                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                                if (window.ShopifyBuy) {
+                                    if (window.ShopifyBuy.UI) {
+                                        ShopifyBuyInit();
+                                    } else {
+                                        loadScript();
+                                    }
+                                } else {
+                                    loadScript();
+                                }
+
+                                function loadScript() {
+                                    var script = document.createElement('script');
+                                    script.async = true;
+                                    script.src = scriptURL;
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                    script.onload = ShopifyBuyInit;
+                                }
+
+                                function ShopifyBuyInit() {
+                                    var client = ShopifyBuy.buildClient({
+                                        domain: 'techmakers-io.myshopify.com',
+                                        apiKey: 'd8b69dfa3a65dc313a9baaa73e6ab2d1',
+                                        appId: '6',
+                                    });
+
+                                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                        ui.createComponent('product', {
+                                            id: [6186447815],
+                                            node: document.getElementById('product-component-8d8a37cf7d1'),
+                                            moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+                                            options: {
+                                                "product": {
+                                                    "buttonDestination": "checkout",
+                                                    "variantId": "all",
+                                                    "width": "240px",
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": false,
+                                                        "title": false,
+                                                        "variantTitle": false,
+                                                        "price": false,
+                                                        "description": false,
+                                                        "buttonWithQuantity": false,
+                                                        "quantity": false
+                                                    },
+                                                    "text": {
+                                                        "button": "COMPRA SUBITO"
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "text-align": "left",
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0",
+                                                                "margin-bottom": "50px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "title": {
+                                                            "font-size": "26px"
+                                                        },
+                                                        "price": {
+                                                            "font-size": "18px"
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        },
+                                                        "compareAt": {
+                                                            "font-size": "15px"
+                                                        }
+                                                    }
+                                                },
+                                                "cart": {
+                                                    "contents": {
+                                                        "button": true
+                                                    },
+                                                    "styles": {
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "footer": {
+                                                            "background-color": "#ffffff"
+                                                        }
+                                                    }
+                                                },
+                                                "modalProduct": {
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "variantTitle": false,
+                                                        "buttonWithQuantity": true,
+                                                        "button": false,
+                                                        "quantity": false
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0px",
+                                                                "margin-bottom": "0px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        }
+                                                    }
+                                                },
+                                                "toggle": {
+                                                    "styles": {
+                                                        "toggle": {
+                                                            "background-color": "#fa4f50",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "count": {
+                                                            "font-size": "13px"
+                                                        }
+                                                    }
+                                                },
+                                                "productSet": {
+                                                    "styles": {
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    });
+                                }
+                            })();
+                            /*]]>*/
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-8">
+                    <img class="img-responsive" src="img/Prodotti/Scatola.png" alt="Rotilio Maker photon">
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="img/Prodotti/RotilioMakerKit.png" id="makerkit" alt="Rotilio Maker photon">
+                    <img class="img-responsive" src="img/Prodotti/photon.png" id="makerkit" alt="Rotilio Maker photon">
+                    <img class="img-responsive"  src="img/Prodotti/Flangia.png" id="flangia" alt="Rotilio Maker Kit flangia">
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="col-xs-6">Rotilio Maker Kit</h3>
+                        <h3 class="col-xs-6 text-center">189,00€<br><span style="font-size: 12px;">IVA esclusa</span></h3>
+                        <ul class="col-xs-12">
+                            <li><a href="rotilio-maker.html">Rotilio Maker</a> di dimensioni in millimetri: 70x70x25 (LxPxH)</li>
+                            <li>Scatola preforata di dimensioni in millimetri: 100x100x400 (LxPxH)</li>
+                            <li>Flangia da muro</li>
+                            <li>Photon (WiFi)</li>
+                            <li>Alimentatore a 5V</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6" style="margin-top: 19px;">
+                        <div id='product-component-585d831ce67'></div>
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+
+                            (function () {
+                                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                                if (window.ShopifyBuy) {
+                                    if (window.ShopifyBuy.UI) {
+                                        ShopifyBuyInit();
+                                    } else {
+                                        loadScript();
+                                    }
+                                } else {
+                                    loadScript();
+                                }
+
+                                function loadScript() {
+                                    var script = document.createElement('script');
+                                    script.async = true;
+                                    script.src = scriptURL;
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                    script.onload = ShopifyBuyInit;
+                                }
+
+                                function ShopifyBuyInit() {
+                                    var client = ShopifyBuy.buildClient({
+                                        domain: 'techmakers-io.myshopify.com',
+                                        apiKey: 'd8b69dfa3a65dc313a9baaa73e6ab2d1',
+                                        appId: '6',
+                                    });
+
+                                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                        ui.createComponent('product', {
+                                            id: [12250959178],
+                                            node: document.getElementById('product-component-585d831ce67'),
+                                            moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+                                            options: {
+                                                "product": {
+                                                    "variantId": "all",
+                                                    "width": "240px",
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": false,
+                                                        "title": false,
+                                                        "variantTitle": false,
+                                                        "price": false,
+                                                        "description": false,
+                                                        "buttonWithQuantity": false,
+                                                        "quantity": false
+                                                    },
+                                                    "text": {
+                                                        "button": "AGGIUNGI AL CARRELLO"
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "text-align": "left",
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0",
+                                                                "margin-bottom": "50px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "title": {
+                                                            "font-size": "26px"
+                                                        },
+                                                        "price": {
+                                                            "font-size": "18px"
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        },
+                                                        "compareAt": {
+                                                            "font-size": "15px"
+                                                        }
+                                                    }
+                                                },
+                                                "cart": {
+                                                    "contents": {
+                                                        "button": true
+                                                    },
+                                                    "styles": {
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "footer": {
+                                                            "background-color": "#ffffff"
+                                                        }
+                                                    }
+                                                },
+                                                "modalProduct": {
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "variantTitle": false,
+                                                        "buttonWithQuantity": true,
+                                                        "button": false,
+                                                        "quantity": false
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0px",
+                                                                "margin-bottom": "0px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        }
+                                                    }
+                                                },
+                                                "toggle": {
+                                                    "styles": {
+                                                        "toggle": {
+                                                            "background-color": "#fa4f50",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "count": {
+                                                            "font-size": "13px"
+                                                        }
+                                                    }
+                                                },
+                                                "productSet": {
+                                                    "styles": {
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    });
+                                }
+                            })();
+                            /*]]>*/
+                        </script>
+                    </div>
+                    <div class="col-sm-6" id="kitbnt" style="margin-top: 19px;">
+                        <div id='product-component-ee7c56ca339'></div>
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+
+                            (function () {
+                                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                                if (window.ShopifyBuy) {
+                                    if (window.ShopifyBuy.UI) {
+                                        ShopifyBuyInit();
+                                    } else {
+                                        loadScript();
+                                    }
+                                } else {
+                                    loadScript();
+                                }
+
+                                function loadScript() {
+                                    var script = document.createElement('script');
+                                    script.async = true;
+                                    script.src = scriptURL;
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                    script.onload = ShopifyBuyInit;
+                                }
+
+                                function ShopifyBuyInit() {
+                                    var client = ShopifyBuy.buildClient({
+                                        domain: 'techmakers-io.myshopify.com',
+                                        apiKey: 'd8b69dfa3a65dc313a9baaa73e6ab2d1',
+                                        appId: '6',
+                                    });
+
+                                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                        ui.createComponent('product', {
+                                            id: [12250959178],
+                                            node: document.getElementById('product-component-ee7c56ca339'),
+                                            moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+                                            options: {
+                                                "product": {
+                                                    "buttonDestination": "checkout",
+                                                    "variantId": "all",
+                                                    "width": "240px",
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": false,
+                                                        "title": false,
+                                                        "variantTitle": false,
+                                                        "price": false,
+                                                        "description": false,
+                                                        "buttonWithQuantity": false,
+                                                        "quantity": false
+                                                    },
+                                                    "text": {
+                                                        "button": "COMPRA SUBITO"
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "text-align": "left",
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0",
+                                                                "margin-bottom": "50px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "title": {
+                                                            "font-size": "26px"
+                                                        },
+                                                        "price": {
+                                                            "font-size": "18px"
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        },
+                                                        "compareAt": {
+                                                            "font-size": "15px"
+                                                        }
+                                                    }
+                                                },
+                                                "cart": {
+                                                    "contents": {
+                                                        "button": true
+                                                    },
+                                                    "styles": {
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "footer": {
+                                                            "background-color": "#ffffff"
+                                                        }
+                                                    }
+                                                },
+                                                "modalProduct": {
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "variantTitle": false,
+                                                        "buttonWithQuantity": true,
+                                                        "button": false,
+                                                        "quantity": false
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0px",
+                                                                "margin-bottom": "0px"
+                                                            }
+                                                        },
+                                                        "button": {
+                                                            "background-color": "#fa4f50",
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "quantityInput": {
+                                                            "font-size": "13px",
+                                                            "padding-top": "14.5px",
+                                                            "padding-bottom": "14.5px"
+                                                        }
+                                                    }
+                                                },
+                                                "toggle": {
+                                                    "styles": {
+                                                        "toggle": {
+                                                            "background-color": "#fa4f50",
+                                                            ":hover": {
+                                                                "background-color": "#e14748"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#e14748"
+                                                            }
+                                                        },
+                                                        "count": {
+                                                            "font-size": "13px"
+                                                        }
+                                                    }
+                                                },
+                                                "productSet": {
+                                                    "styles": {
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    });
+                                }
+                            })();
+                            /*]]>*/
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Rotilio Maker Kit Tutorial
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>ROTILIO THERMO</h3>
+                <p>Un termostato open source, personalizzabile, economico, intelligente.Questo tutorial ti permetterà di realizzare un termostato per il riscaldamento di casa e ufficio, controllato da remoto, attraverso una App Mobile per iOS e Android.</p>
+                <p>Ecco cosa imparerai:</p>
+                <ul>
+                    <li>a scrivere software funzionale, espandibile, orientato agli ultimi standard di programmazione</li>
+                    <li>a controllare oggetti fisici mediante APP e browser WEB</li>
+                    <li>a integrare fra loro servizi WEB per creare un ecosistema funzionale e aperto</li>
+                </ul>
+                <p>Dato che il software nel mondo IoT interagisce con il mondo fisico, ecco cosa altro imparerai:</p>
+                <ul>
+                    <li>a scrivere software che considera gli <code>errori</code> del sistema</li>
+                    <li>a proteggere il sistema da eventuali errori, siano essi di lettura dell’ambiente che umani</li>
+                    <li>ad azionare meccanismi solo quando serve, senza sprechi di energia</li>
+                </ul>
+                <p>Questa è anche l’occasione per esplorare tutte le possibilità offerte da Rotilio Maker, la nostra piattaforma di sviluppo IoT basata su Photon/Electron di Particle.io.</p>
+            </div>
+            <div class="col-sm-12 text-center">
+                <div class="col-sm-3">
+                    <img src="img/TutorialGallery/particle_io_ide_with_code.png" id="thermogallery">
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/TutorialGallery/particle_io_ide_application_name.png" id="thermogallery">
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/TutorialGallery/particle_io_ide_flash.png" id="thermogallery" style="margin-top: -5px;">
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/TutorialGallery/RotilioThermoPictures.003.png" id="thermogallery">
+                </div>
+                <div class="col-sm-12 text-center">
+                <button type="button" class="btn btn-primary" id="thermotutorial"><i class="fa fa-book" aria-hidden="true"> </i> ROTILIO MAKER TUTORIAL</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div id="navfooter">
+                    <div class="col-sm-9  col-xs-12">
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="index.html" title="Techmakers home" style="color: black"><h5 style="font-size: 11pt;">Home</h5></a>
+                            <ul style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                <a href="industria4-0.html" title="L'industria 4.0 secondo Techmakers" style="color: black"><li>Industria 4.0</li></a>
+                                <a href="smart-home.html" title="La smart home secondo techmakers" style="color: black"><li>Smart Home</li></a>
+                                <!--<a href="sviluppatori.html" style="color: black"><li>Sviluppatori</li></a>-->
+                            </ul>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">
+                             <a href="about.html" style="color: black"><h5 style="font-size: 11pt;">Azienda</h5></a>
+                             <ul style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                 <a href="about.html#about" style="color: black"><li>Chi siamo</li></a>
+                                 <a href="about.html#team" style="color: black"><li>I nostri clienti</li></a>
+                                 <a href="about.html#customers" style="color: black"><li>Unisciti a noi</li></a>
+                             </ul>
+                         </div>-->
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="#" title="prodotti" style="color: black"><h5 style="font-size: 11pt;">Prodotti</h5></a>
+                            <ul class="white-text" style="list-style-type:none; margin-left: -40px; margin-bottom: 50px;">
+                                <a href="rotilio-pro.html" title="rotilio pro per l'industria 4.0" style="color: black"><li>Rotilio Pro</li></a>
+                                <!--<a href="tattilio.html" style="color: black"><li>Tattilio</li></a>
+                                <a href="rotilio-all-in-one.html" style="color: black"><li>Rotilio All in One</li></a>-->
+                                <a href="rs485-relays-array.html" title="RS485 relays array" style="color: black"><li>RS485 Realays Array</li></a>
+                                <a href="rotilio-power-meter.html" title="Rotilio power meter" style="color: black"><li>Rotilio Power Meter</li></a>
+                                <a href="rotilio-maker.html" title="Rotilio Maker per gli sviluppatori" style="color: black"><li>Rotilio Maker</li></a>
+                                <a href="rotilio-maker-kit.html" title="Rotilio Maker Kit per gli sviluppatori" style="color: black"><li>Rotilio Maker Kit</li></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="piattaforma-software-iot.html" title="Pattaforma software per la gestione di dispositivi iot" style="color: black"><h5 class="white-text" style="font-size: 11pt;">Piattaforma</h5></a>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-2">
+                            <a href="contact.html" title="Contatti" style="color: black"><h5 class="white-text" style="font-size: 11pt;">Contatti</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-center" style="padding: 10px;">
+                    <img src="img/logo-dark.png" alt="Logo techmakers" style="max-width: 100%;">
+                    <p style="max-width: 150%;">e-mail: info@techmakers.io<br>tel: +39 010 8315289</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="text-align: center;">
+                    <p>© 2015 Techmakers srl  | p.iva 08874730966<br> REA CCIAA Milano n. 2054539 </p><br>
+                    <a href="https://www.facebook.com/techmakers.io/" title="Techmakers Facebook" style="color: black;"><i class="fa fa-fw fa-facebook"></i></a>
+                    <a href="https://twitter.com/techmakers_io" title="Techmakers Twitter" style="color: black;"><i class="fa fa-fw fa-twitter"></i></a>
+                    <a href="https://github.com/techmakers/rotilio.cc" title="Techmakers Github" style="color: black;"><i class="fa fa-fw fa-github"></i></a>
+                    <p><a href="privacy.html" title="Privacy" style="color: black;">Privacy</a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

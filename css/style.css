@@ -1,7 +1,10 @@
 .tmcolor {
     color: #FA4F50;
 }
-
+div#makerkit.col-sm-4{
+    margin-left: -100px !important;
+    margin-top: 20px !important;
+}
 .tmgreencolor{
     color: #459501;
 }
@@ -63,12 +66,52 @@ div.panel-body{
 .fa.fa-circle.fa-stack-2x {
 color: #fc4f4f;
 }
+img#thermogallery{
+    max-width: 100%;
+}
+button#thermotutorial.btn.btn-primary{
+    font-size: 13px;
+    color: white;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    padding: 12px 40px;
+    margin-top: 20px;
+}
+button#indextutorial.btn.btn-primary{
+    font-size: 13px;
+    color: white;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    padding: 12px 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+button#makertutorial.btn.btn-primary{
+    font-size: 13px;
+    color: white;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    padding: 12px 40px;
+    margin-top: 55px;
+}
+img#makerkit.img-responsive{
+    margin-top: 20px;
+    margin-left: -100px;
+}
+img#flangia.img-responsive{
+    margin-top: -170px;
+    margin-left: -440px;
+}
 footer{
     background-color: whitesmoke;
 }
 @media (max-width: 800px) {
     .navbar-header {
         float: none;
+    }
+    div#makerkit.col-sm-4{
+        margin-left: -70px !important;
     }
     img#homestore{
         max-width: 40% !important;
@@ -165,6 +208,17 @@ footer{
     div#carousel-app.carousel.slide{
         max-height: 390px;
     }
+    img#makerkit.img-responsive{
+        margin-top: 10px;
+        margin-left: -80px;
+    }
+    img#flangia.img-responsive{
+        margin-top: -100px;
+        margin-left: -250px;
+    }
+    div.col-sm-6{
+        width: 50% !important;
+    }
     img#iotstore{
         margin-top: 0 !important;
         max-width: 30% !important;
@@ -186,6 +240,56 @@ footer{
 @media (max-width: 736px) and (orientation: portrait){
     img#logo{
         max-width: 15%;
+    }
+    button#makertutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 40px;
+        margin-top: 20px;
+    }
+    button#indextutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: -15px;
+    }
+    img#makerkit.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    img#flangia.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    h3.col-xs-6{
+        width: 50% !important;
+    }
+    div.col-sm-6{
+        width: 100% !important;
+    }
+    div#protesto.col-md-6{
+        margin-top: 15px;
+    }
+    div#makertesto.col-md-6{
+        margin-top: 15px;
+    }
+    div#relaytesto.col-md-6{
+        margin-top: 15px;
+    }
+    div#makerkit.col-sm-4{
+        margin-left: 0 !important;
+    }
+    div#kitbnt.col-sm-6{
+        margin-top: 0 !important;
+    }
+    h3.col-xs-6.text-center{
+        text-align: right !important;
     }
     img#iotstore{
         max-width: 40% !important;
@@ -241,6 +345,31 @@ footer{
     .col-xs-12{
         width: 125%
     }
+    button#makertutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 40px;
+        margin-top: 20px;
+    }
+    button#indextutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    img#makerkit.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    img#flangia.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
     img#logo{
         max-width: 10%;
     }
@@ -273,6 +402,23 @@ footer{
     div#carousel-app.carousel.slide{
         max-height: 1110px;
     }
+    img#makerkit.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    img#flangia.img-responsive{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    button#indextutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
 }
 @media (max-width: 375px){
     div#carousel-app.carousel.slide{
@@ -280,6 +426,24 @@ footer{
     }
     img#logo{
         max-width: 18%;
+    }
+    button#makertutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px 40px;
+        margin-top: 20px;
+    }
+    button#indextutorial.btn.btn-primary{
+        font-size: 13px;
+        color: white;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        padding: 12px;
+        margin-left: -15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 }
 @media (max-width: 320px) {
