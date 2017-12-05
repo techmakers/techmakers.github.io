@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>step-04-lettura-temperatura</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p><a href="README.md">Rotilio thermo - termostato open source</a> passo 4 di 7</p>
+
+<h2 id="toc_0">Stabilizzare la lettura della temperatura</h2>
+
+<h3 id="toc_1">Prossimi passi</h3>
+
+<p>Ci sono cose che si &quot;possono&quot; fare, ma altre che si &quot;devono&quot; fare.</p>
+
+<p>Quello che &quot;possiamo&quot; fare ad esempio potrebbe essere di pubblicare lo stato del sistema ogni volta che c&#39;è una variazione.</p>
+
+<p>Ad esempio potremmo inviare sul cloud un segnale ogni volta che il relè passa da A a B e viceversa, informando così un APP o un utente.</p>
+
+<p>Quello che &quot;dobbiamo&quot; fare sono altre cose molto importanti.</p>
+
+<p>La prima cosa da fare è ottimizzare il sistema di regolazione.</p>
+
+<p>Facciamo un ipotesi:</p>
+
+<ul>
+<li>temperatura desiderata: 23.0 °C</li>
+<li>temperatura rilevata: 23.0 °C</li>
+</ul>
+
+<p>In questo caso, la temperatura rilevata è pari a quella desiderata, il relè sarà quindi in posizione B.</p>
+
+<p>La risoluzione della lettura del nostro sensore è di 0.1 °C.</p>
+
+<p>Se al loop successivo (30 secondi dopo) la temperatura è scesa di 0.1°C il nostro sensore la rileva e il relè passa in posizione &quot;A&quot; per iniziare a scaldare.</p>
+
+<p>Se dopo altri 30 secondi, altro loop, la temperatura risale di 0.1°C e torna quindi a 23.0°C ecco che il nostro relè torna in posizine B.</p>
+
+<p>Se la temperatura rilevata continua ad oscillare di 0.1°C rischiamo di accendere e spegnere il riscaldamento ogni 30 secondi, rischiando di:</p>
+
+<ul>
+<li>danneggiare la calderina</li>
+<li>sprecare energia, quindi gas</li>
+</ul>
+
+<p>Occorre trovare una soluzione al problema, ma facciamo una piccola riflessione.</p>
+
+<p>Il sistema che stiamo costruendo è un sistema a retroazione.</p>
+
+<p>Il feedback è dato dalla temperatura rilevata. L&#39;errore è la differenza tra temperatura desiderata e temperatura rilevata.</p>
+
+<p>Se l&#39;errore è &gt; 0 allora chiudiamo il circuito di controllo della calderina, altrimenti lo apriamo.</p>
+
+<p>La nostra regolazione è a due stati discreti, senza valori intermedi.
+Per questo, la teoria della regolazione, tanto ben illustrata in questo interessante documento <a href="">http://www.unife.it/ing/lm.meccanica/insegnamenti/dinamica-controllo-diagnosi-di-sistemi-b/materiale-didattico/Controllori_PID.pdf</a>, non è applicabile.</p>
+
+<p>Quello che però possiamo fare però sono due cose:</p>
+
+<ol>
+<li><p>stabilizzare la lettura della temperatura, in modo da evitare oscillazioni non volute, dovute a: instabilità del sensore, apertura di finestre vicino al sensore, passaggi di cose molto calde vicino al sensore e così via.</p></li>
+<li><p>proteggere il ciclo di accensione e spegnimento introducendo dei ritardi in modo da impedire l&#39;accensione subito dopo uno spegnimento.</p></li>
+</ol>
+
+<h3 id="toc_2">Stabilizzare la lettura della temperatura</h3>
+
+<p>La cosa più semplice per raggiungere questo obiettivo è quella di calcolare la temperatura media di un periodo di tempo, così da rilevare reali variazioni significative della temperatura.</p>
+
+<p>Un buon sistema è quello di tenere in memoria le ultime N letture di temeperatura e usare la media di queste letture come valore in ingresso alla funzione di regolazione.</p>
+
+<p>Occorre quindi:</p>
+
+<ol>
+<li>predisporre un array di <code>double</code> dove memorizzare le ultime N letture</li>
+<li>modificare la funzione di lettura temperatura che: 
+
+<ol>
+<li>scali (shiftare) le temperature indietro di una posizione ad ogni nuova lettura</li>
+<li>memorizzi la nuova nell&#39;ultima posizione</li>
+<li>calcoli la media e la memorizzi nella variabile <code>T</code></li>
+</ol></li>
+</ol>
+
+<p>Ipotizzando di eseguire la media su 10 letture, con un loop di 30 secondi, il valore medio della temperatura corrisponderà alla media degli ultimi 300 secondi, ovvero cinque minuti.</p>
+
+<p>Con un po&#39; di sperimentazione si arriverà a capire se 10 letture sono troppe (sistema troppo lento) o troppo poche (sistema troppo sensibile).</p>
+
+<p>Dipende molto dalla velocità con cui l&#39;ambiente si scalda o si raffredda.</p>
+
+<p>Vediamo di seguito un implementazione possibile.</p>
+
+<p>Primo punto, predisponiamo l&#39;array dove andremo a memorizzare le ultime 10 temperature</p>
+
+<div><pre><code class="language-none">#define READINGS_COUNT 10        // here we can setup the number of readings we want to store
+#define BLANK_VALUE -9999        // this will be used to fill the temperature history array with a known initial value 
+double temperatureHistory[READINGS_COUNT] ; // here we will store the temperature history</code></pre></div>
+
+<p>Predisponiamo anche la funzione che inizializza il nostro array</p>
+
+<div><pre><code class="language-none">// this will be called in the setup or every time we want to clean the temperature history reading
+void temperatureHistoryInit(){
+    for (int i = 0; i &lt; arraySize(temperatureHistory); i++) {
+        temperatureHistory[i] = BLANK_VALUE ;
+    }
+}</code></pre></div>
+
+<p>Questa è la funzione che memorizza la temperatura nell&#39;array.</p>
+
+<p>Alla prima lettura di, ad esempio 20°C, il nostro array sarà una cosa del genere:</p>
+
+<div><pre><code class="language-none">20,20,20,20,20,20,20,20,20,20</code></pre></div>
+
+<p>Alla seconda lettura di, ad esempio 20.5 °C, il nostro array sarà una cosa del genere:</p>
+
+<div><pre><code class="language-none">20,20,20,20,20,20,20,20,20,20.5</code></pre></div>
+
+<p>Alla terza lettura, di 20.6, avremo quindi:</p>
+
+<div><pre><code class="language-none">20,20,20,20,20,20,20,20,20.5,20.6 </code></pre></div>
+
+<div><pre><code class="language-none">void temperatureHistoryStore(double t){
+
+    int lastIndex = READINGS_COUNT - 1 ;
+
+    // the first time this function will run, we fill the array with the new t value
+    for (int i = 0; i &lt;= lastIndex; i++) {
+        if (temperatureHistory[i] == BLANK_VALUE) temperatureHistory[i] = t ;
+    }
+
+    // shift all the elements to the left, loosing the first one each time
+    for (int i = 0; i &lt; lastIndex; i++) {
+        temperatureHistory[i] = temperatureHistory[i+1] ;
+    }
+
+    // store new temperature in the last array position
+    temperatureHistory[lastIndex] = t ;
+
+}</code></pre></div>
+
+<p>La funzione che calcola la media delle 10 temperature</p>
+
+<div><pre><code class="language-none">double temperatureHistoryCalcAverage(){
+    
+    // sum all values in the array
+    double tempSum = 0 ;
+    for (int i = 0; i &lt; READINGS_COUNT; i++) {
+        double t = temperatureHistory[i] ;
+        tempSum = tempSum + temperatureHistory[i] ;
+    }
+    
+    // calulating average temperature
+    double average = tempSum / READINGS_COUNT ;
+    
+    // returning rounded value of average
+    return round(average*10)/10.0 ;
+
+}</code></pre></div>
+
+<p>infine occorre modificare la procedura di setup aggiungendo la chiamata alla funzione <code>temperatureHistoryInit</code>, come segue:</p>
+
+<div><pre><code class="language-none">void setup(){
+
+    temperatureHistoryInit() ;
+
+    ...
+
+}</code></pre></div>
+
+<p>per concludere, modifichiamo la funzione <code>loop</code> così da utilizzare le precedenti funzioni:</p>
+
+<div><pre><code class="language-none">void loop(){
+    
+    double lastT = readTemperatureFromSensor() ;  // acquire actual temperature
+    temperatureHistoryStore(lastT) ;              // store last temperature reading
+    T = temperatureHistoryCalcAverage() ;         // calc temperature average
+    
+   [...]
+   </code></pre></div>
+
+<p>Potete scaricare il codice modificato con la stabilizzazione della lettura della temperatura, cliccando qui: <a href="https://github.com/techmakers/rotiliothermo/blob/master/firmware/rotiliothermo_step04.ino">rotiliothermo_step04.ino</a>.</p>
+
+<p><a href="step-03-invio-comandi.md">&lt; Prev Invio comandi</a>        <div style="align:left;"><a href="step-05-ciclo-accensione.md">Next Ciclo accensione&gt;</a></div></p>
+
+
+
+
+</body>
+
+</html>

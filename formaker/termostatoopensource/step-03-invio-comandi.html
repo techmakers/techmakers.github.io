@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>step-03-invio-comandi</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p><center><a href="README.html">Rotilio thermo - termostato open source</a> passo 3 di 7 </center></p>
+
+<h2 id="toc_0">Inviare comandi al dispositivo e test software, hardware del termostato opensource</h2>
+
+<h3 id="toc_1">Inviare comandi al dispositivo</h3>
+
+<p>Per poter impostare il modo di funzionamento del nostro dispositivo occorre prevedere la possibilità di inviargli le impostazioni di accensione o meno del riscaldamento e la temperatura desiderata.</p>
+
+<p>Questo si ottiene creando due funzioni distinte, con lo scopo di modificare il valore delle variabili <code>heaterOn</code> e <code>Ts</code>.</p>
+
+<p>Iniziamo con scrivere le due apposite funzioni, che riceveranno in input il nuovo valore da impostare nelle rispettive variabili.</p>
+
+<p>La funzione per impostare l&#39;accensione del riscaldamento</p>
+
+<div><pre><code class="language-none">int setHeaterMode(String _onoff){
+    
+    // cast from String to integer
+    int onoff = _onoff.toInt();
+
+    // input value check (returns an error code: 1 or 2) 
+    if (onoff &gt; 1) return 1 ; 
+    if (onoff &lt; 0) return 2 ;
+
+    // set new value for heaterOn variable
+    heaterOn = onoff ;
+
+    // return 0 for OK 
+    return 0 ;
+}</code></pre></div>
+
+<p>e quella per impostare la temperatura desiderata</p>
+
+<div><pre><code class="language-none">int setTempSetpoint(String _t){
+    
+    // cast from String to integer
+    int t = _t.toInt() ;
+
+    // input value check
+    if (t &lt; 18) return 1 ;
+    if (t &gt; 28) return 2 ;
+
+    // set new value for Ts variable 
+    Ts = t ;
+
+    // returns 0 for OK
+    return 0 ;
+}</code></pre></div>
+
+<p>Il fatto di utilizzare una funzione per impostare il valore di una variabile ci consente di eseguire opportuni controlli di validità del dato in input prima di modificarne effettivamente il valore.</p>
+
+<p>La funzione può restituire un valore intero, per convenzione, zero indica nessun errore, altri valori, diversi da zero indicano un errore.</p>
+
+<p>Nel nostro caso, per entrambe le funzioni, un valore 1 restituito in uscita indica che il valore ricevuto in input è inferiore al minimo valore ammesso.
+Un valore 2 indica invece che il valore ricevuto in input è superiore al massimo valore ammesso.</p>
+
+<p>In questo modo, il dispositivo si autoprotegge, accettando 0 e 1 per la variabile heaterOn e valori compresi tra 18 e 28 °C per la variabile Ts.</p>
+
+<p>Le due funzioni vanno aggiunte in fondo al nostro codice, ma perchè siano richiamabili dal cloud, occorre ancora un ultimo passaggio.</p>
+
+<p>Dobbiamo &quot;pubblicare” le funzioni, come abbiamo fatto per le variabili, utilizzando le API di Particle.io </p>
+
+<div><pre><code class="language-none">Particle.function(&quot;funcKey&quot;, funcName);</code></pre></div>
+
+<p>come indicato a questo indirizzo: <a href="">https://docs.particle.io/reference/firmware/photon/#particle-function-</a></p>
+
+<p>Le righe di codice che pubblicano sul Cloud di Particle.io le nostre due funzioni vanno inserite nella funzione setup, ottenendo così quanto segue:</p>
+
+<div><pre><code class="language-none">void setup(){
+
+    Particle.variable(&quot;heateron&quot;,heaterOn);
+    Particle.variable(&quot;temperature&quot;,T);
+    Particle.variable(&quot;tempsetpoint&quot;,Ts);
+    Particle.variable(&quot;relaisaorb&quot;,relaisAorB);
+
+    Particle.function(&quot;setheater&quot;,setHeaterMode) ;
+    Particle.function(&quot;settemp&quot;,setTempSetpoint) ;
+    
+    pinMode(D3,OUTPUT);
+    pinMode(D4,OUTPUT);
+    
+    Wire.begin();
+    
+}</code></pre></div>
+
+<p>Trovate il codice completo del firmware a questo URL: <a href="https://github.com/techmakers/rotiliothermo/blob/master/firmware/rotiliothermo_step03.ino">rotiliothermo_step03.ino</a>.</p>
+
+<p>Adesso possiamo inviare (Flash) il nuovo firmware al Photon e provare a richiamare le funzioni dal WEB.</p>
+
+<h4 id="toc_2">Test di chiamata delle funzioni</h4>
+
+<p>Le nostre funzioni sono state pubblicate con i nomi: <code>setheater</code> e <code>settemp</code>.</p>
+
+<p>La chiamata via WEB deve avvenire con il metodo http POST. Il browser WEB permette, mediante inserimento di URL nella barra indirizzi, solo richieste con il metodo http GET.</p>
+
+<p>Ecco come dovrebbe essere composta la POST.</p>
+
+<div><pre><code class="language-none">POST /v1/devices/{DEVICE_ID}/{FUNCTION}</code></pre></div>
+
+<p>Per questo motivo, nel caso delle funzioni, occorre utilizzare uno strumento diverso dal browser.</p>
+
+<p>Il più semplice e largamente disponibile è il comando <code>curl</code>.</p>
+
+<p>Potete scoprire se è disponibile nel vostro sistema aprendo una finestra di terminale, o prompt dei comandi, e digitare appunto <code>curl --help</code>.</p>
+
+<p>Se presente verrà listata una serie di opzioni disponibili per il comando curl.</p>
+
+<p>Se non presente occorre installarlo, a seconda della piattaforma Linux, Mac o Windows del vostro PC è necessaria una differente, ma comunque semplice, procedura.</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/420026001147343339383037/settemp \
+     -d access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c \
+     -d &quot;args=27&quot;</code></pre></div>
+
+<p>eseguendo il comando otteniamo, se tutto corretto, una risposta come questa:</p>
+
+<div><pre><code class="language-none">{&quot;id&quot;:&quot;420026001147343339383037&quot;,&quot;last_app&quot;:&quot;&quot;,&quot;connected&quot;:true,&quot;return_value&quot;:0}</code></pre></div>
+
+<p>Il valore <code>return_value</code> pari a 0 ci indica che il comando è stato recepito senza errori.</p>
+
+<p>Se proviamo ad inviare una temperatura desiderata di 29 °C con il seguente comando:</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/420026001147343339383037/settemp \
+     -d access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c \
+     -d &quot;args=29&quot;</code></pre></div>
+
+<p>otteniamo una risposta come questa:</p>
+
+<div><pre><code class="language-none">{&quot;id&quot;:&quot;420026001147343339383037&quot;,&quot;last_app&quot;:&quot;&quot;,&quot;connected&quot;:true,&quot;return_value&quot;:2}
+</code></pre></div>
+
+<p>Dove <code>return_value</code> è pari a 2, ovvero, valore superiore al massimo consentito di 28 °C.</p>
+
+<h2 id="toc_3">Testiamo il nostro termostato opensource</h2>
+
+<p>A questo punto del lavoro abbiamo inserito nel firmware tutti gli elementi necessari a controllare il riscaldamento mediante il nostro Rotilio Maker.</p>
+
+<p>Il test è abbastanza semplice, partendo dal presupposto che:</p>
+
+<ul>
+<li>se la temperatura rilevata è inferiore a quella desiderata, il relè deve spostarsi in posizione A, altrimenti deve spostarsi in B</li>
+</ul>
+
+<p>possiamo quindi, per verificare se il relè si sposta in posizione A, impostare una temperatura desiderata superiore alla temperatura rilevata, esempio:</p>
+
+<ul>
+<li>se la temperatura rilevata è di 25 gradi, potremo settare quella desiderata a 27 e capire se il relè si sposta da A a B.</li>
+</ul>
+
+<p>L&#39;attività di test si svolge su due fronti:</p>
+
+<ul>
+<li>software: inviamo comandi e leggiamo lo stato del dispositivo</li>
+<li>hardware: verifichiamo se il relè è nella posizione desiderata</li>
+</ul>
+
+<p>Prima di procedere assicurarsi di non avere nessun collegamento elettrico sul morsetto del relè. Il test deve essere fatto &quot;a vuoto&quot;.</p>
+
+<h3 id="toc_4">Sequenza di test software</h3>
+
+<p>Leggiamo la temperatura rilevata</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/36001b001551353531343431/temperature?access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c</code></pre></div>
+
+<p>Interpretiamo la risposta</p>
+
+<div><pre><code class="language-none">{&quot;.html&quot;:&quot;VarReturn&quot;,&quot;name&quot;:&quot;temperature&quot;,&quot;result&quot;:24.3,&quot;coreInfo&quot;:{&quot;last_app&quot;:&quot;&quot;,&quot;last_heard&quot;:&quot;2017-09-22T14:02:37.021Z&quot;,&quot;connected&quot;:true,&quot;last_handshake_at&quot;:&quot;2017-09-22T12:04:59.090Z&quot;,&quot;deviceID&quot;:&quot;36001b001551353531343431&quot;,&quot;product_id&quot;:6}}  </code></pre></div>
+
+<p>In questo caso leggiamo 24.3 °C</p>
+
+<p>Impostiamo quindi una temperatura desiderata di 26 °C</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/36001b001551353531343431/settemp \
+     -d access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c \
+     -d &quot;args=27&quot;</code></pre></div>
+
+<p>Verifichiamo la risposta</p>
+
+<div><pre><code class="language-none">{&quot;id&quot;:&quot;36001b001551353531343431&quot;,&quot;last_app&quot;:&quot;&quot;,&quot;connected&quot;:true,&quot;return_value&quot;:0}</code></pre></div>
+
+<p>In questo caso <code>return_value</code> è 0 quindi OK</p>
+
+<p>Leggiamo se effettivamente Rotilio Maker ha recepito la temperatura desiserata</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/36001b001551353531343431/tempsetpoint?access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c</code></pre></div>
+
+<p>Verifichiamo la risposta</p>
+
+<div><pre><code class="language-none">{&quot;.html&quot;:&quot;VarReturn&quot;,&quot;name&quot;:&quot;tempsetpoint&quot;,&quot;result&quot;:27,&quot;coreInfo&quot;:{&quot;last_app&quot;:&quot;&quot;,&quot;last_heard&quot;:&quot;2017-09-22T14:06:57.132Z&quot;,&quot;connected&quot;:true,&quot;last_handshake_at&quot;:&quot;2017-09-22T12:04:59.090Z&quot;,&quot;deviceID&quot;:&quot;36001b001551353531343431&quot;,&quot;product_id&quot;:6}}</code></pre></div>
+
+<p>In questo caso <code>result</code> è 27, come ci aspettavamo.</p>
+
+<p>Controlliamo se il relais è stato spostato in posizione A</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/36001b001551353531343431/relaisAorB?access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c</code></pre></div>
+
+<p>Verifichiamo la risposta</p>
+
+<div><pre><code class="language-none">{&quot;.html&quot;:&quot;VarReturn&quot;,&quot;name&quot;:&quot;relaisAorB&quot;,&quot;result&quot;:0,&quot;coreInfo&quot;:{&quot;last_app&quot;:&quot;&quot;,&quot;last_heard&quot;:&quot;2017-09-22T14:08:47.371Z&quot;,&quot;connected&quot;:true,&quot;last_handshake_at&quot;:&quot;2017-09-22T12:04:59.090Z&quot;,&quot;deviceID&quot;:&quot;36001b001551353531343431&quot;,&quot;product_id&quot;:6}}</code></pre></div>
+
+<p>In questo caso è ancora in posizione B, essendo <code>result</code> pari a 0.</p>
+
+<p>E&#39; normale, dato che il firmware opera ogni 30 secondi, quindi occorre attendere al massimo 30 secondi e riprovare la chiamata</p>
+
+<div><pre><code class="language-none">curl https://api.particle.io/v1/devices/36001b001551353531343431/relaisAorB?access_token=89d67f062abf6d45aa95f176642479d7caf5ca3c</code></pre></div>
+
+<p>Verifichiamo nuovamente la risposta:</p>
+
+<div><pre><code class="language-none">{&quot;.html&quot;:&quot;VarReturn&quot;,&quot;name&quot;:&quot;relaisAorB&quot;,&quot;result&quot;:1,&quot;coreInfo&quot;:{&quot;last_app&quot;:&quot;&quot;,&quot;last_heard&quot;:&quot;2017-09-22T14:11:17.308Z&quot;,&quot;connected&quot;:true,&quot;last_handshake_at&quot;:&quot;2017-09-22T12:04:59.090Z&quot;,&quot;deviceID&quot;:&quot;36001b001551353531343431&quot;,&quot;product_id&quot;:6}}</code></pre></div>
+
+<p>Adesso <code>result</code> è pari a 1, quindi il relè è stato spostato in posizione A.</p>
+
+<p>Dovremmo aver sentito anche il &quot;click&quot; del relè che cambia posizione.</p>
+
+<h3 id="toc_5">Test hardware</h3>
+
+<p>Il test hardware consiste nel verificare che le posizioni del relè corrispondano ai relativi contatti sul morsetto del relè.</p>
+
+<p>La figura seguente illustra la posizione dei contatti e relativa chiusura.</p>
+
+<p><img src="https://raw.githubusercontent.com/techmakers/rotiliothermo/master/images/RotilioThermoPictures.002.png" alt="Rotilio Maker Explained Relais"></p>
+
+<p>Se usiamo un tester per verificare la continuità tra il &quot;Common&quot; e A, dovremo trovare continuità quando il relè è in posizione A e viceversa.</p>
+
+<p>La continuità si misura sempre tra &quot;Common&quot; e A o tra &quot;Common&quot; e B, mai tra A e B.</p>
+
+<h2 id="toc_6">Collegamento del sistema di riscaldamento</h2>
+
+<p>Come detto inizialmente, il relè di Rotilio Maker dovrà essere collegato ai due fili che normalmente vanno dalla caldaia al termostato.</p>
+
+<p>Le due figure seguenti illustrano i possibili collegamenti, che dovranno essere applicati al proprio caso.</p>
+
+<p>Se la caldaia si aspetta il contatto chiuso per avviarsi, dovremo utilizzare il modo A, altrimenti il modo B.</p>
+
+<p><img src="https://raw.githubusercontent.com/techmakers/rotiliothermo/master/images/RotilioThermoPictures.003.png" alt="Heating system connection - Mode A"></p>
+
+<p><img src="https://raw.githubusercontent.com/techmakers/rotiliothermo/master/images/RotilioThermoPictures.004.png" alt="Heating system connection - Mode B"></p>
+
+<h2 id="toc_7">Cosa abbiamo imparato</h2>
+
+<p>Le nozioni fin qui acquisite appartengono al campo del software, dell&#39;hardware e delle comunicazioni (cloud).</p>
+
+<p>Per la parte software abbiamo imparato a scrivere un piccolo programma che, dato un determinato input, prende delle decisioni e fornisce un output.</p>
+
+<p>Abbastanza tradizionale.</p>
+
+<p>Il tutto però diventa interessante perchè gli input provengono da internet e dall&#39;ambiente circonstante, dalle cose, ecco l&#39;Internet delle Cose.</p>
+
+<p>Abbiamo imparato ad azionare qualcosa, che è il nostro output, ovvero la posizione del relè e conseguentemente il funzionamento della caldaia.</p>
+
+<p><a href="step-02-firmware.html">&lt; Prev Il firmware</a>       <div style="align:left;"><a href="step-04-lettura-temperatura.html">Next Lettura temperatura&gt;</a></div></p>
+
+
+
+
+</body>
+
+</html>
