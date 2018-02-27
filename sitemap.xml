@@ -66,6 +66,60 @@
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
+  <url>
+    <loc>http://techmakers.io/en/index.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/industry4-0.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/smart-home.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/rotilio-pro.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/rs485-relays-array.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/rotilio-power-meter.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/rotilio-maker.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/software-platform-iot.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://techmakers.io/en/contact.html</loc>
+    <lastmod>2017-05-30T07:19:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>http://techmakers.io/downloadapp.html</loc>
   <lastmod>2017-05-30T07:19:26+00:00</lastmod>
