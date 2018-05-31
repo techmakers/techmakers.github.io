@@ -107,7 +107,7 @@ footer{
     background-color: whitesmoke;
 }
 
-@media (min-width: 1025px) and (max-width: 1112px) {
+@media (min-width: 1025px) and (max-width: 1212px) {
     img#iotstore{
         max-width: 20% !important;
         margin: 5px;
