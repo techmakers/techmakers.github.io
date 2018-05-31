@@ -111,7 +111,7 @@ footer{
     img#iotstore{
         max-width: 20% !important;
         margin: 5px;
-        margin-top: 20px !important;
+        margin-top: 10px !important;
     }
 }
 @media (min-width: 1024px) {
@@ -189,7 +189,7 @@ footer{
     }
     img#iotstore{
         margin-top: 0 !important;
-        max-width: 30% !important;
+        max-width: 20% !important;
         margin: 10px;
     }
 }
@@ -234,7 +234,7 @@ footer{
     }
     img#iotstore{
         margin-top: 0 !important;
-        max-width: 30% !important;
+        max-width: 20% !important;
         margin: 5px;
     }
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
@@ -305,7 +305,7 @@ footer{
         text-align: right !important;
     }
     img#iotstore{
-        max-width: 40% !important;
+        max-width: 20% !important;
         margin: 5px;
     }
     i.fa.fa-fw.fa-facebook{
