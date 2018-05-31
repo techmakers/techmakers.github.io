@@ -109,7 +109,7 @@ footer{
 
 @media (min-width: 1025px) and (max-width: 1112px) {
     img#iotstore{
-        max-width: 30% !important;
+        max-width: 20% !important;
         margin: 5px;
         margin-top: 20px !important;
     }
